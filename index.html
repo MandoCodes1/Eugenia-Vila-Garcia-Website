@@ -77,6 +77,11 @@
             color: white;
         }
         
+        /* Prevent clicks on span elements inside filter buttons from interfering with button click handling */
+        .filter-btn > span {
+            pointer-events: none;
+        }
+        
         /* Custom utility classes for brand colors */
         .bg-wimbledon { background-color: var(--wimbledon-green) !important; }
         .bg-wimbledon-light { background-color: var(--wimbledon-green-light) !important; }
@@ -97,6 +102,11 @@
         .review-filter-btn.active {
             background: var(--wimbledon-green);
             color: white;
+        }
+        
+        /* Prevent clicks on span elements inside review filter buttons */
+        .review-filter-btn > span {
+            pointer-events: none;
         }
         
         .case-item {
