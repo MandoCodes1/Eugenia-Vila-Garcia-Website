@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dra. Eugenia Vila Garcia - Odontología Estética y General</title>
+    <title>Dra. Eugenia Vila - Odontología Estética y General</title>
     <meta name="description" content="Doctora especializada en odontología estética con más de 30 años de experiencia. Invisalign, implantes dentales y cuidado oral integral. Registrada GDC.">
     
     <!-- Tailwind CSS -->
@@ -25,33 +25,32 @@
         }
         
         .hero-gradient {
-            background: linear-gradient(135deg, #1A535C 0%, #2d6972 100%);
+            background: linear-gradient(135deg, var(--primary-blue-dark) 0%, var(--primary-blue) 100%);
         }
         
         .dental-gradient {
-            background: linear-gradient(135deg, #1A535C 0%, #0f3a42 100%);
+            background: linear-gradient(135deg, var(--primary-blue-dark) 0%, var(--primary-blue) 100%);
         }
         
-        /* Wimbledon & Wellness Color Palette */
+        /* Australian Open & Wellness Color Palette */
         :root {
-            --wimbledon-green: #1A535C;
-            --wimbledon-green-light: #2d6972;
-            --wimbledon-green-dark: #0f3a42;
-            --elegant-plum: #5A5480;
-            --elegant-plum-light: #7a7298;
-            --elegant-plum-dark: #443d60;
+            --primary-blue: #00529C;
+            --primary-blue-light: #006BCB;
+            --primary-blue-dark: #003E7A;
+            --secondary-blue: #A0D3F1;
+            --secondary-blue-light: #EBF8FF;
             --dark-slate: #334155;
             --soft-white: #F8FAFC;
             --pure-white: #FFFFFF;
             --gold-accent: #d4af37;
             
             /* Legacy mappings for compatibility */
-            --primary-slate: #1A535C;
-            --primary-slate-light: #2d6972;
-            --secondary-gray: #5A5480;
-            --accent-subtle: #7a7298;
-            --background-light: #f8fafc;
-            --text-primary: #334155;
+            --primary-slate: var(--primary-blue);
+            --primary-slate-light: var(--primary-blue-light);
+            --secondary-gray: var(--secondary-blue);
+            --accent-subtle: var(--secondary-blue-light);
+            --background-light: var(--soft-white);
+            --text-primary: var(--dark-slate);
             --text-secondary: #475569;
         }
         
@@ -73,7 +72,7 @@
         }
         
         .filter-btn.active {
-            background: var(--wimbledon-green);
+            background: var(--primary-blue);
             color: white;
         }
         
@@ -83,16 +82,16 @@
         }
         
         /* Custom utility classes for brand colors */
-        .bg-wimbledon { background-color: var(--wimbledon-green) !important; }
-        .bg-wimbledon-light { background-color: var(--wimbledon-green-light) !important; }
-        .bg-wimbledon-dark { background-color: var(--wimbledon-green-dark) !important; }
-        .bg-plum { background-color: var(--elegant-plum) !important; }
-        .bg-plum-light { background-color: var(--elegant-plum-light) !important; }
-        .text-wimbledon { color: var(--wimbledon-green) !important; }
-        .text-plum { color: var(--elegant-plum) !important; }
+        .bg-primary-blue { background-color: var(--primary-blue) !important; }
+        .bg-primary-blue-light { background-color: var(--primary-blue-light) !important; }
+        .bg-primary-blue-dark { background-color: var(--primary-blue-dark) !important; }
+        .bg-secondary-blue { background-color: var(--secondary-blue) !important; }
+        .bg-secondary-blue-light { background-color: var(--secondary-blue-light) !important; }
+        .text-primary-blue { color: var(--primary-blue) !important; }
+        .text-secondary-blue { color: var(--secondary-blue) !important; }
         .text-dark-slate { color: var(--dark-slate) !important; }
-        .border-wimbledon { border-color: var(--wimbledon-green) !important; }
-        .border-plum { border-color: var(--elegant-plum) !important; }
+        .border-primary-blue { border-color: var(--primary-blue) !important; }
+        .border-secondary-blue { border-color: var(--secondary-blue) !important; }
         
         /* Star rating gold */
         .star-rating, .text-yellow-500 {
@@ -100,7 +99,7 @@
         }
         
         .review-filter-btn.active {
-            background: var(--wimbledon-green);
+            background: var(--primary-blue);
             color: white;
         }
         
@@ -119,7 +118,7 @@
         
         .review-card {
             background: white;
-            border-left: 4px solid var(--elegant-plum);
+            border-left: 4px solid var(--primary-blue);
         }
         
         .star-rating {
@@ -141,10 +140,10 @@
         }
         
         .tag-invisalign { background: #dbeafe; color: #1e40af; }
-        .tag-bonding { background: #fce7f3; color: #9f1239; }
-        .tag-implant { background: #dcfce7; color: #166534; }
+        .tag-bonding { background: #e0e7ff; color: #3730a3; }
+        .tag-implant { background: #dbeafe; color: #1e40af; }
         .tag-whitening { background: #fef3c7; color: #92400e; }
-        .tag-veneers { background: #e0e7ff; color: #3730a3; }
+        .tag-veneers { background: #EBF8FF; color: #00529C; }
         
         .amazon-product {
             transition: all 0.3s ease;
@@ -248,8 +247,8 @@
     <nav class="bg-white shadow-md sticky top-0 z-50">
         <div class="container mx-auto px-6 py-4">
             <div class="flex justify-between items-center">
-                <a href="#home" onclick="showTab('home', event)" class="text-2xl font-bold transition cursor-pointer" style="color: var(--wimbledon-green);">
-                    <span style="color: var(--wimbledon-green);" class="lang-en">Dr.</span><span style="color: var(--wimbledon-green);" class="lang-es hidden">Dra.</span> Eugenia Vila Garcia
+                <a href="#home" onclick="showTab('home', event)" class="text-2xl font-bold transition cursor-pointer" style="color: var(--primary-blue);">
+                    <span style="color: var(--primary-blue);" class="lang-en">Dr.</span><span style="color: var(--primary-blue);" class="lang-es hidden">Dra.</span> Eugenia Vila
                 </a>
                 <div class="hidden md:flex space-x-8 items-center">
                     <a href="#home" class="nav-link text-gray-700 hover:text-slate-600 font-medium transition" onclick="showTab('home', event)">
@@ -280,9 +279,17 @@
                         <button onclick="changeLanguage('en')" id="lang-en" class="lang-btn p-1 text-3xl hover:opacity-80 transition-opacity" style="background: none; border: none; opacity: 0.5;">🇬🇧</button>
                     </div>
                 </div>
-                <button class="md:hidden" onclick="toggleMobileMenu()">
-                    <i class="fas fa-bars text-2xl text-gray-700"></i>
-                </button>
+                
+                <div class="md:hidden flex items-center gap-4">
+                    <div class="flex items-center gap-1">
+                        <button onclick="changeLanguage('es')" id="lang-es-mobile" class="lang-btn p-1 text-3xl hover:opacity-80 transition-opacity" style="background: none; border: none;">🇪🇸</button>
+                        <button onclick="changeLanguage('en')" id="lang-en-mobile" class="lang-btn p-1 text-3xl hover:opacity-80 transition-opacity" style="background: none; border: none; opacity: 0.5;">🇬🇧</button>
+                    </div>
+                    
+                    <button onclick="toggleMobileMenu()">
+                        <i class="fas fa-bars text-2xl text-gray-700"></i>
+                    </button>
+                </div>
             </div>
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2 pb-4">
@@ -307,10 +314,6 @@
                 <a href="#cv" class="block text-gray-700 hover:text-slate-600 py-2" onclick="showTab('cv', event)">
                     <i class="fas fa-file-pdf mr-2"></i><span class="lang-en">CV</span><span class="lang-es hidden">CV</span>
                 </a>
-                <div class="flex gap-3 pt-3 border-t justify-center">
-                    <button onclick="changeLanguage('es')" id="lang-es-mobile" class="lang-btn p-2 text-4xl hover:opacity-80 transition-opacity" style="background: none; border: none;">🇪🇸</button>
-                    <button onclick="changeLanguage('en')" id="lang-en-mobile" class="lang-btn p-2 text-4xl hover:opacity-80 transition-opacity" style="background: none; border: none; opacity: 0.5;">🇬🇧</button>
-                </div>
             </div>
         </div>
     </nav>
@@ -323,11 +326,11 @@
                 <div class="flex flex-col md:flex-row items-center justify-between gap-12">
                     <div class="md:w-1/2 mb-10 md:mb-0">
                         <h1 class="text-3xl md:text-5xl font-bold mb-4 leading-tight lang-en">
-                            Dr. Eugenia Vila Garcia<br>
+                            Dr. Eugenia Vila<br>
                             <span class="text-2xl md:text-3xl font-normal opacity-90">MD, BDS, MSc</span>
                         </h1>
                         <h1 class="text-3xl md:text-5xl font-bold mb-4 leading-tight lang-es hidden">
-                            Dra. Eugenia Vila Garcia<br>
+                            Dra. Eugenia Vila<br>
                             <span class="text-2xl md:text-3xl font-normal opacity-90">MD, Lic. Odont., MSc</span>
                         </h1>
                         <p class="text-lg md:text-xl mb-8 leading-relaxed lang-en" style="color: rgba(255, 255, 255, 0.9);">
@@ -352,20 +355,20 @@
                             <button onclick="showTab('contact', event)" class="border-2 border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white/10 transition">
                                 Get In Touch
                             </button>
-                            <button onclick="showTab('cv', event)" class="px-6 py-3 rounded-full font-semibold transition shadow-lg" style="background-color: var(--wimbledon-green); color: white;">
+                            <button onclick="showTab('cv', event)" class="px-6 py-3 rounded-full font-semibold transition shadow-lg" style="background-color: var(--primary-blue); color: white;">
                                 <i class="fas fa-file-pdf mr-2"></i>View CV
                             </button>
-                            <button onclick="showTab('cases', event)" class="px-6 py-3 rounded-full font-semibold transition shadow-lg" style="background-color: var(--wimbledon-green); color: white;">
+                            <button onclick="showTab('cases', event)" class="px-6 py-3 rounded-full font-semibold transition shadow-lg" style="background-color: var(--primary-blue); color: white;">
                                 View Cases
                             </button>
                         </div>
                         
                         <!-- Spanish Version - Patient Bookings -->
                         <div class="flex flex-wrap gap-3 mb-6 lang-es hidden">
-                            <button onclick="showTab('cases', event)" class="px-6 py-3 rounded-full font-semibold transition shadow-lg" style="background-color: var(--wimbledon-green); color: white;">
+                            <button onclick="showTab('cases', event)" class="px-6 py-3 rounded-full font-semibold transition shadow-lg" style="background-color: var(--primary-blue); color: white;">
                                 Casos
                             </button>
-                            <button onclick="showTab('reviews', event)" class="px-6 py-3 rounded-full font-semibold transition shadow-lg" style="background-color: var(--wimbledon-green); color: white;">
+                            <button onclick="showTab('reviews', event)" class="px-6 py-3 rounded-full font-semibold transition shadow-lg" style="background-color: var(--primary-blue); color: white;">
                                 Reseñas
                             </button>
                             <a href="https://wa.me/34679975580" target="_blank" class="border-2 border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white/10 transition inline-flex items-center gap-2" title="WhatsApp">
@@ -380,15 +383,15 @@
                         
                         <!-- Contact Icons - English (Professional) -->
                         <div class="flex flex-wrap gap-3 lang-en">
-                            <a href="mailto:eugeniavila63@gmail.com" class="px-6 py-3 rounded-full font-semibold transition shadow-lg inline-flex items-center gap-2" style="background-color: var(--wimbledon-green); color: white;" title="Email">
+                            <a href="mailto:eugeniavila63@gmail.com" class="px-6 py-3 rounded-full font-semibold transition shadow-lg inline-flex items-center gap-2" style="background-color: var(--primary-blue); color: white;" title="Email">
                                 <i class="fas fa-envelope text-xl"></i>
                                 Email
                             </a>
-                            <a href="https://www.linkedin.com/in/eugenia-vila-garcia/" target="_blank" class="px-6 py-3 rounded-full font-semibold transition shadow-lg inline-flex items-center gap-2" style="background-color: var(--wimbledon-green); color: white;" title="LinkedIn">
+                            <a href="https://www.linkedin.com/in/eugenia-vila-garcia/" target="_blank" class="px-6 py-3 rounded-full font-semibold transition shadow-lg inline-flex items-center gap-2" style="background-color: var(--primary-blue); color: white;" title="LinkedIn">
                                 <i class="fab fa-linkedin text-xl"></i>
                                 LinkedIn
                             </a>
-                            <a href="tel:+447309281723" class="px-6 py-3 rounded-full font-semibold transition shadow-lg inline-flex items-center gap-2" style="background-color: var(--wimbledon-green); color: white;" title="Phone">
+                            <a href="tel:+447309281723" class="px-6 py-3 rounded-full font-semibold transition shadow-lg inline-flex items-center gap-2" style="background-color: var(--primary-blue); color: white;" title="Phone">
                                 <i class="fas fa-phone text-xl"></i>
                                 Call
                             </a>
@@ -396,8 +399,8 @@
                     </div>
                     <div class="md:w-1/2 flex justify-end">
                         <div class="relative">
-                            <div class="w-96 h-96 bg-white/20 backdrop-blur-sm rounded-3xl flex items-center justify-center overflow-visible">
-                                <img src="assets/images/full_body.png" alt="Dr. Eugenia Vila Garcia" class="h-[32rem] w-auto object-contain border-4 border-white rounded-2xl shadow-2xl" style="max-width: none;">
+                            <div class="w-80 h-80 md:w-96 md:h-96 bg-white/20 backdrop-blur-sm rounded-3xl flex items-center justify-center overflow-visible">
+                                <img src="assets/images/full_body.png" alt="Dr. Eugenia Vila" class="h-[28rem] md:h-[32rem] w-auto object-contain border-4 border-white rounded-2xl shadow-2xl">
                             </div>
                         </div>
                     </div>
@@ -419,8 +422,8 @@
                     </p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <div class="card-hover p-8 rounded-2xl shadow-lg text-center fade-in-up delay-1" style="background: linear-gradient(135deg, rgba(26, 83, 92, 0.08) 0%, rgba(26, 83, 92, 0.15) 100%);">
-                        <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style="background-color: var(--wimbledon-green);">
+                    <div class="card-hover p-8 rounded-2xl shadow-lg text-center fade-in-up delay-1" style="background: linear-gradient(135deg, rgba(0, 82, 156, 0.08) 0%, rgba(0, 82, 156, 0.15) 100%);">
+                        <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style="background-color: var(--primary-blue);">
                             <i class="fas fa-teeth text-white text-2xl"></i>
                         </div>
                         <h3 class="text-xl font-semibold mb-3 text-gray-800">Invisalign</h3>
@@ -429,8 +432,8 @@
                             <span class="lang-es hidden">Terapia con alineadores transparentes para tratamiento ortodóntico discreto</span>
                         </p>
                     </div>
-                    <div class="card-hover p-8 rounded-2xl shadow-lg text-center fade-in-up delay-2" style="background: linear-gradient(135deg, rgba(90, 84, 128, 0.08) 0%, rgba(90, 84, 128, 0.15) 100%);">
-                        <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style="background-color: var(--elegant-plum);">
+                    <div class="card-hover p-8 rounded-2xl shadow-lg text-center fade-in-up delay-2" style="background: linear-gradient(135deg, rgba(160, 211, 241, 0.1) 0%, rgba(160, 211, 241, 0.2) 100%);">
+                        <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style="background-color: var(--primary-blue-light);">
                             <i class="fas fa-tooth text-white text-2xl"></i>
                         </div>
                         <h3 class="text-xl font-semibold mb-3 text-gray-800">
@@ -442,8 +445,8 @@
                             <span class="lang-es hidden">Soluciones permanentes para dientes perdidos</span>
                         </p>
                     </div>
-                    <div class="card-hover p-8 rounded-2xl shadow-lg text-center fade-in-up delay-3" style="background: linear-gradient(135deg, rgba(26, 83, 92, 0.08) 0%, rgba(26, 83, 92, 0.15) 100%);">
-                        <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style="background-color: var(--wimbledon-green);">
+                    <div class="card-hover p-8 rounded-2xl shadow-lg text-center fade-in-up delay-3" style="background: linear-gradient(135deg, rgba(0, 82, 156, 0.08) 0%, rgba(0, 82, 156, 0.15) 100%);">
+                        <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style="background-color: var(--primary-blue);">
                             <i class="fas fa-smile text-white text-2xl"></i>
                         </div>
                         <h3 class="text-xl font-semibold mb-3 text-gray-800">
@@ -455,8 +458,8 @@
                             <span class="lang-es hidden">Mejora estética y transformación de sonrisas</span>
                         </p>
                     </div>
-                    <div class="card-hover p-8 rounded-2xl shadow-lg text-center fade-in-up delay-4" style="background: linear-gradient(135deg, rgba(90, 84, 128, 0.08) 0%, rgba(90, 84, 128, 0.15) 100%);">
-                        <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style="background-color: var(--elegant-plum);">
+                    <div class="card-hover p-8 rounded-2xl shadow-lg text-center fade-in-up delay-4" style="background: linear-gradient(135deg, rgba(160, 211, 241, 0.1) 0%, rgba(160, 211, 241, 0.2) 100%);">
+                        <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style="background-color: var(--primary-blue-light);">
                             <i class="fas fa-sun text-white text-2xl"></i>
                         </div>
                         <h3 class="text-xl font-semibold mb-3 text-gray-800">
@@ -487,7 +490,7 @@
                         <!-- Left Arrow -->
                         <button 
                             id="carousel-prev" 
-                            class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 bg-white hover:bg-gray-100 text-gray-700 w-12 h-12 rounded-full shadow-lg flex items-center justify-center transition-all duration-300 hover:scale-110"
+                            class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 bg-white hover:bg-gray-100 text-gray-700 w-12 h-12 rounded-full shadow-lg hidden md:flex items-center justify-center transition-all duration-300 hover:scale-110"
                             onclick="scrollFeaturedReviews('prev')"
                         >
                             <i class="fas fa-chevron-left"></i>
@@ -503,14 +506,14 @@
                         <!-- Right Arrow -->
                         <button 
                             id="carousel-next" 
-                            class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 bg-white hover:bg-gray-100 text-gray-700 w-12 h-12 rounded-full shadow-lg flex items-center justify-center transition-all duration-300 hover:scale-110"
+                            class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 bg-white hover:bg-gray-100 text-gray-700 w-12 h-12 rounded-full shadow-lg hidden md:flex items-center justify-center transition-all duration-300 hover:scale-110"
                             onclick="scrollFeaturedReviews('next')"
                         >
                             <i class="fas fa-chevron-right"></i>
                         </button>
                     </div>
                     
-                    <button onclick="showTab('reviews', event)" class="text-white px-8 py-3 rounded-full font-semibold transition shadow-lg hover:shadow-xl" style="background-color: var(--wimbledon-green);">
+                    <button onclick="showTab('reviews', event)" class="text-white px-8 py-3 rounded-full font-semibold transition shadow-lg hover:shadow-xl" style="background-color: var(--primary-blue);">
                         <span class="lang-en">View All 83 Reviews</span>
                         <span class="lang-es hidden">Ver Todas Las 83 Reseñas</span>
                     </button>
@@ -570,28 +573,28 @@
             <div class="container mx-auto px-6">
                 <div class="max-w-4xl mx-auto">
                     <h2 class="text-4xl font-bold text-gray-800 mb-8 text-center">
-                        <span class="lang-en">About Dr. Eugenia Vila Garcia</span>
-                        <span class="lang-es hidden">Acerca de la Dra. Eugenia Vila Garcia</span>
+                        <span class="lang-en">About Dr. Eugenia Vila</span>
+                        <span class="lang-es hidden">Acerca de la Dra. Eugenia Vila</span>
                     </h2>
                     
-                    <div class="p-8 rounded-2xl mb-8" style="background: linear-gradient(135deg, rgba(26, 83, 92, 0.08) 0%, rgba(26, 83, 92, 0.12) 100%);">
+                    <div class="p-8 rounded-2xl mb-8" style="background: linear-gradient(135deg, rgba(0, 82, 156, 0.08) 0%, rgba(0, 82, 156, 0.12) 100%);">
                         <h3 class="text-2xl font-semibold mb-4 text-gray-800">
                             <span class="lang-en">Qualifications & Experience</span>
                             <span class="lang-es hidden">Cualificaciones y Experiencia</span>
                         </h3>
                         <div class="space-y-4 text-gray-700">
                             <div class="flex items-start lang-en">
-                                <i class="fas fa-check-circle mt-1 mr-3" style="color: var(--wimbledon-green);"></i>
+                                <i class="fas fa-check-circle mt-1 mr-3" style="color: var(--primary-blue);"></i>
                                 <p><strong>GDC Registration:</strong> 287705 
-                                    <a href="https://olr.gdc-uk.org/SearchRegister/SearchResult?RegistrationNumber=287705" target="_blank" class="text-sm ml-2" style="color: var(--wimbledon-green);">
+                                    <a href="https://olr.gdc-uk.org/SearchRegister/SearchResult?RegistrationNumber=287705" target="_blank" class="text-sm ml-2" style="color: var(--primary-blue);">
                                         <i class="fas fa-external-link-alt"></i> Verify
                                     </a>
                                 </p>
                             </div>
                             <div class="flex items-start lang-es hidden">
-                                <i class="fas fa-check-circle mt-1 mr-3" style="color: var(--wimbledon-green);"></i>
+                                <i class="fas fa-check-circle mt-1 mr-3" style="color: var(--primary-blue);"></i>
                                 <p><strong>Registro GDC:</strong> 287705 
-                                    <a href="https://olr.gdc-uk.org/SearchRegister/SearchResult?RegistrationNumber=287705" target="_blank" class="text-sm ml-2" style="color: var(--wimbledon-green);">
+                                    <a href="https://olr.gdc-uk.org/SearchRegister/SearchResult?RegistrationNumber=287705" target="_blank" class="text-sm ml-2" style="color: var(--primary-blue);">
                                         <i class="fas fa-external-link-alt"></i> Verificar
                                     </a>
                                 </p>
@@ -605,35 +608,35 @@
                                 <p><strong>Premio:</strong> Dentista del Año 2024 (Dental Art Implant Clinics, Londres)</p>
                             </div>
                             <div class="flex items-start lang-en">
-                                <i class="fas fa-check-circle mt-1 mr-3" style="color: var(--wimbledon-green);"></i>
+                                <i class="fas fa-check-circle mt-1 mr-3" style="color: var(--primary-blue);"></i>
                                 <p><strong>Education:</strong> Master's in Implantology (UIC Barcelona), Master's in Aesthetic Medicine (Universidad de Córdoba), MBBS Medicine (Universidad de Málaga)</p>
                             </div>
                             <div class="flex items-start lang-es hidden">
-                                <i class="fas fa-check-circle mt-1 mr-3" style="color: var(--wimbledon-green);"></i>
+                                <i class="fas fa-check-circle mt-1 mr-3" style="color: var(--primary-blue);"></i>
                                 <p><strong>Formación:</strong> Máster en Implantología (UIC Barcelona), Máster en Medicina Estética (Universidad de Córdoba), Licenciatura en Medicina (Universidad de Málaga)</p>
                             </div>
                             <div class="flex items-start lang-en">
-                                <i class="fas fa-check-circle mt-1 mr-3" style="color: var(--wimbledon-green);"></i>
+                                <i class="fas fa-check-circle mt-1 mr-3" style="color: var(--primary-blue);"></i>
                                 <p><strong>Specializations:</strong> Dental Implants, Oral Surgery, Aligners & Orthodontics, Aesthetic Dentistry, Full-Mouth Rehabilitation</p>
                             </div>
                             <div class="flex items-start lang-es hidden">
-                                <i class="fas fa-check-circle mt-1 mr-3" style="color: var(--wimbledon-green);"></i>
+                                <i class="fas fa-check-circle mt-1 mr-3" style="color: var(--primary-blue);"></i>
                                 <p><strong>Especializaciones:</strong> Implantes Dentales, Cirugía Oral, Alineadores y Ortodoncia, Odontología Estética, Rehabilitación Oral Completa</p>
                             </div>
                             <div class="flex items-start lang-en">
-                                <i class="fas fa-check-circle mt-1 mr-3" style="color: var(--wimbledon-green);"></i>
+                                <i class="fas fa-check-circle mt-1 mr-3" style="color: var(--primary-blue);"></i>
                                 <p><strong>Experience:</strong> 30+ years of clinical experience, treated over 20,000 patients</p>
                             </div>
                             <div class="flex items-start lang-es hidden">
-                                <i class="fas fa-check-circle mt-1 mr-3" style="color: var(--wimbledon-green);"></i>
+                                <i class="fas fa-check-circle mt-1 mr-3" style="color: var(--primary-blue);"></i>
                                 <p><strong>Experiencia:</strong> Más de 30 años de experiencia clínica, tratando a más de 20,000 pacientes</p>
                             </div>
                             <div class="flex items-start lang-en">
-                                <i class="fas fa-check-circle mt-1 mr-3" style="color: var(--wimbledon-green);"></i>
+                                <i class="fas fa-check-circle mt-1 mr-3" style="color: var(--primary-blue);"></i>
                                 <p><strong>Languages:</strong> English (Fluent), Spanish (Native)</p>
                             </div>
                             <div class="flex items-start lang-es hidden">
-                                <i class="fas fa-check-circle mt-1 mr-3" style="color: var(--wimbledon-green);"></i>
+                                <i class="fas fa-check-circle mt-1 mr-3" style="color: var(--primary-blue);"></i>
                                 <p><strong>Idiomas:</strong> Inglés (Fluido), Español (Nativo)</p>
                             </div>
                         </div>
@@ -641,49 +644,49 @@
 
                     <div class="prose max-w-none">
                         <p class="text-lg text-gray-700 mb-6 lang-en">
-                            Dr. Eugenia Vila Garcia is a highly qualified dentist with over <strong>30 years of clinical experience</strong>. She holds a Master's in Dental Implants from UIC Barcelona and a Master's in Aesthetic Medicine from the University of Córdoba. Uniquely, Dr. Vila Garcia also holds degrees in both <strong>Medicine and Dentistry</strong>, providing a holistic approach to patient care.
+                            Dr. Eugenia Vila is a highly qualified dentist with over <strong>30 years of clinical experience</strong>. She holds a Master's in Dental Implants from UIC Barcelona and a Master's in Aesthetic Medicine from the University of Córdoba. Uniquely, Dr. Vila also holds degrees in both <strong>Medicine and Dentistry</strong>, providing a holistic approach to patient care.
                         </p>
                         <p class="text-lg text-gray-700 mb-6 lang-es hidden">
-                            La Dra. Eugenia Vila Garcia es una dentista altamente cualificada con más de <strong>30 años de experiencia clínica</strong>. Posee un Máster en Implantes Dentales por UIC Barcelona y un Máster en Medicina Estética por la Universidad de Córdoba. De manera única, la Dra. Vila Garcia también tiene títulos en <strong>Medicina y Odontología</strong>, proporcionando un enfoque holístico en la atención al paciente.
+                            La Dra. Eugenia Vila es una dentista altamente cualificada con más de <strong>30 años de experiencia clínica</strong>. Posee un Máster en Implantes Dentales por UIC Barcelona y un Máster en Medicina Estética por la Universidad de Córdoba. De manera única, la Dra. Vila también tiene títulos en <strong>Medicina y Odontología</strong>, proporcionando un enfoque holístico en la atención al paciente.
                         </p>
                         <p class="text-lg text-gray-700 mb-6 lang-en">
-                            Currently serving as an Implantologist at <strong>Dental Art Implant Clinics in London</strong>, Dr. Vila Garcia was awarded <strong>Dentist of the Year 2024 by Dental Art Implant Clinics</strong> for outstanding clinical outcomes and patient satisfaction. She specializes in complex implant treatments, full-mouth rehabilitations using fully digital workflows (CBCT, 3Shape, Medit), and has a special interest in oral surgery and aligner treatment.
+                            Currently serving as an Implantologist at <strong>Dental Art Implant Clinics in London</strong>, Dr. Vila was awarded <strong>Dentist of the Year 2024 by Dental Art Implant Clinics</strong> for outstanding clinical outcomes and patient satisfaction. She specializes in complex implant treatments, full-mouth rehabilitations using fully digital workflows (CBCT, 3Shape, Medit), and has a special interest in oral surgery and aligner treatment.
                         </p>
                         <p class="text-lg text-gray-700 mb-6 lang-es hidden">
-                            Actualmente trabajando como Implantóloga en <strong>Dental Art Implant Clinics en Londres</strong>, la Dra. Vila Garcia fue galardonada como <strong>Dentista del Año 2024 por Dental Art Implant Clinics</strong> por sus excelentes resultados clínicos y satisfacción del paciente. Se especializa en tratamientos de implantes complejos, rehabilitaciones de boca completa utilizando flujos de trabajo totalmente digitales (CBCT, 3Shape, Medit), y tiene especial interés en cirugía oral y tratamiento con alineadores.
+                            Actualmente trabajando como Implantóloga en <strong>Dental Art Implant Clinics en Londres</strong>, la Dra. Vila fue galardonada como <strong>Dentista del Año 2024 por Dental Art Implant Clinics</strong> por sus excelentes resultados clínicos y satisfacción del paciente. Se especializa en tratamientos de implantes complejos, rehabilitaciones de boca completa utilizando flujos de trabajo totalmente digitales (CBCT, 3Shape, Medit), y tiene especial interés en cirugía oral y tratamiento con alineadores.
                         </p>
                         <p class="text-lg text-gray-700 mb-6 lang-en">
-                            Prior to moving to the UK in 2022, Dr. Vila Garcia ran her own successful practice in Málaga, Spain for 28 years, treating over <strong>20,000 patients</strong> and completing thousands of dental implant placements, bone grafts, extractions, restorations, and aligner smile corrections. Her approach combines technical excellence with genuine empathy and care, making even anxious patients feel comfortable and supported.
+                            Prior to moving to the UK in 2022, Dr. Vila ran her own successful practice in Málaga, Spain for 28 years, treating over <strong>20,000 patients</strong> and completing thousands of dental implant placements, bone grafts, extractions, restorations, and aligner smile corrections. Her approach combines technical excellence with genuine empathy and care, making even anxious patients feel comfortable and supported.
                         </p>
                         <p class="text-lg text-gray-700 mb-6 lang-es hidden">
-                            Antes de mudarse al Reino Unido en 2022, la Dra. Vila Garcia dirigió su propia consulta exitosa en Málaga, España durante 28 años, tratando a más de <strong>20,000 pacientes</strong> y completando miles de colocaciones de implantes dentales, injertos óseos, extracciones, restauraciones y correcciones de sonrisa con alineadores. Su enfoque combina excelencia técnica con genuina empatía y cuidado, haciendo que incluso los pacientes más ansiosos se sientan cómodos y respaldados.
+                            Antes de mudarse al Reino Unido en 2022, la Dra. Vila dirigió su propia consulta exitosa en Málaga, España durante 28 años, tratando a más de <strong>20,000 pacientes</strong> y completando miles de colocaciones de implantes dentales, injertos óseos, extracciones, restauraciones y correcciones de sonrisa con alineadores. Su enfoque combina excelencia técnica con genuina empatía y cuidado, haciendo que incluso los pacientes más ansiosos se sientan cómodos y respaldados.
                         </p>
                     </div>
 
                     <div class="mt-12 grid md:grid-cols-4 gap-6">
-                        <div class="text-center p-6 rounded-xl" style="background-color: rgba(26, 83, 92, 0.08);">
-                            <div class="text-4xl font-bold mb-2" style="color: var(--wimbledon-green);">20,000+</div>
+                        <div class="text-center p-6 rounded-xl" style="background-color: rgba(0, 82, 156, 0.08);">
+                            <div class="text-4xl font-bold mb-2" style="color: var(--primary-blue);">20,000+</div>
                             <p class="text-gray-700">
                                 <span class="lang-en">Patients Treated</span>
                                 <span class="lang-es hidden">Pacientes Tratados</span>
                             </p>
                         </div>
-                        <div class="text-center p-6 rounded-xl" style="background-color: rgba(90, 84, 128, 0.08);">
-                            <div class="text-4xl font-bold mb-2" style="color: var(--elegant-plum);">30+</div>
+                        <div class="text-center p-6 rounded-xl" style="background-color: rgba(160, 211, 241, 0.1);">
+                            <div class="text-4xl font-bold mb-2" style="color: var(--primary-blue-light);">30+</div>
                             <p class="text-gray-700">
                                 <span class="lang-en">Years Experience</span>
                                 <span class="lang-es hidden">Años de Experiencia</span>
                             </p>
                         </div>
-                        <div class="text-center p-6 rounded-xl" style="background-color: rgba(26, 83, 92, 0.08);">
-                            <div class="text-4xl font-bold mb-2" style="color: var(--wimbledon-green);">5/5</div>
+                        <div class="text-center p-6 rounded-xl" style="background-color: rgba(0, 82, 156, 0.08);">
+                            <div class="text-4xl font-bold mb-2" style="color: var(--primary-blue);">5/5</div>
                             <p class="text-gray-700">
                                 <span class="lang-en">+70 Reviews</span>
                                 <span class="lang-es hidden">+70 Reseñas</span>
                             </p>
                         </div>
-                        <div class="text-center p-6 rounded-xl" style="background-color: rgba(90, 84, 128, 0.08);">
-                            <div class="text-4xl font-bold mb-2" style="color: var(--elegant-plum);">2024</div>
+                        <div class="text-center p-6 rounded-xl" style="background-color: rgba(160, 211, 241, 0.1);">
+                            <div class="text-4xl font-bold mb-2" style="color: var(--primary-blue-light);">2024</div>
                             <p class="text-gray-700">
                                 <span class="lang-en">Dentist of the Year<br><span class="text-xs text-gray-500">(Dental Art Implant Clinics)</span></span>
                                 <span class="lang-es hidden">Dentista del Año<br><span class="text-xs text-gray-500">(Dental Art Implant Clinics)</span></span>
@@ -752,10 +755,10 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="aspect-square rounded-lg flex items-center justify-center" style="background: linear-gradient(135deg, rgba(26, 83, 92, 0.15) 0%, rgba(26, 83, 92, 0.25) 100%);">
+                                <div class="aspect-square rounded-lg flex items-center justify-center" style="background: linear-gradient(135deg, rgba(0, 82, 156, 0.15) 0%, rgba(0, 82, 156, 0.25) 100%);">
                                     <div class="text-center">
-                                        <i class="fas fa-image text-4xl mb-2" style="color: var(--wimbledon-green);"></i>
-                                        <p class="text-xs" style="color: var(--wimbledon-green);">
+                                        <i class="fas fa-image text-4xl mb-2" style="color: var(--primary-blue);"></i>
+                                        <p class="text-xs" style="color: var(--primary-blue);">
                                             <span class="lang-en">After</span>
                                             <span class="lang-es hidden">Después</span>
                                         </p>
@@ -783,10 +786,10 @@
                                         <p class="text-xs text-gray-500">Before</p>
                                     </div>
                                 </div>
-                                <div class="aspect-square rounded-lg flex items-center justify-center" style="background: linear-gradient(135deg, rgba(90, 84, 128, 0.15) 0%, rgba(90, 84, 128, 0.25) 100%);">
+                                <div class="aspect-square rounded-lg flex items-center justify-center" style="background: linear-gradient(135deg, rgba(160, 211, 241, 0.2) 0%, rgba(90, 84, 128, 0.25) 100%);">
                                     <div class="text-center">
-                                        <i class="fas fa-image text-4xl mb-2" style="color: var(--elegant-plum);"></i>
-                                        <p class="text-xs" style="color: var(--elegant-plum);">After</p>
+                                        <i class="fas fa-image text-4xl mb-2" style="color: var(--primary-blue-light);"></i>
+                                        <p class="text-xs" style="color: var(--primary-blue-light);">After</p>
                                     </div>
                                 </div>
                             </div>
@@ -811,10 +814,10 @@
                                         <p class="text-xs text-gray-500">Before</p>
                                     </div>
                                 </div>
-                                <div class="aspect-square rounded-lg flex items-center justify-center" style="background: linear-gradient(135deg, rgba(26, 83, 92, 0.15) 0%, rgba(26, 83, 92, 0.25) 100%);">
+                                <div class="aspect-square rounded-lg flex items-center justify-center" style="background: linear-gradient(135deg, rgba(0, 82, 156, 0.15) 0%, rgba(0, 82, 156, 0.25) 100%);">
                                     <div class="text-center">
-                                        <i class="fas fa-image text-4xl mb-2" style="color: var(--wimbledon-green);"></i>
-                                        <p class="text-xs" style="color: var(--wimbledon-green);">After</p>
+                                        <i class="fas fa-image text-4xl mb-2" style="color: var(--primary-blue);"></i>
+                                        <p class="text-xs" style="color: var(--primary-blue);">After</p>
                                     </div>
                                 </div>
                             </div>
@@ -839,10 +842,10 @@
                                         <p class="text-xs text-gray-500">Before</p>
                                     </div>
                                 </div>
-                                <div class="aspect-square rounded-lg flex items-center justify-center" style="background: linear-gradient(135deg, rgba(90, 84, 128, 0.15) 0%, rgba(90, 84, 128, 0.25) 100%);">
+                                <div class="aspect-square rounded-lg flex items-center justify-center" style="background: linear-gradient(135deg, rgba(160, 211, 241, 0.2) 0%, rgba(90, 84, 128, 0.25) 100%);">
                                     <div class="text-center">
-                                        <i class="fas fa-image text-4xl mb-2" style="color: var(--elegant-plum);"></i>
-                                        <p class="text-xs" style="color: var(--elegant-plum);">After</p>
+                                        <i class="fas fa-image text-4xl mb-2" style="color: var(--primary-blue-light);"></i>
+                                        <p class="text-xs" style="color: var(--primary-blue-light);">After</p>
                                     </div>
                                 </div>
                             </div>
@@ -867,10 +870,10 @@
                                         <p class="text-xs text-gray-500">Before</p>
                                     </div>
                                 </div>
-                                <div class="aspect-square rounded-lg flex items-center justify-center" style="background: linear-gradient(135deg, rgba(26, 83, 92, 0.15) 0%, rgba(26, 83, 92, 0.25) 100%);">
+                                <div class="aspect-square rounded-lg flex items-center justify-center" style="background: linear-gradient(135deg, rgba(0, 82, 156, 0.15) 0%, rgba(0, 82, 156, 0.25) 100%);">
                                     <div class="text-center">
-                                        <i class="fas fa-image text-4xl mb-2" style="color: var(--wimbledon-green);"></i>
-                                        <p class="text-xs" style="color: var(--wimbledon-green);">After</p>
+                                        <i class="fas fa-image text-4xl mb-2" style="color: var(--primary-blue);"></i>
+                                        <p class="text-xs" style="color: var(--primary-blue);">After</p>
                                     </div>
                                 </div>
                             </div>
@@ -896,10 +899,10 @@
                                         <p class="text-xs text-gray-500">Before</p>
                                     </div>
                                 </div>
-                                <div class="aspect-square rounded-lg flex items-center justify-center" style="background: linear-gradient(135deg, rgba(90, 84, 128, 0.15) 0%, rgba(90, 84, 128, 0.25) 100%);">
+                                <div class="aspect-square rounded-lg flex items-center justify-center" style="background: linear-gradient(135deg, rgba(160, 211, 241, 0.2) 0%, rgba(90, 84, 128, 0.25) 100%);">
                                     <div class="text-center">
-                                        <i class="fas fa-image text-4xl mb-2" style="color: var(--elegant-plum);"></i>
-                                        <p class="text-xs" style="color: var(--elegant-plum);">After</p>
+                                        <i class="fas fa-image text-4xl mb-2" style="color: var(--primary-blue-light);"></i>
+                                        <p class="text-xs" style="color: var(--primary-blue-light);">After</p>
                                     </div>
                                 </div>
                             </div>
@@ -918,7 +921,7 @@
 
                 <!-- Load More Cases Button -->
                 <div class="text-center mt-12">
-                    <button id="load-more-cases" class="text-white px-8 py-3 rounded-full font-semibold transition shadow-lg mb-4" style="background-color: var(--wimbledon-green);" onclick="loadMoreCases()">
+                    <button id="load-more-cases" class="text-white px-8 py-3 rounded-full font-semibold transition shadow-lg mb-4" style="background-color: var(--primary-blue);" onclick="loadMoreCases()">
                         <i class="fas fa-chevron-down mr-2"></i>
                         <span class="lang-en">Load More Cases</span>
                         <span class="lang-es hidden">Cargar Más Casos</span>
@@ -942,10 +945,10 @@
                     <h2 class="text-5xl font-bold text-gray-900 mb-4 lang-en">Patient Reviews</h2>
                     <h2 class="text-5xl font-bold text-gray-900 mb-4 lang-es hidden">Reseñas de Pacientes</h2>
                     <p class="text-xl text-gray-600 max-w-3xl mx-auto lang-en">
-                        Real experiences from patients who have trusted Dr. Vila Garcia with their dental care across the UK and Spain
+                        Real experiences from patients who have trusted Dr. Vila with their dental care across the UK and Spain
                     </p>
                     <p class="text-xl text-gray-600 max-w-3xl mx-auto lang-es hidden">
-                        Experiencias reales de pacientes que han confiado en la Dra. Vila Garcia para su cuidado dental en Reino Unido y España
+                        Experiencias reales de pacientes que han confiado en la Dra. Vila para su cuidado dental en Reino Unido y España
                     </p>
                 </div>
                 
@@ -980,7 +983,8 @@
 
                 <!-- Load More Button -->
                 <div class="text-center mt-16">
-                    <button id="load-more-reviews" class="font-semibold text-lg border-b-2 transition pb-1" style="color: var(--wimbledon-green); border-color: var(--wimbledon-green);" onclick="loadMoreReviews()">
+                    <button id="load-more-reviews" class="text-white px-8 py-3 rounded-full font-semibold transition shadow-lg" style="background-color: var(--primary-blue);" onclick="loadMoreReviews()">
+                        <i class="fas fa-chevron-down mr-2"></i>
                         <span class="lang-en">Load More Reviews</span>
                         <span class="lang-es hidden">Cargar Más Reseñas</span>
                     </button>
@@ -991,7 +995,7 @@
 
     <!-- Products Tab -->
     <div id="products-tab" class="tab-content">
-        <section class="py-20" style="background: linear-gradient(135deg, #f8f9fa 0%, rgba(26, 83, 92, 0.06) 100%);">
+        <section class="py-20" style="background: linear-gradient(135deg, #f8f9fa 0%, rgba(0, 82, 156, 0.06) 100%);">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-12">
                     <h2 class="text-4xl font-bold text-gray-800 mb-4">
@@ -1014,8 +1018,8 @@
                     
                     <!-- Product 1: Electric Toothbrush -->
                     <div class="amazon-product bg-white rounded-2xl shadow-lg overflow-hidden">
-                        <div class="p-8 flex items-center justify-center" style="min-height: 200px; background: linear-gradient(135deg, rgba(26, 83, 92, 0.08) 0%, rgba(26, 83, 92, 0.15) 100%);">
-                            <i class="fas fa-tooth text-7xl" style="color: var(--wimbledon-green);"></i>
+                        <div class="p-8 flex items-center justify-center" style="min-height: 200px; background: linear-gradient(135deg, rgba(0, 82, 156, 0.08) 0%, rgba(0, 82, 156, 0.15) 100%);">
+                            <i class="fas fa-tooth text-7xl" style="color: var(--primary-blue);"></i>
                         </div>
                         <div class="p-6">
                             <h3 class="text-xl font-semibold text-gray-800 mb-2">
@@ -1033,7 +1037,7 @@
                                 </div>
                                 <div class="text-2xl font-bold text-gray-800">£89.99</div>
                             </div>
-                            <a href="https://www.amazon.co.uk" target="_blank" class="block w-full text-white text-center py-3 rounded-lg font-semibold transition" style="background-color: var(--wimbledon-green);">
+                            <a href="https://www.amazon.co.uk" target="_blank" class="block w-full text-white text-center py-3 rounded-lg font-semibold transition" style="background-color: var(--primary-blue);">
                                 <i class="fab fa-amazon mr-2"></i>
                                 <span class="lang-en">View on Amazon</span>
                                 <span class="lang-es hidden">Ver en Amazon</span>
@@ -1043,8 +1047,8 @@
 
                     <!-- Product 2: Toothpaste -->
                     <div class="amazon-product bg-white rounded-2xl shadow-lg overflow-hidden">
-                        <div class="p-8 flex items-center justify-center" style="min-height: 200px; background: linear-gradient(135deg, rgba(90, 84, 128, 0.08) 0%, rgba(90, 84, 128, 0.15) 100%);">
-                            <i class="fas fa-pump-soap text-7xl" style="color: var(--elegant-plum);"></i>
+                        <div class="p-8 flex items-center justify-center" style="min-height: 200px; background: linear-gradient(135deg, rgba(160, 211, 241, 0.1) 0%, rgba(160, 211, 241, 0.2) 100%);">
+                            <i class="fas fa-pump-soap text-7xl" style="color: var(--primary-blue-light);"></i>
                         </div>
                         <div class="p-6">
                             <h3 class="text-xl font-semibold text-gray-800 mb-2">
@@ -1062,7 +1066,7 @@
                                 </div>
                                 <div class="text-2xl font-bold text-gray-800">£12.99</div>
                             </div>
-                            <a href="https://www.amazon.co.uk" target="_blank" class="block w-full text-white text-center py-3 rounded-lg font-semibold transition" style="background-color: var(--elegant-plum);">
+                            <a href="https://www.amazon.co.uk" target="_blank" class="block w-full text-center py-3 rounded-lg font-semibold transition" style="background-color: var(--secondary-blue); color: var(--text-primary);">
                                 <i class="fab fa-amazon mr-2"></i>
                                 <span class="lang-en">View on Amazon</span>
                                 <span class="lang-es hidden">Ver en Amazon</span>
@@ -1072,8 +1076,8 @@
 
                     <!-- Product 3: Water Flosser -->
                     <div class="amazon-product bg-white rounded-2xl shadow-lg overflow-hidden">
-                        <div class="p-8 flex items-center justify-center" style="min-height: 200px; background: linear-gradient(135deg, rgba(26, 83, 92, 0.08) 0%, rgba(26, 83, 92, 0.15) 100%);">
-                            <i class="fas fa-water text-7xl" style="color: var(--wimbledon-green);"></i>
+                        <div class="p-8 flex items-center justify-center" style="min-height: 200px; background: linear-gradient(135deg, rgba(0, 82, 156, 0.08) 0%, rgba(0, 82, 156, 0.15) 100%);">
+                            <i class="fas fa-water text-7xl" style="color: var(--primary-blue);"></i>
                         </div>
                         <div class="p-6">
                             <h3 class="text-xl font-semibold text-gray-800 mb-2">
@@ -1091,7 +1095,7 @@
                                 </div>
                                 <div class="text-2xl font-bold text-gray-800">£59.99</div>
                             </div>
-                            <a href="https://www.amazon.co.uk" target="_blank" class="block w-full text-white text-center py-3 rounded-lg font-semibold transition" style="background-color: var(--wimbledon-green);">
+                            <a href="https://www.amazon.co.uk" target="_blank" class="block w-full text-white text-center py-3 rounded-lg font-semibold transition" style="background-color: var(--primary-blue);">
                                 <i class="fab fa-amazon mr-2"></i>
                                 <span class="lang-en">View on Amazon</span>
                                 <span class="lang-es hidden">Ver en Amazon</span>
@@ -1101,8 +1105,8 @@
 
                     <!-- Product 4: Interdental Brushes -->
                     <div class="amazon-product bg-white rounded-2xl shadow-lg overflow-hidden">
-                        <div class="p-8 flex items-center justify-center" style="min-height: 200px; background: linear-gradient(135deg, rgba(90, 84, 128, 0.08) 0%, rgba(90, 84, 128, 0.15) 100%);">
-                            <i class="fas fa-broom text-7xl" style="color: var(--elegant-plum);"></i>
+                        <div class="p-8 flex items-center justify-center" style="min-height: 200px; background: linear-gradient(135deg, rgba(160, 211, 241, 0.1) 0%, rgba(160, 211, 241, 0.2) 100%);">
+                            <i class="fas fa-broom text-7xl" style="color: var(--primary-blue-light);"></i>
                         </div>
                         <div class="p-6">
                             <h3 class="text-xl font-semibold text-gray-800 mb-2">
@@ -1120,7 +1124,7 @@
                                 </div>
                                 <div class="text-2xl font-bold text-gray-800">£8.99</div>
                             </div>
-                            <a href="https://www.amazon.co.uk" target="_blank" class="block w-full text-white text-center py-3 rounded-lg font-semibold transition" style="background-color: var(--elegant-plum);">
+                            <a href="https://www.amazon.co.uk" target="_blank" class="block w-full text-center py-3 rounded-lg font-semibold transition" style="background-color: var(--secondary-blue); color: var(--text-primary);">
                                 <i class="fab fa-amazon mr-2"></i>
                                 <span class="lang-en">View on Amazon</span>
                                 <span class="lang-es hidden">Ver en Amazon</span>
@@ -1130,8 +1134,8 @@
 
                     <!-- Product 5: Mouthwash -->
                     <div class="amazon-product bg-white rounded-2xl shadow-lg overflow-hidden">
-                        <div class="p-8 flex items-center justify-center" style="min-height: 200px; background: linear-gradient(135deg, rgba(26, 83, 92, 0.08) 0%, rgba(26, 83, 92, 0.15) 100%);">
-                            <i class="fas fa-flask text-7xl" style="color: var(--wimbledon-green);"></i>
+                        <div class="p-8 flex items-center justify-center" style="min-height: 200px; background: linear-gradient(135deg, rgba(0, 82, 156, 0.08) 0%, rgba(0, 82, 156, 0.15) 100%);">
+                            <i class="fas fa-flask text-7xl" style="color: var(--primary-blue);"></i>
                         </div>
                         <div class="p-6">
                             <h3 class="text-xl font-semibold text-gray-800 mb-2">
@@ -1149,7 +1153,7 @@
                                 </div>
                                 <div class="text-2xl font-bold text-gray-800">£9.99</div>
                             </div>
-                            <a href="https://www.amazon.co.uk" target="_blank" class="block w-full text-white text-center py-3 rounded-lg font-semibold transition" style="background-color: var(--wimbledon-green);">
+                            <a href="https://www.amazon.co.uk" target="_blank" class="block w-full text-white text-center py-3 rounded-lg font-semibold transition" style="background-color: var(--primary-blue);">
                                 <i class="fab fa-amazon mr-2"></i>
                                 <span class="lang-en">View on Amazon</span>
                                 <span class="lang-es hidden">Ver en Amazon</span>
@@ -1159,8 +1163,8 @@
 
                     <!-- Product 6: Tongue Scraper -->
                     <div class="amazon-product bg-white rounded-2xl shadow-lg overflow-hidden">
-                        <div class="p-8 flex items-center justify-center" style="min-height: 200px; background: linear-gradient(135deg, rgba(90, 84, 128, 0.08) 0%, rgba(90, 84, 128, 0.15) 100%);">
-                            <i class="fas fa-hand-sparkles text-7xl" style="color: var(--elegant-plum);"></i>
+                        <div class="p-8 flex items-center justify-center" style="min-height: 200px; background: linear-gradient(135deg, rgba(160, 211, 241, 0.1) 0%, rgba(160, 211, 241, 0.2) 100%);">
+                            <i class="fas fa-hand-sparkles text-7xl" style="color: var(--primary-blue-light);"></i>
                         </div>
                         <div class="p-6">
                             <h3 class="text-xl font-semibold text-gray-800 mb-2">
@@ -1178,7 +1182,7 @@
                                 </div>
                                 <div class="text-2xl font-bold text-gray-800">£6.99</div>
                             </div>
-                            <a href="https://www.amazon.co.uk" target="_blank" class="block w-full text-white text-center py-3 rounded-lg font-semibold transition" style="background-color: var(--elegant-plum);">
+                            <a href="https://www.amazon.co.uk" target="_blank" class="block w-full text-center py-3 rounded-lg font-semibold transition" style="background-color: var(--secondary-blue); color: var(--text-primary);">
                                 <i class="fab fa-amazon mr-2"></i>
                                 <span class="lang-en">View on Amazon</span>
                                 <span class="lang-es hidden">Ver en Amazon</span>
@@ -1214,7 +1218,7 @@
 
     <!-- Contact Tab -->
     <div id="contact-tab" class="tab-content">
-        <section class="py-20" style="background: linear-gradient(135deg, #f8f9fa 0%, rgba(26, 83, 92, 0.06) 100%);">
+        <section class="py-20" style="background: linear-gradient(135deg, #f8f9fa 0%, rgba(0, 82, 156, 0.06) 100%);">
             <div class="container mx-auto px-6">
                 <div class="max-w-4xl mx-auto">
                     <div class="text-center mb-12">
@@ -1238,31 +1242,31 @@
                             
                             <div class="space-y-4">
                                 <div class="flex items-start">
-                                    <div class="w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0" style="background-color: rgba(26, 83, 92, 0.1);">
-                                        <i class="fas fa-envelope text-xl" style="color: var(--wimbledon-green);"></i>
+                                    <div class="w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0" style="background-color: rgba(0, 82, 156, 0.1);">
+                                        <i class="fas fa-envelope text-xl" style="color: var(--primary-blue);"></i>
                                     </div>
                                     <div class="ml-4">
                                         <div class="font-semibold text-gray-800">Email</div>
-                                        <a href="mailto:eugeniavila63@gmail.com" style="color: var(--wimbledon-green);">eugeniavila63@gmail.com</a>
+                                        <a href="mailto:eugeniavila63@gmail.com" style="color: var(--primary-blue);">eugeniavila63@gmail.com</a>
                                     </div>
                                 </div>
 
                                 <div class="flex items-start">
-                                    <div class="w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0" style="background-color: rgba(26, 83, 92, 0.1);">
-                                        <i class="fas fa-phone text-xl" style="color: var(--wimbledon-green);"></i>
+                                    <div class="w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0" style="background-color: rgba(0, 82, 156, 0.1);">
+                                        <i class="fas fa-phone text-xl" style="color: var(--primary-blue);"></i>
                                     </div>
                                     <div class="ml-4">
                                         <div class="font-semibold text-gray-800">
                                             <span class="lang-en">Phone</span>
                                             <span class="lang-es hidden">Teléfono</span>
                                         </div>
-                                        <a href="tel:+447309281723" style="color: var(--wimbledon-green);">+44 7309 281723</a>
+                                        <a href="tel:+447309281723" style="color: var(--primary-blue);">+44 7309 281723</a>
                                     </div>
                                 </div>
 
                                 <div class="flex items-start">
-                                    <div class="w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0" style="background-color: rgba(90, 84, 128, 0.1);">
-                                        <i class="fas fa-id-card text-xl" style="color: var(--elegant-plum);"></i>
+                                    <div class="w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0" style="background-color: rgba(160, 211, 241, 0.2);">
+                                        <i class="fas fa-id-card text-xl" style="color: var(--primary-blue-light);"></i>
                                     </div>
                                     <div class="ml-4">
                                         <div class="font-semibold text-gray-800">
@@ -1270,7 +1274,7 @@
                                             <span class="lang-es hidden">Registro GDC</span>
                                         </div>
                                         <div class="text-gray-700">287705</div>
-                                        <a href="https://olr.gdc-uk.org/SearchRegister/SearchResult?RegistrationNumber=287705" target="_blank" class="text-sm" style="color: var(--elegant-plum);">
+                                        <a href="https://olr.gdc-uk.org/SearchRegister/SearchResult?RegistrationNumber=287705" target="_blank" class="text-sm" style="color: var(--primary-blue-light);">
                                             <span class="lang-en">Verify on GDC Register</span>
                                             <span class="lang-es hidden">Verificar en Registro GDC</span>
                                             <i class="fas fa-external-link-alt ml-1"></i>
@@ -1279,12 +1283,12 @@
                                 </div>
 
                                 <div class="flex items-start">
-                                    <div class="w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0" style="background-color: rgba(26, 83, 92, 0.1);">
-                                        <i class="fab fa-linkedin text-xl" style="color: var(--wimbledon-green);"></i>
+                                    <div class="w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0" style="background-color: rgba(0, 82, 156, 0.1);">
+                                        <i class="fab fa-linkedin text-xl" style="color: var(--primary-blue);"></i>
                                     </div>
                                     <div class="ml-4">
                                         <div class="font-semibold text-gray-800">LinkedIn</div>
-                                        <a href="https://www.linkedin.com/in/eugenia-vila-garcia/" target="_blank" class="text-sm" style="color: var(--wimbledon-green);">
+                                        <a href="https://www.linkedin.com/in/eugenia-vila-garcia/" target="_blank" class="text-sm" style="color: var(--primary-blue);">
                                             <span class="lang-en">View Professional Profile</span>
                                             <span class="lang-es hidden">Ver Perfil Profesional</span>
                                             <i class="fas fa-external-link-alt ml-1"></i>
@@ -1293,8 +1297,8 @@
                                 </div>
 
                                 <div class="flex items-start">
-                                    <div class="w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0" style="background-color: rgba(90, 84, 128, 0.1);">
-                                        <i class="fas fa-map-marker-alt text-xl" style="color: var(--elegant-plum);"></i>
+                                    <div class="w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0" style="background-color: rgba(160, 211, 241, 0.2);">
+                                        <i class="fas fa-map-marker-alt text-xl" style="color: var(--primary-blue-light);"></i>
                                     </div>
                                     <div class="ml-4">
                                         <div class="font-semibold text-gray-800">
@@ -1316,14 +1320,14 @@
                                     <span class="lang-es hidden">Membresías Profesionales</span>
                                 </h4>
                                 <div class="space-y-2 text-gray-700 lang-en">
-                                    <div><i class="fas fa-check-circle mr-2" style="color: var(--wimbledon-green);"></i>General Dental Council (UK) - Registration No. 287705</div>
-                                    <div><i class="fas fa-check-circle mr-2" style="color: var(--wimbledon-green);"></i>Royal College of Surgeons Ireland (RCSI) - Affiliate since 2021</div>
-                                    <div><i class="fas fa-check-circle mr-2" style="color: var(--wimbledon-green);"></i>Colegio Oficial de Dentistas de Málaga - Member since 1994</div>
+                                    <div><i class="fas fa-check-circle mr-2" style="color: var(--primary-blue);"></i>General Dental Council (UK) - Registration No. 287705</div>
+                                    <div><i class="fas fa-check-circle mr-2" style="color: var(--primary-blue);"></i>Royal College of Surgeons Ireland (RCSI) - Affiliate since 2021</div>
+                                    <div><i class="fas fa-check-circle mr-2" style="color: var(--primary-blue);"></i>Colegio Oficial de Dentistas de Málaga - Member since 1994</div>
                                 </div>
                                 <div class="space-y-2 text-gray-700 lang-es hidden">
-                                    <div><i class="fas fa-check-circle mr-2" style="color: var(--wimbledon-green);"></i>General Dental Council (Reino Unido) - Registro No. 287705</div>
-                                    <div><i class="fas fa-check-circle mr-2" style="color: var(--wimbledon-green);"></i>Royal College of Surgeons Ireland (RCSI) - Afiliada desde 2021</div>
-                                    <div><i class="fas fa-check-circle mr-2" style="color: var(--wimbledon-green);"></i>Colegio Oficial de Dentistas de Málaga - Miembro desde 1994</div>
+                                    <div><i class="fas fa-check-circle mr-2" style="color: var(--primary-blue);"></i>General Dental Council (Reino Unido) - Registro No. 287705</div>
+                                    <div><i class="fas fa-check-circle mr-2" style="color: var(--primary-blue);"></i>Royal College of Surgeons Ireland (RCSI) - Afiliada desde 2021</div>
+                                    <div><i class="fas fa-check-circle mr-2" style="color: var(--primary-blue);"></i>Colegio Oficial de Dentistas de Málaga - Miembro desde 1994</div>
                                 </div>
                             </div>
                         </div>
@@ -1337,34 +1341,34 @@
                             
                             <div class="space-y-4 text-gray-700">
                                 <p class="lang-en">
-                                    Dr. Eugenia Vila Garcia is a highly qualified dentist with over 30 years of clinical experience. She holds degrees in both Medicine and Dentistry, along with Master's degrees in Implantology and Aesthetic Medicine.
+                                    Dr. Eugenia Vila is a highly qualified dentist with over 30 years of clinical experience. She holds degrees in both Medicine and Dentistry, along with Master's degrees in Implantology and Aesthetic Medicine.
                                 </p>
                                 <p class="lang-es hidden">
-                                    La Dra. Eugenia Vila Garcia es una dentista altamente cualificada con más de 30 años de experiencia clínica. Posee títulos en Medicina y Odontología, junto con Másteres en Implantología y Medicina Estética.
+                                    La Dra. Eugenia Vila es una dentista altamente cualificada con más de 30 años de experiencia clínica. Posee títulos en Medicina y Odontología, junto con Másteres en Implantología y Medicina Estética.
                                 </p>
                                 
-                                <div class="p-4 rounded-lg" style="background: linear-gradient(135deg, rgba(26, 83, 92, 0.08) 0%, rgba(26, 83, 92, 0.12) 100%);">
+                                <div class="p-4 rounded-lg" style="background: linear-gradient(135deg, rgba(0, 82, 156, 0.08) 0%, rgba(0, 82, 156, 0.12) 100%);">
                                     <h4 class="font-semibold text-gray-800 mb-2">
                                         <span class="lang-en">Key Specializations:</span>
                                         <span class="lang-es hidden">Especializaciones Clave:</span>
                                     </h4>
                                     <ul class="space-y-1 text-sm lang-en">
-                                        <li><i class="fas fa-chevron-right mr-2" style="color: var(--wimbledon-green);"></i>Dental Implants & Full-Mouth Rehabilitation</li>
-                                        <li><i class="fas fa-chevron-right mr-2" style="color: var(--wimbledon-green);"></i>Oral Surgery & Bone Grafting</li>
-                                        <li><i class="fas fa-chevron-right mr-2" style="color: var(--wimbledon-green);"></i>Aligner Therapy & Orthodontics</li>
-                                        <li><i class="fas fa-chevron-right mr-2" style="color: var(--wimbledon-green);"></i>Composite Bonding & Aesthetic Dentistry</li>
-                                        <li><i class="fas fa-chevron-right mr-2" style="color: var(--wimbledon-green);"></i>Digital Dentistry (CBCT, 3Shape, Medit)</li>
+                                        <li><i class="fas fa-chevron-right mr-2" style="color: var(--primary-blue);"></i>Dental Implants & Full-Mouth Rehabilitation</li>
+                                        <li><i class="fas fa-chevron-right mr-2" style="color: var(--primary-blue);"></i>Oral Surgery & Bone Grafting</li>
+                                        <li><i class="fas fa-chevron-right mr-2" style="color: var(--primary-blue);"></i>Aligner Therapy & Orthodontics</li>
+                                        <li><i class="fas fa-chevron-right mr-2" style="color: var(--primary-blue);"></i>Composite Bonding & Aesthetic Dentistry</li>
+                                        <li><i class="fas fa-chevron-right mr-2" style="color: var(--primary-blue);"></i>Digital Dentistry (CBCT, 3Shape, Medit)</li>
                                     </ul>
                                     <ul class="space-y-1 text-sm lang-es hidden">
-                                        <li><i class="fas fa-chevron-right mr-2" style="color: var(--wimbledon-green);"></i>Implantes Dentales y Rehabilitación Oral Completa</li>
-                                        <li><i class="fas fa-chevron-right mr-2" style="color: var(--wimbledon-green);"></i>Cirugía Oral e Injertos Óseos</li>
-                                        <li><i class="fas fa-chevron-right mr-2" style="color: var(--wimbledon-green);"></i>Terapia con Alineadores y Ortodoncia</li>
-                                        <li><i class="fas fa-chevron-right mr-2" style="color: var(--wimbledon-green);"></i>Carillas de Composite y Odontología Estética</li>
-                                        <li><i class="fas fa-chevron-right mr-2" style="color: var(--wimbledon-green);"></i>Odontología Digital (CBCT, 3Shape, Medit)</li>
+                                        <li><i class="fas fa-chevron-right mr-2" style="color: var(--primary-blue);"></i>Implantes Dentales y Rehabilitación Oral Completa</li>
+                                        <li><i class="fas fa-chevron-right mr-2" style="color: var(--primary-blue);"></i>Cirugía Oral e Injertos Óseos</li>
+                                        <li><i class="fas fa-chevron-right mr-2" style="color: var(--primary-blue);"></i>Terapia con Alineadores y Ortodoncia</li>
+                                        <li><i class="fas fa-chevron-right mr-2" style="color: var(--primary-blue);"></i>Carillas de Composite y Odontología Estética</li>
+                                        <li><i class="fas fa-chevron-right mr-2" style="color: var(--primary-blue);"></i>Odontología Digital (CBCT, 3Shape, Medit)</li>
                                     </ul>
                                 </div>
 
-                                <div class="p-4 rounded-lg" style="background: linear-gradient(135deg, rgba(90, 84, 128, 0.08) 0%, rgba(90, 84, 128, 0.12) 100%);">
+                                <div class="p-4 rounded-lg" style="background: linear-gradient(135deg, rgba(160, 211, 241, 0.1) 0%, rgba(160, 211, 241, 0.15) 100%);">
                                     <h4 class="font-semibold text-gray-800 mb-2">
                                         <span class="lang-en">Career Highlights:</span>
                                         <span class="lang-es hidden">Logros Profesionales:</span>
@@ -1385,7 +1389,7 @@
                                     </ul>
                                 </div>
 
-                                <div class="p-4 rounded-lg" style="background: linear-gradient(135deg, rgba(26, 83, 92, 0.08) 0%, rgba(26, 83, 92, 0.12) 100%);">
+                                <div class="p-4 rounded-lg" style="background: linear-gradient(135deg, rgba(0, 82, 156, 0.08) 0%, rgba(0, 82, 156, 0.12) 100%);">
                                     <h4 class="font-semibold text-gray-800 mb-2">
                                         <span class="lang-en">Current Position:</span>
                                         <span class="lang-es hidden">Posición Actual:</span>
@@ -1413,7 +1417,7 @@
                             </div>
 
                             <div class="mt-6">
-                                <a href="documents/cv.pdf" download class="block w-full text-white text-center py-3 rounded-lg font-semibold transition shadow-lg" style="background: linear-gradient(135deg, var(--elegant-plum) 0%, var(--elegant-plum-light) 100%);">
+                                <a href="documents/cv.pdf" download class="block w-full text-white text-center py-3 rounded-lg font-semibold transition shadow-lg" style="background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-light) 100%);">
                                     <i class="fas fa-download mr-2"></i>
                                     <span class="lang-en">Download CV</span>
                                     <span class="lang-es hidden">Descargar CV</span>
@@ -1439,8 +1443,8 @@
                             <span class="lang-es hidden">Currículum Vitae</span>
                         </h2>
                         <p class="text-xl text-gray-600">
-                            <span class="lang-en">Dr. Eugenia Vila Garcia - Professional Resume</span>
-                            <span class="lang-es hidden">Dra. Eugenia Vila Garcia - Currículum Profesional</span>
+                            <span class="lang-en">Dr. Eugenia Vila - Professional Resume</span>
+                            <span class="lang-es hidden">Dra. Eugenia Vila - Currículum Profesional</span>
                         </p>
                     </div>
 
@@ -1468,7 +1472,7 @@
                                         href="documents/cv.pdf" 
                                         download 
                                         class="inline-block text-white px-8 py-3 rounded-lg font-semibold transition shadow-lg"
-                                        style="background-color: var(--elegant-plum);"
+                                        style="background-color: var(--primary-blue-light);"
                                     >
                                         <i class="fas fa-download mr-2"></i>
                                         <span class="lang-en">Download CV</span>
@@ -1490,7 +1494,7 @@
                                     href="documents/cv.pdf" 
                                     download 
                                     class="text-white px-6 py-2 rounded-lg font-semibold transition shadow-md flex items-center gap-2"
-                                    style="background-color: var(--elegant-plum);"
+                                    style="background-color: var(--primary-blue);"
                                 >
                                     <i class="fas fa-download"></i>
                                     <span class="lang-en">Download PDF</span>
@@ -1541,14 +1545,14 @@
     </div>
 
     <!-- Footer - Space Dental Inspired -->
-    <footer class="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-16">
+    <footer class="text-white py-16" style="background-color: var(--primary-blue-dark);">
         <div class="container mx-auto px-6">
             <div class="grid md:grid-cols-4 gap-8 mb-12">
                 <!-- About Section -->
                 <div>
                     <h3 class="text-xl font-bold mb-4">
-                        <span class="lang-en">Dr. Eugenia Vila Garcia</span>
-                        <span class="lang-es hidden">Dra. Eugenia Vila Garcia</span>
+                        <span class="lang-en">Dr. Eugenia Vila</span>
+                        <span class="lang-es hidden">Dra. Eugenia Vila</span>
                     </h3>
                     <p class="text-gray-400 text-sm leading-relaxed mb-4">
                         <span class="lang-en">GDC-registered dental professional with 30+ years of experience, specializing in aesthetic dentistry and comprehensive oral care in London.</span>
@@ -1694,7 +1698,7 @@
 
             <!-- Bottom Bar -->
             <div class="border-t border-slate-700 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
-                <p>&copy; 2025 <span class="lang-en">Dr. Eugenia Vila Garcia.</span><span class="lang-es hidden">Dra. Eugenia Vila Garcia.</span> <span class="lang-en">All rights reserved.</span><span class="lang-es hidden">Todos los derechos reservados.</span></p>
+                <p>&copy; 2025 <span class="lang-en">Dr. Eugenia Vila.</span><span class="lang-es hidden">Dra. Eugenia Vila.</span> <span class="lang-en">All rights reserved.</span><span class="lang-es hidden">Todos los derechos reservados.</span></p>
                 <p class="mt-2 md:mt-0 text-xs">
                     <span class="lang-en">Professional Dental Portfolio • GDC Registered</span>
                     <span class="lang-es hidden">Portafolio Dental Profesional • Registrado GDC</span>
