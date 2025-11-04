@@ -1,0 +1,62 @@
+[
+  {
+    "title_en": "Invisalign Treatment",
+    "title_es": "Tratamiento Invisalign",
+    "description_en": "Complete orthodontic correction with clear aligners. Treatment duration: 12 months.",
+    "description_es": "Corrección de ortodoncia completa con alineadores transparentes. Duración del tratamiento: 12 meses.",
+    "tags": ["invisalign"],
+    "location": "London Clinic",
+    "image_before": "",
+    "image_after": ""
+  },
+  {
+    "title_en": "Composite Bonding",
+    "title_es": "Carillas de Composite",
+    "description_en": "Smile makeover with composite bonding on upper anterior teeth.",
+    "description_es": "Cambio de sonrisa con carillas de composite en los dientes anteriores superiores.",
+    "tags": ["bonding"],
+    "location": "Manchester",
+    "image_before": "",
+    "image_after": ""
+  },
+  {
+    "title_en": "Single Tooth Implant",
+    "title_es": "Implante de un solo diente",
+    "description_en": "Complete restoration with dental implant and crown. Natural appearance.",
+    "description_es": "Restauración completa con implante dental y corona. Apariencia natural.",
+    "tags": ["implant"],
+    "location": "Birmingham",
+    "image_before": "",
+    "image_after": ""
+  },
+  {
+    "title_en": "Professional Whitening",
+    "title_es": "Blanqueamiento Profesional",
+    "description_en": "Dramatic color improvement with professional teeth whitening treatment.",
+    "description_es": "Mejora drástica del color con tratamiento de blanqueamiento dental profesional.",
+    "tags": ["whitening"],
+    "location": "London Clinic",
+    "image_before": "",
+    "image_after": ""
+  },
+  {
+    "title_en": "Smile Makeover",
+    "title_es": "Diseño de Sonrisa",
+    "description_en": "Complete smile transformation with veneers and bonding.",
+    "description_es": "Transformación completa de la sonrisa con carillas y composite.",
+    "tags": ["veneers", "bonding"],
+    "location": "Manchester",
+    "image_before": "",
+    "image_after": ""
+  },
+  {
+    "title_en": "Combined Treatment",
+    "title_es": "Tratamiento Combinado",
+    "description_en": "Invisalign treatment followed by professional whitening for optimal results.",
+    "description_es": "Tratamiento de Invisalign seguido de blanqueamiento profesional para resultados óptimos.",
+    "tags": ["invisalign", "whitening"],
+    "location": "Birmingham",
+    "image_before": "",
+    "image_after": ""
+  }
+]

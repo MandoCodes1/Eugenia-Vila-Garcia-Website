@@ -1,4 +1,4 @@
-# Dr. Eugenia Vila Garcia - Professional Dental Portfolio
+# Dr. Eugenia Vila - Professional Dental Portfolio
 
 A professional bilingual portfolio website showcasing dental expertise, patient testimonials, and career accomplishments. Designed to serve two distinct audiences: UK recruiters (English) and Málaga patients (Spanish).
 
@@ -12,7 +12,7 @@ A professional bilingual portfolio website showcasing dental expertise, patient 
   - **Spanish Version**: Patient booking focus with WhatsApp and Google Maps integration
 
 ### Professional Design
-- **Color Palette**: Wimbledon & Wellness (sophisticated green #1A535C and elegant plum #5A5480)
+- **Color Palette**: Australian Open Theme (professional blue #006BCB, light blue #249CEA, and dark blue #00529C)
 - **Responsive Design**: Mobile-first approach, optimized for all devices
 - **Clean Layout**: Medical-grade professional styling throughout
 
@@ -38,8 +38,8 @@ A professional bilingual portfolio website showcasing dental expertise, patient 
 - Location tags (London, Manchester, Birmingham)
 
 #### ⭐ Reviews (57 Total)
-- **Featured Carousel**: 14 handpicked passionate reviews on home page
-- **Full Reviews Tab**: All 57 patient testimonials
+- **Featured Carousel**: 12 handpicked passionate reviews on home page (sorted by quality and heartfulness)
+- **Full Reviews Tab**: All 57 patient testimonials (with best reviews appearing first)
 - **Two Display Styles**: Dr. Kalia (compact) and Dr. Martin (detailed) layouts
 - **Bilingual Reviews**: English and Spanish translations
 - **Avatar Integration**: Real profile pictures from Google/Trustpilot
@@ -53,10 +53,11 @@ A professional bilingual portfolio website showcasing dental expertise, patient 
 - Professional descriptions and pricing
 
 #### 📞 Contact
-- **English Version**: Email (eugeniavila63@gmail.com), LinkedIn, UK Phone (+44 7309281723)
-- **Spanish Version**: Spanish Phone (+34 679975580)
+- **English Version**: Email (eugeniavila63@gmail.com), LinkedIn, UK Phone (+44 7309 281723), WhatsApp (+44 7309 281723)
+- **Spanish Version**: Spanish Phone (+34 679 975 580), WhatsApp (+34 679 975 580)
 - GDC Registration: 287705 (with verification link)
-- Current Location: Dental Art Implant Clinics, London
+- **UK Locations**: Dental Art Implant Clinics (Balham & East Finchley, London)
+- **Spain Location**: Clínica Dental Dra. Eugenia Vila (Av. Juan Sebastián Elcano, 191, Málaga-Este, 29017 Málaga)
 - Professional Memberships: GDC, RCSI, Colegio Oficial de Dentistas de Málaga
 - Comprehensive professional summary
 
@@ -67,8 +68,9 @@ A professional bilingual portfolio website showcasing dental expertise, patient 
 - Quick stats display
 
 ### Spanish Version Extras
-- **Google Maps Integration**: Clinic location (Av. Juan Sebastián Elcano, 191, Málaga-Este, 29017 Málaga, Spain)
-- **WhatsApp Button**: Direct booking via WhatsApp (+34 679975580)
+- **Google Maps Integration**: Embedded map showing clinic location with interactive directions
+- **Google Maps Link**: [maps.app.goo.gl/VQvCD5BBHYrHaJWu6](https://maps.app.goo.gl/VQvCD5BBHYrHaJWu6)
+- **WhatsApp Button**: Direct booking via WhatsApp (+34 679 975 580)
 - **"Cómo Llegar" Button**: Google Maps directions (styled in Maps blue #4285F4)
 
 ## 📁 Directory Structure
@@ -99,13 +101,16 @@ _site/
 
 ## 🎨 Design System
 
-### Color Palette
+### Color Palette (Australian Open Theme)
 ```css
---wimbledon-green: #1A535C     /* Primary actions, links, accents */
---wimbledon-green-light: #2a6d78  /* Hover states */
---elegant-plum: #5A5480        /* Secondary actions */
---elegant-plum-light: #6a6490  /* Hover states */
---gold-accent: #C5A572         /* Awards, achievements */
+--primary-blue: #006BCB           /* Main primary color - professional blue */
+--primary-blue-light: #249CEA     /* Light accent blue */
+--primary-blue-dark: #00529C      /* Dark blue for depth */
+--secondary-blue: #A0D3F1         /* Light accent blue */
+--secondary-blue-light: #EBF8FF   /* Very light background/accent */
+--gold-accent: #d4af37            /* Awards, achievements, star ratings */
+--dark-slate: #334155             /* Text color */
+--soft-white: #F8FAFC             /* Background color */
 ```
 
 ### Typography
@@ -181,21 +186,27 @@ Edit the Dental Cases section in `index.html` (lines ~637-924)
 ## 📊 Website Statistics
 
 - **Total Lines of Code**: 2,296
-- **Patient Reviews**: 57 (14 featured on home page)
+- **Patient Reviews**: 57 (12 featured on home page, sorted by quality)
 - **Dental Cases**: 6 sample cases
 - **Product Recommendations**: 6 items
-- **Languages**: 2 (English, Spanish)
+- **Languages**: 2 (English, Spanish) - Spanish is default
 - **Tabs/Sections**: 7 (Home, About, Dental Cases, Reviews, Products, Contact, CV)
 
 ## 📞 Contact Information
 
-**Dr. Eugenia Vila Garcia**
+**Dr. Eugenia Vila** (Spanish: **Dra. Eugenia Vila**)
 - **GDC Registration**: 287705 ([Verify](https://olr.gdc-uk.org/SearchRegister/SearchResult?RegistrationNumber=287705))
 - **Email**: eugeniavila63@gmail.com
 - **LinkedIn**: [linkedin.com/in/eugenia-vila-garcia](https://www.linkedin.com/in/eugenia-vila-garcia/)
 - **UK Phone**: +44 7309 281723
+- **UK WhatsApp**: +44 7309 281723
 - **Spain Phone**: +34 679 975 580
-- **Clinic Address**: Av. Juan Sebastián Elcano, 191, Málaga-Este, 29017 Málaga, Spain
+- **Spain WhatsApp**: +34 679 975 580
+- **UK Clinics**: 
+  - Dental Art Implant Clinic, Balham, London
+  - Dental Art Implant Clinic, East Finchley, London
+- **Spain Clinic**: Clínica Dental Dra. Eugenia Vila, Av. Juan Sebastián Elcano, 191, Málaga-Este, 29017 Málaga, Spain
+- **Google Maps**: [maps.app.goo.gl/VQvCD5BBHYrHaJWu6](https://maps.app.goo.gl/VQvCD5BBHYrHaJWu6)
 
 ## 🏆 Achievements
 
@@ -208,11 +219,18 @@ Edit the Dental Cases section in `index.html` (lines ~637-924)
 
 ## 📄 License
 
-This website is the professional portfolio of Dr. Eugenia Vila Garcia. All rights reserved.
+This website is the professional portfolio of Dr. Eugenia Vila. All rights reserved.
 
 ---
 
-**Website Version**: 1.0  
-**Last Updated**: October 2025  
+**Website Version**: 2.0  
+**Last Updated**: January 2025  
 **Maintained by**: Miguel (Developer)
+
+### Recent Updates
+- Updated color palette to Australian Open theme (professional blue)
+- Changed name from "Eugenia Vila Garcia" to "Eugenia Vila" throughout
+- Reordered reviews with best reviews first (12 featured on home page)
+- Updated Google Maps integration with correct clinic location
+- Enhanced footer with improved contact information organization
 

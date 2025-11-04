@@ -1,0 +1,62 @@
+[
+  {
+    "name_en": "Electric Toothbrush",
+    "name_es": "Cepillo Eléctrico",
+    "description_en": "Professional-grade electric toothbrush with multiple cleaning modes and pressure sensor.",
+    "description_es": "Cepillo eléctrico de grado profesional con múltiples modos de limpieza y sensor de presión.",
+    "icon": "fa-tooth",
+    "rating": 4.5,
+    "price": "£89.99",
+    "url": "https://www.amazon.co.uk"
+  },
+  {
+    "name_en": "Fluoride Toothpaste",
+    "name_es": "Pasta Dental con Flúor",
+    "description_en": "Premium fluoride toothpaste for cavity protection and enamel strengthening.",
+    "description_es": "Pasta dental premium con flúor para protección contra caries y fortalecimiento del esmalte.",
+    "icon": "fa-pump-soap",
+    "rating": 5,
+    "price": "£12.99",
+    "url": "https://www.amazon.co.uk"
+  },
+  {
+    "name_en": "Water Flosser/Irrigator",
+    "name_es": "Irrigador Dental",
+    "description_en": "Advanced water irrigator for deep cleaning between teeth and along the gumline.",
+    "description_es": "Irrigador dental avanzado para limpieza profunda entre los dientes y a lo largo de la línea de las encías.",
+    "icon": "fa-water",
+    "rating": 4.7,
+    "price": "£59.99",
+    "url": "https://www.amazon.co.uk"
+  },
+  {
+    "name_en": "Interdental Brushes",
+    "name_es": "Cepillos Interdentales",
+    "description_en": "Set of interdental brushes in various sizes for cleaning between teeth.",
+    "description_es": "Set de cepillos interdentales en varios tamaños para limpiar entre los dientes.",
+    "icon": "fa-broom",
+    "rating": 4.8,
+    "price": "£8.99",
+    "url": "https://www.amazon.co.uk"
+  },
+  {
+    "name_en": "Antibacterial Mouthwash",
+    "name_es": "Enjuague Bucal Antibacteriano",
+    "description_en": "Clinical-strength antibacterial mouthwash for complete oral hygiene.",
+    "description_es": "Enjuague bucal antibacteriano de grado clínico para higiene oral completa.",
+    "icon": "fa-flask",
+    "rating": 4.5,
+    "price": "£15.50",
+    "url": "https://www.amazon.co.uk"
+  },
+  {
+    "name_en": "Tongue Scraper",
+    "name_es": "Limpiador de Lengua",
+    "description_en": "Hygienic tongue scraper for fresh breath and oral cleanliness.",
+    "description_es": "Limpiador de lengua higiénico para un aliento fresco y limpieza oral.",
+    "icon": "fa-ribbon",
+    "rating": 4.9,
+    "price": "£6.99",
+    "url": "https://www.amazon.co.uk"
+  }
+]
