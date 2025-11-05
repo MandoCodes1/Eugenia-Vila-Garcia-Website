@@ -34,9 +34,9 @@
         
         /* Australian Open & Wellness Color Palette */
         :root {
-            --primary-blue: #006BCB;           /* Old light becomes new primary */
-            --primary-blue-light: #249CEA;      /* New light, inspired by logo */
-            --primary-blue-dark: #00529C;          /* Old primary becomes new dark */
+            --primary-blue: #00529C;
+            --primary-blue-light: #006BCB;
+            --primary-blue-dark: #003E7A;
             --secondary-blue: #A0D3F1;
             --secondary-blue-light: #EBF8FF;
             --dark-slate: #334155;
@@ -244,62 +244,79 @@
 <body class="bg-gray-50 smooth-scroll">
     
     <!-- Navigation -->
-    <header class="bg-white shadow-md sticky top-0 z-50">
-        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <!-- Logo -->
-            <a href="#home" onclick="showTab('home', event)" class="flex items-center gap-3">
-                <img src="assets/images/logo.png" alt="Logo" class="h-12 w-12">
-                <span class="font-bold text-xl text-gray-800">
-                    <span class="lang-en">Dr. Eugenia Vila</span>
-                    <span class="lang-es hidden">Dra. Eugenia Vila</span>
-                </span>
-            </a>
- 
-            <!-- Desktop Menu -->
-            <div class="hidden md:flex items-center space-x-1">
-                <a href="#home" onclick="showTab('home', event)" class="nav-link py-2 px-3 text-gray-700 hover:text-cyan-600 font-medium" role="tab" aria-selected="true">
-                    <span class="lang-en">Home</span><span class="lang-es hidden">Inicio</span>
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#home" onclick="showTab('home', event)" class="text-2xl font-bold transition cursor-pointer" style="color: var(--primary-blue);">
+                    <span style="color: var(--primary-blue);" class="lang-en">Dr.</span><span style="color: var(--primary-blue);" class="lang-es hidden">Dra.</span> Eugenia Vila
                 </a>
-                <a href="#about" onclick="showTab('about', event)" class="nav-link py-2 px-3 text-gray-700 hover:text-cyan-600 font-medium" role="tab" aria-selected="false">
-                    <span class="lang-en">About</span><span class="lang-es hidden">Trayectoria</span>
-                </a>
-                <a href="#cases" onclick="showTab('cases', event)" class="nav-link py-2 px-3 text-gray-700 hover:text-cyan-600 font-medium" role="tab" aria-selected="false">
-                    <span class="lang-en">Dental Cases</span><span class="lang-es hidden">Casos</span>
-                </a>
-                <a href="#reviews" onclick="showTab('reviews', event)" class="nav-link py-2 px-3 text-gray-700 hover:text-cyan-600 font-medium" role="tab" aria-selected="false">
-                    <span class="lang-en">Reviews</span><span class="lang-es hidden">Reseñas</span>
-                </a>
-                <a href="#products" onclick="showTab('products', event)" class="nav-link py-2 px-3 text-gray-700 hover:text-cyan-600 font-medium" role="tab" aria-selected="false">
-                    <span class="lang-en">Products</span><span class="lang-es hidden">Productos</span>
-                </a>
-                <a href="#contact" onclick="showTab('contact', event)" class="nav-link py-2 px-3 text-gray-700 hover:text-cyan-600 font-medium" role="tab" aria-selected="false">
-                    <span class="lang-en">Contact</span><span class="lang-es hidden">Contacto</span>
-                </a>
-                <a href="#cv" onclick="showTab('cv', event)" class="nav-link py-2 px-3 text-gray-700 hover:text-cyan-600 font-medium" role="tab" aria-selected="false">
-                    <span class="lang-en">CV</span><span class="lang-es hidden">CV</span>
-                </a>
-                <div class="flex items-center gap-1 ml-4 border-l pl-4">
-                    <button onclick="changeLanguage('es')" id="lang-es" class="lang-btn p-1 text-3xl hover:opacity-80 transition-opacity" style="background: none; border: none;">🇪🇸</button>
-                    <button onclick="changeLanguage('en')" id="lang-en" class="lang-btn p-1 text-3xl hover:opacity-80 transition-opacity" style="background: none; border: none; opacity: 0.5;">🇬🇧</button>
-                </div>
-            </div>
-            
-            <!-- Mobile Menu Button -->
-            <div class="md:hidden flex items-center gap-4">
-                <div class="flex items-center gap-1">
-                    <button onclick="changeLanguage('es')" id="lang-es-mobile" class="lang-btn p-1 text-3xl hover:opacity-80 transition-opacity" style="background: none; border: none;">🇪🇸</button>
-                    <button onclick="changeLanguage('en')" id="lang-en-mobile" class="lang-btn p-1 text-3xl hover:opacity-80 transition-opacity" style="background: none; border: none; opacity: 0.5;">🇬🇧</button>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-slate-600 font-medium transition" onclick="showTab('home', event)">
+                        <span class="lang-en">Home</span><span class="lang-es hidden">Inicio</span>
+                    </a>
+                    <a href="#about" class="nav-link text-gray-700 hover:text-slate-600 font-medium transition" onclick="showTab('about', event)">
+                        <span class="lang-en">About</span><span class="lang-es hidden">Acerca de</span>
+                    </a>
+                    <a href="#cases" class="nav-link text-gray-700 hover:text-slate-600 font-medium transition" onclick="showTab('cases', event)">
+                        <span class="lang-en">Dental Cases</span><span class="lang-es hidden">Casos Dentales</span>
+                    </a>
+                    <a href="#reviews" class="nav-link text-gray-700 hover:text-slate-600 font-medium transition" onclick="showTab('reviews', event)">
+                        <span class="lang-en">Reviews</span><span class="lang-es hidden">Reseñas</span>
+                    </a>
+                    <a href="#products" class="nav-link text-gray-700 hover:text-slate-600 font-medium transition" onclick="showTab('products', event)">
+                        <span class="lang-en">Products</span><span class="lang-es hidden">Productos</span>
+                    </a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-slate-600 font-medium transition" onclick="showTab('contact', event)">
+                        <span class="lang-en">Contact</span><span class="lang-es hidden">Contacto</span>
+                    </a>
+                    <a href="#cv" class="nav-link text-gray-700 hover:text-slate-600 font-medium transition" onclick="showTab('cv', event)">
+                        <i class="fas fa-file-pdf mr-1"></i>CV
+                    </a>
+                    
+                    <!-- Language Switcher -->
+                    <div class="flex items-center gap-1 ml-4 border-l pl-4">
+                        <button onclick="changeLanguage('es')" id="lang-es" class="lang-btn p-1 text-3xl hover:opacity-80 transition-opacity" style="background: none; border: none;">🇪🇸</button>
+                        <button onclick="changeLanguage('en')" id="lang-en" class="lang-btn p-1 text-3xl hover:opacity-80 transition-opacity" style="background: none; border: none; opacity: 0.5;">🇬🇧</button>
+                    </div>
                 </div>
                 
-                <button onclick="toggleMobileMenu()">
-                    <i class="fas fa-bars text-2xl text-gray-700"></i>
-                </button>
+                <div class="md:hidden flex items-center gap-4">
+                    <div class="flex items-center gap-1">
+                        <button onclick="changeLanguage('es')" id="lang-es-mobile" class="lang-btn p-1 text-3xl hover:opacity-80 transition-opacity" style="background: none; border: none;">🇪🇸</button>
+                        <button onclick="changeLanguage('en')" id="lang-en-mobile" class="lang-btn p-1 text-3xl hover:opacity-80 transition-opacity" style="background: none; border: none; opacity: 0.5;">🇬🇧</button>
+                    </div>
+                    
+                    <button onclick="toggleMobileMenu()">
+                        <i class="fas fa-bars text-2xl text-gray-700"></i>
+                    </button>
+                </div>
             </div>
-        </nav>
-    </header>
-
-    <!-- Main Content -->
-    <main>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2 pb-4">
+                <a href="#home" class="block text-gray-700 hover:text-slate-600 py-2" onclick="showTab('home', event)">
+                    <span class="lang-en">Home</span><span class="lang-es hidden">Inicio</span>
+                </a>
+                <a href="#about" class="block text-gray-700 hover:text-slate-600 py-2" onclick="showTab('about', event)">
+                    <span class="lang-en">About</span><span class="lang-es hidden">Acerca de</span>
+                </a>
+                <a href="#cases" class="block text-gray-700 hover:text-slate-600 py-2" onclick="showTab('cases', event)">
+                    <span class="lang-en">Dental Cases</span><span class="lang-es hidden">Casos Dentales</span>
+                </a>
+                <a href="#reviews" class="block text-gray-700 hover:text-slate-600 py-2" onclick="showTab('reviews', event)">
+                    <span class="lang-en">Reviews</span><span class="lang-es hidden">Reseñas</span>
+                </a>
+                <a href="#products" class="block text-gray-700 hover:text-slate-600 py-2" onclick="showTab('products', event)">
+                    <span class="lang-en">Products</span><span class="lang-es hidden">Productos</span>
+                </a>
+                <a href="#contact" class="block text-gray-700 hover:text-slate-600 py-2" onclick="showTab('contact', event)">
+                    <span class="lang-en">Contact</span><span class="lang-es hidden">Contacto</span>
+                </a>
+                <a href="#cv" class="block text-gray-700 hover:text-slate-600 py-2" onclick="showTab('cv', event)">
+                    <i class="fas fa-file-pdf mr-2"></i><span class="lang-en">CV</span><span class="lang-es hidden">CV</span>
+                </a>
+            </div>
+        </div>
+    </nav>
 
     <!-- Home Tab -->
     <div id="home-tab" class="tab-content" role="tabpanel" aria-hidden="false">
@@ -358,7 +375,7 @@
                                 <i class="fab fa-whatsapp text-xl"></i>
                                 WhatsApp
                             </a>
-                            <a href="https://maps.app.goo.gl/VQvCD5BBHYrHaJWu6" target="_blank" class="border-2 border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white/10 transition inline-flex items-center gap-2" title="Ubicación">
+                            <a href="https://www.google.com/maps/place/Av.+Juan+Sebastián+Elcano,+191,+Málaga-Este,+29017+Málaga,+Spain" target="_blank" class="border-2 border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white/10 transition inline-flex items-center gap-2" title="Ubicación">
                                 <i class="fas fa-map-marker-alt text-xl"></i>
                                 Mapa
                             </a>
@@ -523,7 +540,7 @@
                     <!-- Map Container -->
                     <div class="rounded-2xl shadow-2xl overflow-hidden">
                         <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.3447537891847!2d-4.379431!3d36.716667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7259d6897597c3%3A0x48544afb3aaf06a4!2sCl%C3%ADnica%20Dental%20Dra.%20Eugenia%20Vila!5e0!3m2!1sen!2sus!4v1728123456789!5m2!1sen!2sus"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.3447537891847!2d-4.379431!3d36.716667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f78f2c8b5555%3A0x0!2sAv.%20Juan%20Sebastián%20Elcano%2C%20191%2C%2029017%20Málaga%2C%20Spain!5e0!3m2!1sen!2sus!4v1234567890"
                             width="100%" 
                             height="450" 
                             style="border:0;" 
@@ -540,7 +557,7 @@
                             <i class="fab fa-whatsapp text-2xl"></i>
                             <span>Reservar Cita por WhatsApp</span>
                         </a>
-                        <a href="https://maps.app.goo.gl/VQvCD5BBHYrHaJWu6" target="_blank" class="flex items-center justify-center gap-3 text-white px-8 py-4 rounded-xl font-semibold transition shadow-lg hover:shadow-xl" style="background-color: #4285F4;">
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=Av.+Juan+Sebastián+Elcano,+191,+Málaga-Este,+29017+Málaga,+Spain" target="_blank" class="flex items-center justify-center gap-3 text-white px-8 py-4 rounded-xl font-semibold transition shadow-lg hover:shadow-xl" style="background-color: #4285F4;">
                             <i class="fas fa-directions text-2xl"></i>
                             <span>Cómo Llegar</span>
                         </a>
@@ -1212,7 +1229,7 @@
                         <div class="text-gray-400">
                             <p class="font-semibold text-white mb-1">Balham, London</p>
                             <p class="text-xs">Dental Art Implant Clinics</p>
-                            <a href="https://www.google.com/maps/place/Dental+Art+Implant+Clinic+-+Balham" target="_blank" 
+                            <a href="https://maps.app.goo.gl/ZCarKQCmnUGdkBZB7" target="_blank" 
                                class="text-slate-400 hover:text-white transition text-xs">
                                 <i class="fas fa-map-marker-alt mr-1"></i>View on Map
                             </a>
@@ -1220,7 +1237,7 @@
                         <div class="text-gray-400">
                             <p class="font-semibold text-white mb-1">East Finchley, London</p>
                             <p class="text-xs">Dental Art Implant Clinics</p>
-                            <a href="https://www.google.com/maps/place/Dental+Art+Implant+Clinic+-+East+Finchley" target="_blank" 
+                            <a href="https://maps.app.goo.gl/ZCarKQCmnUGdkBZB7" target="_blank" 
                                class="text-slate-400 hover:text-white transition text-xs">
                                 <i class="fas fa-map-marker-alt mr-1"></i>View on Map
                             </a>
@@ -1234,7 +1251,7 @@
                             <p class="text-xs">Clínica Dental Dra. Eugenia Vila</p>
                             <p class="text-xs">Av. Juan Sebastián Elcano, 191</p>
                             <p class="text-xs">Málaga-Este, 29017 Málaga</p>
-                            <a href="https://maps.app.goo.gl/VQvCD5BBHYrHaJWu6" target="_blank" 
+                            <a href="https://www.google.com/maps/place/Av.+Juan+Sebastián+Elcano,+191,+Málaga-Este,+29017+Málaga,+Spain" target="_blank" 
                                class="text-slate-400 hover:text-white transition text-xs">
                                 <i class="fas fa-map-marker-alt mr-1"></i>Ver en Mapa
                             </a>
@@ -1337,25 +1354,16 @@
         function showTab(tabName, event) {
             if (event) event.preventDefault();
             
-            // Update ARIA attributes for tabs and tab panels
-            document.querySelectorAll('[role="tab"]').forEach(tab => {
-                const isSelected = tab.getAttribute('href') === `#${tabName}`;
-                tab.setAttribute('aria-selected', isSelected);
-                
-                const tabPanelId = tab.getAttribute('href').substring(1) + '-tab';
-                const tabPanel = document.getElementById(tabPanelId);
-                
-                if (tabPanel) {
-                    if (isSelected) {
-                        tabPanel.classList.add('active');
-                        tabPanel.setAttribute('aria-hidden', 'false');
-                    } else {
-                        tabPanel.classList.remove('active');
-                        tabPanel.setAttribute('aria-hidden', 'true');
-                    }
-                }
-            });
-              
+            // Hide all tab contents
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabContents.forEach(tab => tab.classList.remove('active'));
+            
+            // Show selected tab
+            const selectedTab = document.getElementById(tabName + '-tab');
+            if (selectedTab) {
+                selectedTab.classList.add('active');
+            }
+            
             // Update URL hash
             window.location.hash = tabName;
             
@@ -1473,9 +1481,6 @@
             {name:"Teresa Vez luque",source:"Google",rating:5,text_en:"Dr. Eugenia has been, is, and will always be the best dentist...and I say this from experience. Always willing to help anyone who needs it. Her great humanity, her vast experience, and her great prices (which must be said) make her a truly great professional.",text_es:"Eugenia ha sido, es y será la mejor dentista...y lo digo con conocimiento de causa. Siempre dispuesta a ayudar a toda persona que la necesite, su gran humanidad , su gran experiencia y sus buenos precios( que todo hay que decirlo ) la hacen una grandisima profesional",date:"Mar 2022",link:"https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURXZ0pDeEF3EAE!2m1!1s0x0:0x48544afb3aaf06a4!3m1!1s2@1:CIHM0ogKEICAgIDWgJCxAw%7CCgwIgMatkQYQqJGM6wI%7C?hl=en",clinic:"malaga",avatar:"https://lh3.googleusercontent.com/a/ACg8ocLURnZTe-4lcKqiAljiSW8Mc34VzzSjjUnDFlnnYTLXzXP7IQ=w79-h79-p-rp-mo-br100"},
             {name:"Gerson Suaznabar",source:"Google",rating:5,text_en:"I've always received excellent care from Dr. Eugenia Vila. Her service is consistently thorough and professional, and the pricing is very competitive compared to other clinics. Highly recommended!",text_es:"Siempre he recibido una atención excelente de la Dra. Eugenia Vila. Su servicio es siempre minucioso y profesional, y sus precios son muy competitivos en comparación con otras clínicas. ¡La recomiendo ampliamente!",date:"Jun 2025",link:"https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xwVmFIWk5SVFpsYURNMk1UWmtOV05UU3psSlRGRRAB!2m1!1s0x0:0x90860a666266ed85!3m1!1s2@1:CAIQACodChtycF9oOlpVaHZNRTZlaDM2MTZkNWNTSzlJTFE%7C0cKJxLEqLgK%7C?hl=en",clinic:"balham",avatar:"https://lh3.googleusercontent.com/a-/ALV-UjWi4w9_lBTyyDI_4jXi2T1q8fqCDOr2So3Pns502-T_ANs3yjMVKg=w79-h79-p-rp-mo-br100"},
             {name:"Giuseppe Tinaglia",source:"Google",rating:5,text_en:"I wholeheartedly recommend Dr. Eugenia Vila. She is warm, attentive, and incredibly reassuring. She took the time to explain each step in a calm, clear manner and never made me feel rushed or uncomfortable. Her kindness and professionalism made a real difference for me. I'm very grateful to have her as my dentist.",text_es:"Recomiendo sin reservas a la Dra. Eugenia Vila. Es amable, atenta y transmite muchísima tranquilidad. Se tomó el tiempo necesario para explicarme cada paso con calma y claridad, y en ningún momento me hizo sentir apurada ni incómoda. Su amabilidad y profesionalismo marcaron una gran diferencia para mí. Estoy muy agradecida de tenerla como mi dentista.",date:"May 2025",link:"https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VPNjlfYmF6Z3QzNmVREAE!2m1!1s0x0:0x90860a666266ed85!3m1!1s2@1:CIHM0ogKEO69_bazgt36eQ%7CCgwIy5zLwQYQ6IDgvwE%7C?hl=en",clinic:"balham",avatar:"https://lh3.googleusercontent.com/a-/ALV-UjWIeuQK9sGRT7BwWnXLvxLXpC5nPXotSmlRGJtmZwHSpwyfAZw=w79-h79-p-rp-mo-ba2-br100"},
-            {name:"customer",source:"Trustpilot",rating:5,text_en:"I am a nervous patient but Dr. Eugenia Vila was incredibly patient with me. Dr Eugenia took time to explain everything to me clearly and did an outstanding job! Dr. Eugenia is not only a great professional but also someone who genuinely emphasises with patients! I am very grateful for her support and kindness.",text_es:"Soy una paciente nerviosa, pero la Dra. Eugenia Vila fue increíblemente paciente conmigo. Se tomó el tiempo necesario para explicarme todo con claridad e hizo un trabajo excepcional. La Dra. Eugenia no solo es una gran profesional, sino que también comprende de verdad a sus pacientes. Estoy muy agradecida por su apoyo y amabilidad.",date:"May 2025",link:"https://www.trustpilot.com/reviews/68223d534c01d4036c9984a5",clinic:"balham",avatar:"CU, pink"},
-            {name:"J Ainsworth",source:"Trustpilot",rating:5,text_en:"Dr Eugenia is incredible. Puts you at your ease immediately. Absolutely fantastic dentist. Also nurse Irelina so kind.They were both amazing!",text_es:"La Dra. Eugenia es increíble. Te hace sentir cómodo enseguida. Una dentista absolutamente fantástica. La enfermera Irelina también es muy amable. ¡Ambas fueron maravillosas!",date:"May 2025",link:"https://www.trustpilot.com/reviews/682861cba01cabefd9e2290e",clinic:"balham",avatar:"JA, pink"},
-            {name:"Santi Barreche Pelaez",source:"Google",rating:5,text_en:"The best dentist in Malaga, after trying several doctors, she was recommended to me and she finally solved my problems.",text_es:"La mejor dentista de Málaga, tras probar varios médicos me la recomendaron y porfin solucionó mis problemas.",date:"Feb 2021",link:"https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR5Z3VuZHVnRRAB!2m1!1s0x0:0x48544afb3aaf06a4!3m1!1s2@1:CIHM0ogKEICAgIDygundugE%7CCgwIjdHvgQYQsMbvhgE%7C?hl=en",clinic:"malaga",avatar:"https://lh3.googleusercontent.com/a/ACg8ocLjEjAI9PFsmdxg6Mghz-7U7xlrGT0hz6ugOSqT_JeL8ovFRw=w79-h79-p-rp-mo-br100"},
             {name:"Laura Scott",source:"Google",rating:5,text_en:"I went there after searching for dentists online in El Palo without knowing anything about the place, and I recommend it 100%. If you're an English speaker who prefers or needs an English-speaking dentist, Eugenia speaks perfect English!!",text_es:"Fui allí tras buscar dentistas por Internet en El Palo sin saber nada del sitio, y lo recomiendo 100%. If you´re an English speaker who prefers or needs an English speaking dentist, Eugenia speaks perfect English!!",date:"Nov 2020",link:"https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNpX29lbVp3EAE!2m1!1s0x0:0x48544afb3aaf06a4!3m1!1s2@1:CIHM0ogKEICAgICi_oemZw%7CCgsIkpWL_QUQgNWxfw%7C?hl=en",clinic:"malaga",avatar:"https://lh3.googleusercontent.com/a-/ALV-UjWQgzhOZPsr5TA7pPr2RDZrEDDv7RDYnlq7qGm5Z8ttNYUQOOz0=w79-h79-p-rp-mo-br100"},
             {name:"S F",source:"Google",rating:5,text_en:"I'm a naturally nervous patient, but Dr. Eugenia Vila was incredibly patient and understanding throughout my visit. She made me feel at ease right away and took the time to explain everything clearly, without rushing me. Her calm and professional manner really stood out, and I felt truly listened to and cared for. Dr. Vila is not only a great professional but also someone who genuinely empathizes with her patients. I'm very grateful for her support and highly recommend her to anyone, especially those who might be anxious about appointments.",text_es:"Soy una paciente nerviosa por naturaleza, pero la Dra. Eugenia Vila fue increíblemente paciente y comprensiva durante toda mi consulta. Me hizo sentir cómoda de inmediato y se tomó el tiempo necesario para explicarme todo con claridad, sin prisas. Su trato tranquilo y profesional fue realmente admirable, y me sentí verdaderamente escuchada y atendida. La Dra. Vila no solo es una gran profesional, sino también una persona que empatiza genuinamente con sus pacientes. Estoy muy agradecida por su apoyo y la recomiendo ampliamente a cualquiera, especialmente a quienes puedan sentir ansiedad ante las citas médicas.",date:"May 2025",link:"https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VKNzdyb095OExmX3BRRRAB!2m1!1s0x0:0x90860a666266ed85!3m1!1s2@1:CIHM0ogKEJ77roOy8Lf_pQE%7CCgsI1_uIwQYQyKX0GA%7C?hl=en",clinic:"balham",avatar:"https://lh3.googleusercontent.com/a/ACg8ocLKT0EVmO04iWr9De4quvBC1_NCM5rsyhNAQLsV9qZkXdmdig=w79-h79-p-rp-mo-br100"},
             {name:"Zoe King",source:"Google",rating:5,text_en:"I wish I had Dr Eugenia Vila as my dentist from years ago! She is simply the best dentist I have visited in a while, she always takes time to be gentle and is very skilled. Dr Vila has such a lovely personality, greeting you with a smile and ensuring you feel comfortable. All the staff assistants and reception team I have dealt with so far have been very welcoming and great at keeping you updated. I highly recommend this practice.",text_es:"¡Ojalá hubiera tenido a la Dra. Eugenia Vila como mi dentista hace años! Es, sencillamente, la mejor dentista que he visitado en mucho tiempo; siempre se toma su tiempo para ser delicada y es muy hábil. La Dra. Vila tiene una personalidad encantadora, te recibe con una sonrisa y se asegura de que te sientas cómodo. Todo el personal auxiliar y de recepción con el que he tratado hasta ahora ha sido muy amable y me ha mantenido informado en todo momento. Recomiendo encarecidamente esta clínica.",date:"Jun 2025",link:"https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VOSC02UDJ6M2RTbUN3EAE!2m1!1s0x0:0x90860a666266ed85!3m1!1s2@1:CIHM0ogKENH-6P2z3dSmCw%7CCgsIhqD4wQYQgNeLRg%7C?hl=en",clinic:"balham",avatar:"https://lh3.googleusercontent.com/a/ACg8ocI5-qgk-qzfbo_fLljhbOxuMRjpbN3w7tsPUix-WuwAUqIXHA=w79-h79-p-rp-mo-ba3-br100"},
@@ -1526,14 +1531,9 @@
         
         // Initialize reviews
         function initReviews() {
-            fetch('data/reviews.json')
-                .then(response => response.json())
-                .then(data => {
-                    allReviews = data;
-                    loadReviews();
-                    loadFeaturedReviews(); 
-                })
-                .catch(error => console.error('Error loading reviews:', error));
+            allReviews = [...reviewsData];
+            currentReviewIndex = 0;
+            loadReviews();
         }
         
         // Load featured reviews carousel on home page
@@ -1543,18 +1543,20 @@
             
             // Select the most passionate and positive reviews (sorted by quality and heartfulness)
             const featuredReviewNames = [
-                'Isabel',
-                'Nuria Salido Iniesta',
-                'Emma',
-                'Teresa Vez luque',
-                'Gerson Suaznabar',
-                'Giuseppe Tinaglia',
-                'customer',
-                'J Ainsworth',
-                'Santi Barreche Pelaez',
-                'Laura Scott',
-                'S F',
-                'Zoe King'
+                'Isabel', // Google - Best dentist in ALL OF MALAGA, family trust
+                'Sixto Robello', // Google - Outstanding service
+                'Emma', // Trustpilot - Best dentist ever met, artiste and perfectionist
+                'Santi Barreche Pelaez', // Google - Exceptional treatment
+                'J Ainsworth', // Trustpilot - Incredible, absolutely fantastic
+                'Teresa Vez Luque', // Google - Professional and caring
+                'Timothy Gilbert', // Google - Dedicated commitment, amazing
+                'customer', // Trustpilot - Incredibly patient, genuinely empathizes
+                'Giuseppe Tinaglia', // Google - Highly professional
+                'Laura Scott', // Google - Excellent experience
+                'Nuria Salido Iniesta', // Google - Exceptional care
+                'S F', // Google - Outstanding service
+                'Gerson Suaznabar', // Google - Great experience
+                'Zoe King' // Google - Wonderful treatment
             ];
             
             // Get the featured reviews in order
@@ -1581,8 +1583,8 @@
                     es: 'La mejor dentista de Málaga, tras probar varios médicos me la recomendaron y porfin solucionó mis problemas.'
                 },
                 'j ainsworth': {
-                    en: 'Dr Eugenia is incredible. Puts you at your ease immediately. Absolutely fantastic dentist...',
-                    es: 'La Dra. Eugenia es increíble. Te hace sentir cómodo enseguida. Una dentista absolutamente fantástica...'
+                    en: 'Dr Eugenia is incredible. Puts you at your ease immediately. Absolutely fantastic dentist. Also nurse Irelina so kind...',
+                    es: 'La Dra. Eugenia es increíble. Te hace sentir cómodo enseguida. Una dentista absolutamente fantástica. La enfermera Irelina también es muy amable...'
                 },
                 'teresa vez luque': {
                     en: 'Dr. Eugenia has been, is, and will always be the best dentist...and I say this from experience. Always willing to help anyone who needs it...',

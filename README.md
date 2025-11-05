@@ -117,58 +117,6 @@ _site/
 - **Headings**: Playfair Display (serif, elegant)
 - **Body**: Inter (sans-serif, clean and modern)
 
-## 🚀 Deployment
-
-This is a static website that can be deployed to:
-
-### Recommended Platforms
-1. **Cloudflare Pages** ⭐ (recommended)
-   - Fast global CDN
-   - Free SSL certificate
-   - Automatic deployments from GitHub
-   - Zero configuration
-
-2. **GitHub Pages**
-   - Free hosting
-   - Custom domain support
-   - Easy setup with repository
-
-3. **Netlify**
-   - Continuous deployment
-   - Form handling
-   - Serverless functions support
-
-4. **Vercel**
-   - Optimized for performance
-   - Preview deployments
-   - Analytics included
-
-### Deployment Steps
-1. Upload the entire `_site/` directory contents to your hosting provider
-2. Set `index.html` as the root file
-3. Configure custom domain (optional)
-4. Enable HTTPS (usually automatic)
-
-## 📝 Content Updates
-
-### To Update Reviews
-1. Edit `data/reviews.csv` with new patient testimonials
-2. Reviews are embedded in HTML (manual update required in `reviewsData` array)
-3. Include: name, text (EN/ES), rating, source, avatar URL, origin link
-
-### To Update CV
-Replace `documents/cv.pdf` with the updated version
-
-### To Update Photos
-- **Hero Image**: Replace `assets/images/full_body.png` (recommended: professional full-body or upper-body photo)
-- **Alternative**: Replace `assets/images/profile.png` (recommended: 800x800px headshot)
-
-### To Update Contact Information
-Edit the Contact tab section in `index.html` (lines ~1205-1410)
-
-### To Update Dental Cases
-Edit the Dental Cases section in `index.html` (lines ~637-924)
-
 ## 👥 Target Audiences
 
 ### English Version (🇬🇧)
@@ -223,14 +171,5 @@ This website is the professional portfolio of Dr. Eugenia Vila. All rights reser
 
 ---
 
-**Website Version**: 2.0  
-**Last Updated**: January 2025  
-**Maintained by**: Miguel (Developer)
-
-### Recent Updates
-- Updated color palette to Australian Open theme (professional blue)
-- Changed name from "Eugenia Vila Garcia" to "Eugenia Vila" throughout
-- Reordered reviews with best reviews first (12 featured on home page)
-- Updated Google Maps integration with correct clinic location
-- Enhanced footer with improved contact information organization
-
+**Last Updated**: November 2025  
+**Maintained by**: Miguel Orti Vila (Developer)
