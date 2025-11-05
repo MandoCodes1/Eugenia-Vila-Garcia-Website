@@ -80,13 +80,8 @@
         "name": "J Ainsworth",
         "source": "Trustpilot",
         "rating": 5,
-<<<<<<< HEAD
-        "text_en": "Dr Eugenia is incredible. Puts you at your ease immediately. Absolutely fantastic dentist. Also nurse Irelina so kind.They were both amazing!",
-        "text_es": "La Dra. Eugenia es increíble. Te hace sentir cómodo enseguida. Una dentista absolutamente fantástica. La enfermera Irelina también es muy amable. ¡Ambas fueron maravillosas!",
-=======
         "text_en": "Dr Eugenia is incredible. Puts you at your ease immediately. Absolutely fantastic dentist.",
         "text_es": "La Dra. Eugenia es increíble. Te hace sentir cómodo enseguida. Una dentista absolutamente fantástica.",
->>>>>>> 606fb3a (FULLY WORKING VERSION. Fell back to previous version and updated a few features.)
         "date": "May 2025",
         "link": "https://www.trustpilot.com/reviews/682861cba01cabefd9e2290e",
         "clinic": "balham",

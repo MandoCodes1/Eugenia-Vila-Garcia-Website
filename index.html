@@ -34,9 +34,9 @@
         
         /* Australian Open & Wellness Color Palette */
         :root {
-            --primary-blue: #00529C;
-            --primary-blue-light: #006BCB;
-            --primary-blue-dark: #003E7A;
+            --primary-blue: #1E88E5;
+            --primary-blue-light: #42A5F5;
+            --primary-blue-dark: #1565C0;
             --secondary-blue: #A0D3F1;
             --secondary-blue-light: #EBF8FF;
             --dark-slate: #334155;
@@ -287,8 +287,8 @@
                     </div>
                     
                     <button onclick="toggleMobileMenu()">
-                        <i class="fas fa-bars text-2xl text-gray-700"></i>
-                    </button>
+                    <i class="fas fa-bars text-2xl text-gray-700"></i>
+                </button>
                 </div>
             </div>
             <!-- Mobile Menu -->
@@ -319,9 +319,9 @@
     </nav>
 
     <!-- Home Tab -->
-    <div id="home-tab" class="tab-content" role="tabpanel" aria-hidden="false">
-        <!-- Hero Section - Minimalist & Professional -->
-        <section class="relative overflow-hidden" style="background: linear-gradient(135deg, var(--secondary-blue-light) 0%, var(--background-light) 70%);">
+    <div id="home-tab" class="tab-content active">
+        <!-- Hero Section -->
+        <section class="dental-gradient text-white py-32 md:py-48">
             <div class="container mx-auto px-6">
                 <div class="flex flex-col md:flex-row items-center justify-between gap-12">
                     <div class="md:w-1/2 mb-10 md:mb-0">
@@ -329,6 +329,7 @@
                             Dr. Eugenia Vila<br>
                             <span class="text-2xl md:text-3xl font-normal opacity-90">MD, BDS, MSc</span>
                         </h1>
+                        <h2 class="text-xl md:text-2xl font-semibold mb-2 lang-es hidden">Clínica Dental</h2>
                         <h1 class="text-3xl md:text-5xl font-bold mb-4 leading-tight lang-es hidden">
                             Dra. Eugenia Vila<br>
                             <span class="text-2xl md:text-3xl font-normal opacity-90">MD, Lic. Odont., MSc</span>
@@ -375,8 +376,8 @@
                                 <i class="fab fa-whatsapp text-xl"></i>
                                 WhatsApp
                             </a>
-                            <a href="https://www.google.com/maps/place/Av.+Juan+Sebastián+Elcano,+191,+Málaga-Este,+29017+Málaga,+Spain" target="_blank" class="border-2 border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white/10 transition inline-flex items-center gap-2" title="Ubicación">
-                                <i class="fas fa-map-marker-alt text-xl"></i>
+                            <a href="https://maps.app.goo.gl/ZCarKQCmnUGdkBZB7" target="_blank" class="border-2 border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white/10 transition inline-flex items-center gap-2" title="Ubicación">
+                                <i class="fas fa-directions text-xl"></i>
                                 Mapa
                             </a>
                         </div>
@@ -481,7 +482,7 @@
                 <div class="text-center mb-16 fade-in-up">
                     <h2 class="text-4xl font-bold text-gray-800 mb-4 lang-en">What Patients Say</h2>
                     <h2 class="text-4xl font-bold text-gray-800 mb-4 lang-es hidden">Qué Dicen Los Pacientes</h2>
-                    <p class="text-xl text-gray-600 mb-8 lang-en">Trusted by thousands of satisfied patients across the UK and Spain</p>
+                    <p class="text-xl text-gray-600 mb-8 lang-en">Trusted by thousands of satisfied patients across UK and Spain</p>
                     <p class="text-xl text-gray-600 mb-8 lang-es hidden">Confianza de miles de pacientes satisfechos en Reino Unido y España</p>
 
                     
@@ -540,7 +541,7 @@
                     <!-- Map Container -->
                     <div class="rounded-2xl shadow-2xl overflow-hidden">
                         <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.3447537891847!2d-4.379431!3d36.716667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f78f2c8b5555%3A0x0!2sAv.%20Juan%20Sebastián%20Elcano%2C%20191%2C%2029017%20Málaga%2C%20Spain!5e0!3m2!1sen!2sus!4v1234567890"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.244243110292!2d-4.36335838471206!3d36.72125677996417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7259d6897597c3%3A0x48544afb3aaf06a4!2sClinica%20Dental%20Dra.%20Eugenia%20Vila!5e0!3m2!1sen!2ses"
                             width="100%" 
                             height="450" 
                             style="border:0;" 
@@ -557,7 +558,7 @@
                             <i class="fab fa-whatsapp text-2xl"></i>
                             <span>Reservar Cita por WhatsApp</span>
                         </a>
-                        <a href="https://www.google.com/maps/dir/?api=1&destination=Av.+Juan+Sebastián+Elcano,+191,+Málaga-Este,+29017+Málaga,+Spain" target="_blank" class="flex items-center justify-center gap-3 text-white px-8 py-4 rounded-xl font-semibold transition shadow-lg hover:shadow-xl" style="background-color: #4285F4;">
+                        <a href="https://maps.app.goo.gl/ZCarKQCmnUGdkBZB7" target="_blank" class="flex items-center justify-center gap-3 text-white px-8 py-4 rounded-xl font-semibold transition shadow-lg hover:shadow-xl" style="background-color: #4285F4;">
                             <i class="fas fa-directions text-2xl"></i>
                             <span>Cómo Llegar</span>
                         </a>
@@ -568,7 +569,7 @@
     </div>
 
     <!-- About Tab -->
-    <div id="about-tab" class="tab-content" role="tabpanel" aria-hidden="true">
+    <div id="about-tab" class="tab-content">
         <section class="py-20 bg-white">
             <div class="container mx-auto px-6">
                 <div class="max-w-4xl mx-auto">
@@ -699,7 +700,7 @@
     </div>
 
     <!-- Dental Cases Tab -->
-    <div id="cases-tab" class="tab-content" role="tabpanel" aria-hidden="true">
+    <div id="cases-tab" class="tab-content">
         <section class="py-20 bg-gray-50">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-12">
@@ -742,7 +743,181 @@
 
                 <!-- Cases Grid -->
                 <div id="cases-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Case items will be dynamically inserted here -->
+                    <!-- Case 1 -->
+                    <div class="case-item card-hover bg-white rounded-2xl shadow-lg overflow-hidden" data-tags="invisalign">
+                        <div class="before-after-container">
+                            <div class="grid grid-cols-2 gap-2 p-4 bg-gray-100">
+                                <div class="aspect-square bg-gradient-to-br from-gray-200 to-gray-300 rounded-lg flex items-center justify-center">
+                                    <div class="text-center">
+                                        <i class="fas fa-image text-4xl text-gray-400 mb-2"></i>
+                                        <p class="text-xs text-gray-500">
+                                            <span class="lang-en">Before</span>
+                                            <span class="lang-es hidden">Antes</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="aspect-square rounded-lg flex items-center justify-center" style="background: linear-gradient(135deg, rgba(0, 82, 156, 0.15) 0%, rgba(0, 82, 156, 0.25) 100%);">
+                                    <div class="text-center">
+                                        <i class="fas fa-image text-4xl mb-2" style="color: var(--primary-blue);"></i>
+                                        <p class="text-xs" style="color: var(--primary-blue);">
+                                            <span class="lang-en">After</span>
+                                            <span class="lang-es hidden">Después</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3">Invisalign Treatment</h3>
+                            <p class="text-gray-600 mb-4 text-sm">Complete orthodontic correction with clear aligners. Treatment duration: 12 months.</p>
+                            <div class="flex flex-wrap gap-1">
+                                <span class="case-tag tag-invisalign">Invisalign</span>
+                                <span class="case-tag" style="background: #f3f4f6; color: #374151;">London Clinic</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Case 2 -->
+                    <div class="case-item card-hover bg-white rounded-2xl shadow-lg overflow-hidden" data-tags="bonding">
+                        <div class="before-after-container">
+                            <div class="grid grid-cols-2 gap-2 p-4 bg-gray-100">
+                                <div class="aspect-square bg-gradient-to-br from-gray-200 to-gray-300 rounded-lg flex items-center justify-center">
+                                    <div class="text-center">
+                                        <i class="fas fa-image text-4xl text-gray-400 mb-2"></i>
+                                        <p class="text-xs text-gray-500">Before</p>
+                                    </div>
+                                </div>
+                                <div class="aspect-square rounded-lg flex items-center justify-center" style="background: linear-gradient(135deg, rgba(160, 211, 241, 0.2) 0%, rgba(90, 84, 128, 0.25) 100%);">
+                                    <div class="text-center">
+                                        <i class="fas fa-image text-4xl mb-2" style="color: var(--primary-blue-light);"></i>
+                                        <p class="text-xs" style="color: var(--primary-blue-light);">After</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3">Composite Bonding</h3>
+                            <p class="text-gray-600 mb-4 text-sm">Smile makeover with composite bonding on upper anterior teeth.</p>
+                            <div class="flex flex-wrap gap-1">
+                                <span class="case-tag tag-bonding">Composite Bonding</span>
+                                <span class="case-tag" style="background: #f3f4f6; color: #374151;">Manchester</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Case 3 -->
+                    <div class="case-item card-hover bg-white rounded-2xl shadow-lg overflow-hidden" data-tags="implant">
+                        <div class="before-after-container">
+                            <div class="grid grid-cols-2 gap-2 p-4 bg-gray-100">
+                                <div class="aspect-square bg-gradient-to-br from-gray-200 to-gray-300 rounded-lg flex items-center justify-center">
+                                    <div class="text-center">
+                                        <i class="fas fa-image text-4xl text-gray-400 mb-2"></i>
+                                        <p class="text-xs text-gray-500">Before</p>
+                                    </div>
+                                </div>
+                                <div class="aspect-square rounded-lg flex items-center justify-center" style="background: linear-gradient(135deg, rgba(0, 82, 156, 0.15) 0%, rgba(0, 82, 156, 0.25) 100%);">
+                                    <div class="text-center">
+                                        <i class="fas fa-image text-4xl mb-2" style="color: var(--primary-blue);"></i>
+                                        <p class="text-xs" style="color: var(--primary-blue);">After</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3">Single Tooth Implant</h3>
+                            <p class="text-gray-600 mb-4 text-sm">Complete restoration with dental implant and crown. Natural appearance.</p>
+                            <div class="flex flex-wrap gap-1">
+                                <span class="case-tag tag-implant">Dental Implant</span>
+                                <span class="case-tag" style="background: #f3f4f6; color: #374151;">Birmingham</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Case 4 -->
+                    <div class="case-item card-hover bg-white rounded-2xl shadow-lg overflow-hidden" data-tags="whitening">
+                        <div class="before-after-container">
+                            <div class="grid grid-cols-2 gap-2 p-4 bg-gray-100">
+                                <div class="aspect-square bg-gradient-to-br from-gray-200 to-gray-300 rounded-lg flex items-center justify-center">
+                                    <div class="text-center">
+                                        <i class="fas fa-image text-4xl text-gray-400 mb-2"></i>
+                                        <p class="text-xs text-gray-500">Before</p>
+                                    </div>
+                                </div>
+                                <div class="aspect-square rounded-lg flex items-center justify-center" style="background: linear-gradient(135deg, rgba(160, 211, 241, 0.2) 0%, rgba(90, 84, 128, 0.25) 100%);">
+                                    <div class="text-center">
+                                        <i class="fas fa-image text-4xl mb-2" style="color: var(--primary-blue-light);"></i>
+                                        <p class="text-xs" style="color: var(--primary-blue-light);">After</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3">Professional Whitening</h3>
+                            <p class="text-gray-600 mb-4 text-sm">Dramatic color improvement with professional teeth whitening treatment.</p>
+                            <div class="flex flex-wrap gap-1">
+                                <span class="case-tag tag-whitening">Teeth Whitening</span>
+                                <span class="case-tag" style="background: #f3f4f6; color: #374151;">London Clinic</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Case 5 -->
+                    <div class="case-item card-hover bg-white rounded-2xl shadow-lg overflow-hidden" data-tags="veneers bonding">
+                        <div class="before-after-container">
+                            <div class="grid grid-cols-2 gap-2 p-4 bg-gray-100">
+                                <div class="aspect-square bg-gradient-to-br from-gray-200 to-gray-300 rounded-lg flex items-center justify-center">
+                                    <div class="text-center">
+                                        <i class="fas fa-image text-4xl text-gray-400 mb-2"></i>
+                                        <p class="text-xs text-gray-500">Before</p>
+                                    </div>
+                                </div>
+                                <div class="aspect-square rounded-lg flex items-center justify-center" style="background: linear-gradient(135deg, rgba(0, 82, 156, 0.15) 0%, rgba(0, 82, 156, 0.25) 100%);">
+                                    <div class="text-center">
+                                        <i class="fas fa-image text-4xl mb-2" style="color: var(--primary-blue);"></i>
+                                        <p class="text-xs" style="color: var(--primary-blue);">After</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3">Smile Makeover</h3>
+                            <p class="text-gray-600 mb-4 text-sm">Complete smile transformation with veneers and bonding.</p>
+                            <div class="flex flex-wrap gap-1">
+                                <span class="case-tag tag-veneers">Veneers</span>
+                                <span class="case-tag tag-bonding">Bonding</span>
+                                <span class="case-tag" style="background: #f3f4f6; color: #374151;">Manchester</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Case 6 -->
+                    <div class="case-item card-hover bg-white rounded-2xl shadow-lg overflow-hidden" data-tags="invisalign whitening">
+                        <div class="before-after-container">
+                            <div class="grid grid-cols-2 gap-2 p-4 bg-gray-100">
+                                <div class="aspect-square bg-gradient-to-br from-gray-200 to-gray-300 rounded-lg flex items-center justify-center">
+                                    <div class="text-center">
+                                        <i class="fas fa-image text-4xl text-gray-400 mb-2"></i>
+                                        <p class="text-xs text-gray-500">Before</p>
+                                    </div>
+                                </div>
+                                <div class="aspect-square rounded-lg flex items-center justify-center" style="background: linear-gradient(135deg, rgba(160, 211, 241, 0.2) 0%, rgba(90, 84, 128, 0.25) 100%);">
+                                    <div class="text-center">
+                                        <i class="fas fa-image text-4xl mb-2" style="color: var(--primary-blue-light);"></i>
+                                        <p class="text-xs" style="color: var(--primary-blue-light);">After</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3">Combined Treatment</h3>
+                            <p class="text-gray-600 mb-4 text-sm">Invisalign treatment followed by professional whitening for optimal results.</p>
+                            <div class="flex flex-wrap gap-1">
+                                <span class="case-tag tag-invisalign">Invisalign</span>
+                                <span class="case-tag tag-whitening">Whitening</span>
+                                <span class="case-tag" style="background: #f3f4f6; color: #374151;">Birmingham</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Load More Cases Button -->
@@ -763,7 +938,7 @@
     </div>
 
     <!-- Reviews Tab -->
-    <div id="reviews-tab" class="tab-content" role="tabpanel" aria-hidden="true">
+    <div id="reviews-tab" class="tab-content">
         <section class="py-20 bg-gradient-to-b from-white to-gray-50">
             <div class="container mx-auto px-6">
                 <!-- Header -->
@@ -798,8 +973,8 @@
 
                 <!-- Test Tabs for Different Layouts -->
                 <div class="flex justify-center gap-4 mb-8">
-                    <button onclick="switchTestimonialLayout('dr-kalia')" id="layout-dr-kalia" class="px-6 py-2 bg-slate-600 text-white rounded-lg font-medium">Style 1</button>
-                    <button onclick="switchTestimonialLayout('dr-martin')" id="layout-dr-martin" class="px-6 py-2 bg-gray-200 text-gray-700 rounded-lg font-medium hover:bg-gray-300">Style 2</button>
+                    <button onclick="switchTestimonialLayout('dr-kalia')" id="layout-dr-kalia" class="px-6 py-2 bg-slate-600 text-white rounded-lg font-medium">Dr. Kalia Style</button>
+                    <button onclick="switchTestimonialLayout('dr-martin')" id="layout-dr-martin" class="px-6 py-2 bg-gray-200 text-gray-700 rounded-lg font-medium hover:bg-gray-300">Dr. Martin Style</button>
                 </div>
 
                 <!-- Reviews Container -->
@@ -820,7 +995,7 @@
     </div>
 
     <!-- Products Tab -->
-    <div id="products-tab" class="tab-content" role="tabpanel" aria-hidden="true">
+    <div id="products-tab" class="tab-content">
         <section class="py-20" style="background: linear-gradient(135deg, #f8f9fa 0%, rgba(0, 82, 156, 0.06) 100%);">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-12">
@@ -840,8 +1015,182 @@
                 </div>
 
                 <!-- Products Grid -->
-                <div id="products-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-                    <!-- Products will be dynamically inserted here -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+                    
+                    <!-- Product 1: Electric Toothbrush -->
+                    <div class="amazon-product bg-white rounded-2xl shadow-lg overflow-hidden">
+                        <div class="p-8 flex items-center justify-center" style="min-height: 200px; background: linear-gradient(135deg, rgba(0, 82, 156, 0.08) 0%, rgba(0, 82, 156, 0.15) 100%);">
+                            <i class="fas fa-tooth text-7xl" style="color: var(--primary-blue);"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                                <span class="lang-en">Electric Toothbrush</span>
+                                <span class="lang-es hidden">Cepillo Eléctrico</span>
+                            </h3>
+                            <p class="text-gray-600 mb-4">
+                                <span class="lang-en">Professional-grade electric toothbrush with multiple cleaning modes and pressure sensor.</span>
+                                <span class="lang-es hidden">Cepillo eléctrico de grado profesional con múltiples modos de limpieza y sensor de presión.</span>
+                            </p>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="star-rating text-sm">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                    <span class="text-gray-600 ml-2">4.5/5</span>
+                                </div>
+                                <div class="text-2xl font-bold text-gray-800">£89.99</div>
+                            </div>
+                            <a href="https://www.amazon.co.uk" target="_blank" class="block w-full text-white text-center py-3 rounded-lg font-semibold transition" style="background-color: var(--primary-blue);">
+                                <i class="fab fa-amazon mr-2"></i>
+                                <span class="lang-en">View on Amazon</span>
+                                <span class="lang-es hidden">Ver en Amazon</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Product 2: Toothpaste -->
+                    <div class="amazon-product bg-white rounded-2xl shadow-lg overflow-hidden">
+                        <div class="p-8 flex items-center justify-center" style="min-height: 200px; background: linear-gradient(135deg, rgba(160, 211, 241, 0.1) 0%, rgba(160, 211, 241, 0.2) 100%);">
+                            <i class="fas fa-pump-soap text-7xl" style="color: var(--primary-blue-light);"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                                <span class="lang-en">Fluoride Toothpaste</span>
+                                <span class="lang-es hidden">Pasta Dental con Flúor</span>
+                            </h3>
+                            <p class="text-gray-600 mb-4">
+                                <span class="lang-en">Premium fluoride toothpaste for cavity protection and enamel strengthening.</span>
+                                <span class="lang-es hidden">Pasta dental premium con flúor para protección contra caries y fortalecimiento del esmalte.</span>
+                            </p>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="star-rating text-sm">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                    <span class="text-gray-600 ml-2">5/5</span>
+                                </div>
+                                <div class="text-2xl font-bold text-gray-800">£12.99</div>
+                            </div>
+                            <a href="https://www.amazon.co.uk" target="_blank" class="block w-full text-center py-3 rounded-lg font-semibold transition" style="background-color: var(--secondary-blue); color: var(--text-primary);">
+                                <i class="fab fa-amazon mr-2"></i>
+                                <span class="lang-en">View on Amazon</span>
+                                <span class="lang-es hidden">Ver en Amazon</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Product 3: Water Flosser -->
+                    <div class="amazon-product bg-white rounded-2xl shadow-lg overflow-hidden">
+                        <div class="p-8 flex items-center justify-center" style="min-height: 200px; background: linear-gradient(135deg, rgba(0, 82, 156, 0.08) 0%, rgba(0, 82, 156, 0.15) 100%);">
+                            <i class="fas fa-water text-7xl" style="color: var(--primary-blue);"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                                <span class="lang-en">Water Flosser/Irrigator</span>
+                                <span class="lang-es hidden">Irrigador Dental</span>
+                            </h3>
+                            <p class="text-gray-600 mb-4">
+                                <span class="lang-en">Advanced water irrigator for deep cleaning between teeth and along the gumline.</span>
+                                <span class="lang-es hidden">Irrigador dental avanzado para limpieza profunda entre los dientes y a lo largo de la línea de las encías.</span>
+                            </p>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="star-rating text-sm">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                    <span class="text-gray-600 ml-2">4.7/5</span>
+                                </div>
+                                <div class="text-2xl font-bold text-gray-800">£59.99</div>
+                            </div>
+                            <a href="https://www.amazon.co.uk" target="_blank" class="block w-full text-white text-center py-3 rounded-lg font-semibold transition" style="background-color: var(--primary-blue);">
+                                <i class="fab fa-amazon mr-2"></i>
+                                <span class="lang-en">View on Amazon</span>
+                                <span class="lang-es hidden">Ver en Amazon</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Product 4: Interdental Brushes -->
+                    <div class="amazon-product bg-white rounded-2xl shadow-lg overflow-hidden">
+                        <div class="p-8 flex items-center justify-center" style="min-height: 200px; background: linear-gradient(135deg, rgba(160, 211, 241, 0.1) 0%, rgba(160, 211, 241, 0.2) 100%);">
+                            <i class="fas fa-broom text-7xl" style="color: var(--primary-blue-light);"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                                <span class="lang-en">Interdental Brushes</span>
+                                <span class="lang-es hidden">Cepillos Interdentales</span>
+                            </h3>
+                            <p class="text-gray-600 mb-4">
+                                <span class="lang-en">Set of interdental brushes in various sizes for cleaning between teeth.</span>
+                                <span class="lang-es hidden">Set de cepillos interdentales en varios tamaños para limpiar entre los dientes.</span>
+                            </p>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="star-rating text-sm">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                    <span class="text-gray-600 ml-2">4.8/5</span>
+                                </div>
+                                <div class="text-2xl font-bold text-gray-800">£8.99</div>
+                            </div>
+                            <a href="https://www.amazon.co.uk" target="_blank" class="block w-full text-center py-3 rounded-lg font-semibold transition" style="background-color: var(--secondary-blue); color: var(--text-primary);">
+                                <i class="fab fa-amazon mr-2"></i>
+                                <span class="lang-en">View on Amazon</span>
+                                <span class="lang-es hidden">Ver en Amazon</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Product 5: Mouthwash -->
+                    <div class="amazon-product bg-white rounded-2xl shadow-lg overflow-hidden">
+                        <div class="p-8 flex items-center justify-center" style="min-height: 200px; background: linear-gradient(135deg, rgba(0, 82, 156, 0.08) 0%, rgba(0, 82, 156, 0.15) 100%);">
+                            <i class="fas fa-flask text-7xl" style="color: var(--primary-blue);"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                                <span class="lang-en">Antibacterial Mouthwash</span>
+                                <span class="lang-es hidden">Enjuague Bucal Antibacteriano</span>
+                            </h3>
+                            <p class="text-gray-600 mb-4">
+                                <span class="lang-en">Clinical-strength antibacterial mouthwash for complete oral hygiene.</span>
+                                <span class="lang-es hidden">Enjuague bucal antibacteriano de grado clínico para higiene oral completa.</span>
+                            </p>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="star-rating text-sm">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                    <span class="text-gray-600 ml-2">4.6/5</span>
+                                </div>
+                                <div class="text-2xl font-bold text-gray-800">£9.99</div>
+                            </div>
+                            <a href="https://www.amazon.co.uk" target="_blank" class="block w-full text-white text-center py-3 rounded-lg font-semibold transition" style="background-color: var(--primary-blue);">
+                                <i class="fab fa-amazon mr-2"></i>
+                                <span class="lang-en">View on Amazon</span>
+                                <span class="lang-es hidden">Ver en Amazon</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Product 6: Tongue Scraper -->
+                    <div class="amazon-product bg-white rounded-2xl shadow-lg overflow-hidden">
+                        <div class="p-8 flex items-center justify-center" style="min-height: 200px; background: linear-gradient(135deg, rgba(160, 211, 241, 0.1) 0%, rgba(160, 211, 241, 0.2) 100%);">
+                            <i class="fas fa-hand-sparkles text-7xl" style="color: var(--primary-blue-light);"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                                <span class="lang-en">Tongue Scraper</span>
+                                <span class="lang-es hidden">Raspador Lingual</span>
+                            </h3>
+                            <p class="text-gray-600 mb-4">
+                                <span class="lang-en">Stainless steel tongue scraper for fresh breath and improved oral hygiene.</span>
+                                <span class="lang-es hidden">Raspador lingual de acero inoxidable para aliento fresco y mejor higiene oral.</span>
+                            </p>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="star-rating text-sm">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                    <span class="text-gray-600 ml-2">4.9/5</span>
+                                </div>
+                                <div class="text-2xl font-bold text-gray-800">£6.99</div>
+                            </div>
+                            <a href="https://www.amazon.co.uk" target="_blank" class="block w-full text-center py-3 rounded-lg font-semibold transition" style="background-color: var(--secondary-blue); color: var(--text-primary);">
+                                <i class="fab fa-amazon mr-2"></i>
+                                <span class="lang-en">View on Amazon</span>
+                                <span class="lang-es hidden">Ver en Amazon</span>
+                            </a>
+                        </div>
+                    </div>
+
                 </div>
 
                 <div class="text-center mt-12 max-w-3xl mx-auto">
@@ -869,7 +1218,7 @@
     </div>
 
     <!-- Contact Tab -->
-    <div id="contact-tab" class="tab-content" role="tabpanel" aria-hidden="true">
+    <div id="contact-tab" class="tab-content">
         <section class="py-20" style="background: linear-gradient(135deg, #f8f9fa 0%, rgba(0, 82, 156, 0.06) 100%);">
             <div class="container mx-auto px-6">
                 <div class="max-w-4xl mx-auto">
@@ -1083,7 +1432,7 @@
     </div>
 
     <!-- CV Tab -->
-    <div id="cv-tab" class="tab-content" role="tabpanel" aria-hidden="true">
+    <div id="cv-tab" class="tab-content">
         <section class="py-16 bg-gradient-to-br from-slate-50 to-gray-100 min-h-screen">
             <div class="container mx-auto px-6">
                 <div class="max-w-6xl mx-auto">
@@ -1251,7 +1600,7 @@
                             <p class="text-xs">Clínica Dental Dra. Eugenia Vila</p>
                             <p class="text-xs">Av. Juan Sebastián Elcano, 191</p>
                             <p class="text-xs">Málaga-Este, 29017 Málaga</p>
-                            <a href="https://www.google.com/maps/place/Av.+Juan+Sebastián+Elcano,+191,+Málaga-Este,+29017+Málaga,+Spain" target="_blank" 
+                            <a href="https://maps.app.goo.gl/ZCarKQCmnUGdkBZB7" target="_blank" 
                                class="text-slate-400 hover:text-white transition text-xs">
                                 <i class="fas fa-map-marker-alt mr-1"></i>Ver en Mapa
                             </a>
@@ -1275,7 +1624,7 @@
 
                         <!-- WhatsApp - English Version -->
                         <div class="flex items-start gap-3 text-gray-400 lang-en">
-                            <i class="fab fa-whatsapp mt-1 text-lg"></i>
+                            <i class="fab fa-whatsapp mt-1"></i>
                             <div>
                                 <p class="font-semibold text-white mb-1">WhatsApp</p>
                                 <a href="https://wa.me/447309281723" class="hover:text-white transition">+44 7309 281723</a>
@@ -1293,7 +1642,7 @@
                         
                         <!-- WhatsApp - Spanish Version -->
                         <div class="flex items-start gap-3 text-gray-400 lang-es hidden">
-                            <i class="fab fa-whatsapp mt-1 text-lg"></i>
+                            <i class="fab fa-whatsapp mt-1"></i>
                             <div>
                                 <p class="font-semibold text-white mb-1">WhatsApp</p>
                                 <a href="https://wa.me/34679975580" class="hover:text-white transition">+34 679 975 580</a>
@@ -1343,7 +1692,7 @@
                 <p>&copy; 2025 <span class="lang-en">Dr. Eugenia Vila.</span><span class="lang-es hidden">Dra. Eugenia Vila.</span> <span class="lang-en">All rights reserved.</span><span class="lang-es hidden">Todos los derechos reservados.</span></p>
                 <p class="mt-2 md:mt-0 text-xs">
                     <span class="lang-en">Professional Dental Portfolio • GDC Registered</span>
-                    <span class="lang-es hidden">Portafolio Dental Profesional • Registrada GDC</span>
+                    <span class="lang-es hidden">Portafolio Dental Profesional • Registrado GDC</span>
                 </p>
             </div>
         </div>
@@ -1363,7 +1712,7 @@
             if (selectedTab) {
                 selectedTab.classList.add('active');
             }
-            
+              
             // Update URL hash
             window.location.hash = tabName;
             
@@ -1443,13 +1792,9 @@
             if (lang === 'en') {
                 document.querySelectorAll('.lang-en').forEach(el => el.classList.remove('hidden'));
                 document.querySelectorAll('.lang-es').forEach(el => el.classList.add('hidden'));
-                document.title = 'Dr. Eugenia Vila - Aesthetic & General Dentistry (UK)';
-                document.querySelector('meta[name="description"]').content = 'GDC-registered dentist with 30+ years of experience in aesthetic dentistry, implantology, and comprehensive oral care, currently practicing in London.';
             } else {
                 document.querySelectorAll('.lang-en').forEach(el => el.classList.add('hidden'));
                 document.querySelectorAll('.lang-es').forEach(el => el.classList.remove('hidden'));
-                document.title = 'Dra. Eugenia Vila - Odontología Estética y General (Málaga)';
-                document.querySelector('meta[name="description"]').content = 'Doctora especializada en odontología estética con más de 30 años de experiencia. Atendiendo pacientes en Málaga con cuidado dental integral de alta calidad.';
             }
             
             // Reload reviews with new language
@@ -1481,6 +1826,9 @@
             {name:"Teresa Vez luque",source:"Google",rating:5,text_en:"Dr. Eugenia has been, is, and will always be the best dentist...and I say this from experience. Always willing to help anyone who needs it. Her great humanity, her vast experience, and her great prices (which must be said) make her a truly great professional.",text_es:"Eugenia ha sido, es y será la mejor dentista...y lo digo con conocimiento de causa. Siempre dispuesta a ayudar a toda persona que la necesite, su gran humanidad , su gran experiencia y sus buenos precios( que todo hay que decirlo ) la hacen una grandisima profesional",date:"Mar 2022",link:"https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURXZ0pDeEF3EAE!2m1!1s0x0:0x48544afb3aaf06a4!3m1!1s2@1:CIHM0ogKEICAgIDWgJCxAw%7CCgwIgMatkQYQqJGM6wI%7C?hl=en",clinic:"malaga",avatar:"https://lh3.googleusercontent.com/a/ACg8ocLURnZTe-4lcKqiAljiSW8Mc34VzzSjjUnDFlnnYTLXzXP7IQ=w79-h79-p-rp-mo-br100"},
             {name:"Gerson Suaznabar",source:"Google",rating:5,text_en:"I've always received excellent care from Dr. Eugenia Vila. Her service is consistently thorough and professional, and the pricing is very competitive compared to other clinics. Highly recommended!",text_es:"Siempre he recibido una atención excelente de la Dra. Eugenia Vila. Su servicio es siempre minucioso y profesional, y sus precios son muy competitivos en comparación con otras clínicas. ¡La recomiendo ampliamente!",date:"Jun 2025",link:"https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xwVmFIWk5SVFpsYURNMk1UWmtOV05UU3psSlRGRRAB!2m1!1s0x0:0x90860a666266ed85!3m1!1s2@1:CAIQACodChtycF9oOlpVaHZNRTZlaDM2MTZkNWNTSzlJTFE%7C0cKJxLEqLgK%7C?hl=en",clinic:"balham",avatar:"https://lh3.googleusercontent.com/a-/ALV-UjWi4w9_lBTyyDI_4jXi2T1q8fqCDOr2So3Pns502-T_ANs3yjMVKg=w79-h79-p-rp-mo-br100"},
             {name:"Giuseppe Tinaglia",source:"Google",rating:5,text_en:"I wholeheartedly recommend Dr. Eugenia Vila. She is warm, attentive, and incredibly reassuring. She took the time to explain each step in a calm, clear manner and never made me feel rushed or uncomfortable. Her kindness and professionalism made a real difference for me. I'm very grateful to have her as my dentist.",text_es:"Recomiendo sin reservas a la Dra. Eugenia Vila. Es amable, atenta y transmite muchísima tranquilidad. Se tomó el tiempo necesario para explicarme cada paso con calma y claridad, y en ningún momento me hizo sentir apurada ni incómoda. Su amabilidad y profesionalismo marcaron una gran diferencia para mí. Estoy muy agradecida de tenerla como mi dentista.",date:"May 2025",link:"https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VPNjlfYmF6Z3QzNmVREAE!2m1!1s0x0:0x90860a666266ed85!3m1!1s2@1:CIHM0ogKEO69_bazgt36eQ%7CCgwIy5zLwQYQ6IDgvwE%7C?hl=en",clinic:"balham",avatar:"https://lh3.googleusercontent.com/a-/ALV-UjWIeuQK9sGRT7BwWnXLvxLXpC5nPXotSmlRGJtmZwHSpwyfAZw=w79-h79-p-rp-mo-ba2-br100"},
+            {name:"customer",source:"Trustpilot",rating:5,text_en:"I am a nervous patient but Dr. Eugenia Vila was incredibly patient with me. Dr Eugenia took time to explain everything to me clearly and did an outstanding job! Dr. Eugenia is not only a great professional but also someone who genuinely emphasises with patients! I am very grateful for her support and kindness.",text_es:"Soy una paciente nerviosa, pero la Dra. Eugenia Vila fue increíblemente paciente conmigo. Se tomó el tiempo necesario para explicarme todo con claridad e hizo un trabajo excepcional. La Dra. Eugenia no solo es una gran profesional, sino que también comprende de verdad a sus pacientes. Estoy muy agradecida por su apoyo y amabilidad.",date:"May 2025",link:"https://www.trustpilot.com/reviews/68223d534c01d4036c9984a5",clinic:"balham",avatar:"CU, pink"},
+            {name:"J Ainsworth",source:"Trustpilot",rating:5,text_en:"Dr Eugenia is incredible. Puts you at your ease immediately. Absolutely fantastic dentist.",text_es:"La Dra. Eugenia es increíble. Te hace sentir cómodo enseguida. Una dentista absolutamente fantástica.",date:"May 2025",link:"https://www.trustpilot.com/reviews/682861cba01cabefd9e2290e",clinic:"balham",avatar:"JA, pink"},
+            {name:"Santi Barreche Pelaez",source:"Google",rating:5,text_en:"The best dentist in Malaga, after trying several doctors, she was recommended to me and she finally solved my problems.",text_es:"La mejor dentista de Málaga, tras probar varios médicos me la recomendaron y porfin solucionó mis problemas.",date:"Feb 2021",link:"https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR5Z3VuZHVnRRAB!2m1!1s0x0:0x48544afb3aaf06a4!3m1!1s2@1:CIHM0ogKEICAgIDygundugE%7CCgwIjdHvgQYQsMbvhgE%7C?hl=en",clinic:"malaga",avatar:"https://lh3.googleusercontent.com/a/ACg8ocLjEjAI9PFsmdxg6Mghz-7U7xlrGT0hz6ugOSqT_JeL8ovFRw=w79-h79-p-rp-mo-br100"},
             {name:"Laura Scott",source:"Google",rating:5,text_en:"I went there after searching for dentists online in El Palo without knowing anything about the place, and I recommend it 100%. If you're an English speaker who prefers or needs an English-speaking dentist, Eugenia speaks perfect English!!",text_es:"Fui allí tras buscar dentistas por Internet en El Palo sin saber nada del sitio, y lo recomiendo 100%. If you´re an English speaker who prefers or needs an English speaking dentist, Eugenia speaks perfect English!!",date:"Nov 2020",link:"https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNpX29lbVp3EAE!2m1!1s0x0:0x48544afb3aaf06a4!3m1!1s2@1:CIHM0ogKEICAgICi_oemZw%7CCgsIkpWL_QUQgNWxfw%7C?hl=en",clinic:"malaga",avatar:"https://lh3.googleusercontent.com/a-/ALV-UjWQgzhOZPsr5TA7pPr2RDZrEDDv7RDYnlq7qGm5Z8ttNYUQOOz0=w79-h79-p-rp-mo-br100"},
             {name:"S F",source:"Google",rating:5,text_en:"I'm a naturally nervous patient, but Dr. Eugenia Vila was incredibly patient and understanding throughout my visit. She made me feel at ease right away and took the time to explain everything clearly, without rushing me. Her calm and professional manner really stood out, and I felt truly listened to and cared for. Dr. Vila is not only a great professional but also someone who genuinely empathizes with her patients. I'm very grateful for her support and highly recommend her to anyone, especially those who might be anxious about appointments.",text_es:"Soy una paciente nerviosa por naturaleza, pero la Dra. Eugenia Vila fue increíblemente paciente y comprensiva durante toda mi consulta. Me hizo sentir cómoda de inmediato y se tomó el tiempo necesario para explicarme todo con claridad, sin prisas. Su trato tranquilo y profesional fue realmente admirable, y me sentí verdaderamente escuchada y atendida. La Dra. Vila no solo es una gran profesional, sino también una persona que empatiza genuinamente con sus pacientes. Estoy muy agradecida por su apoyo y la recomiendo ampliamente a cualquiera, especialmente a quienes puedan sentir ansiedad ante las citas médicas.",date:"May 2025",link:"https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VKNzdyb095OExmX3BRRRAB!2m1!1s0x0:0x90860a666266ed85!3m1!1s2@1:CIHM0ogKEJ77roOy8Lf_pQE%7CCgsI1_uIwQYQyKX0GA%7C?hl=en",clinic:"balham",avatar:"https://lh3.googleusercontent.com/a/ACg8ocLKT0EVmO04iWr9De4quvBC1_NCM5rsyhNAQLsV9qZkXdmdig=w79-h79-p-rp-mo-br100"},
             {name:"Zoe King",source:"Google",rating:5,text_en:"I wish I had Dr Eugenia Vila as my dentist from years ago! She is simply the best dentist I have visited in a while, she always takes time to be gentle and is very skilled. Dr Vila has such a lovely personality, greeting you with a smile and ensuring you feel comfortable. All the staff assistants and reception team I have dealt with so far have been very welcoming and great at keeping you updated. I highly recommend this practice.",text_es:"¡Ojalá hubiera tenido a la Dra. Eugenia Vila como mi dentista hace años! Es, sencillamente, la mejor dentista que he visitado en mucho tiempo; siempre se toma su tiempo para ser delicada y es muy hábil. La Dra. Vila tiene una personalidad encantadora, te recibe con una sonrisa y se asegura de que te sientas cómodo. Todo el personal auxiliar y de recepción con el que he tratado hasta ahora ha sido muy amable y me ha mantenido informado en todo momento. Recomiendo encarecidamente esta clínica.",date:"Jun 2025",link:"https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VOSC02UDJ6M2RTbUN3EAE!2m1!1s0x0:0x90860a666266ed85!3m1!1s2@1:CIHM0ogKENH-6P2z3dSmCw%7CCgsIhqD4wQYQgNeLRg%7C?hl=en",clinic:"balham",avatar:"https://lh3.googleusercontent.com/a/ACg8ocI5-qgk-qzfbo_fLljhbOxuMRjpbN3w7tsPUix-WuwAUqIXHA=w79-h79-p-rp-mo-ba3-br100"},
@@ -1533,7 +1881,7 @@
         function initReviews() {
             allReviews = [...reviewsData];
             currentReviewIndex = 0;
-            loadReviews();
+                    loadReviews();
         }
         
         // Load featured reviews carousel on home page
@@ -1544,18 +1892,16 @@
             // Select the most passionate and positive reviews (sorted by quality and heartfulness)
             const featuredReviewNames = [
                 'Isabel', // Google - Best dentist in ALL OF MALAGA, family trust
-                'Sixto Robello', // Google - Outstanding service
-                'Emma', // Trustpilot - Best dentist ever met, artiste and perfectionist
-                'Santi Barreche Pelaez', // Google - Exceptional treatment
-                'J Ainsworth', // Trustpilot - Incredible, absolutely fantastic
-                'Teresa Vez Luque', // Google - Professional and caring
-                'Timothy Gilbert', // Google - Dedicated commitment, amazing
-                'customer', // Trustpilot - Incredibly patient, genuinely empathizes
-                'Giuseppe Tinaglia', // Google - Highly professional
-                'Laura Scott', // Google - Excellent experience
                 'Nuria Salido Iniesta', // Google - Exceptional care
-                'S F', // Google - Outstanding service
+                'Emma', // Trustpilot - Best dentist ever met, artiste and perfectionist
+                'Teresa Vez luque', // Google - Professional and caring
                 'Gerson Suaznabar', // Google - Great experience
+                'Giuseppe Tinaglia', // Google - Highly professional
+                'customer', // Trustpilot - Incredibly patient, genuinely empathizes
+                'J Ainsworth', // Trustpilot - Incredible, absolutely fantastic
+                'Santi Barreche Pelaez', // Google - Exceptional treatment
+                'Laura Scott', // Google - Excellent experience
+                'S F', // Google - Outstanding service
                 'Zoe King' // Google - Wonderful treatment
             ];
             
@@ -1583,8 +1929,8 @@
                     es: 'La mejor dentista de Málaga, tras probar varios médicos me la recomendaron y porfin solucionó mis problemas.'
                 },
                 'j ainsworth': {
-                    en: 'Dr Eugenia is incredible. Puts you at your ease immediately. Absolutely fantastic dentist. Also nurse Irelina so kind...',
-                    es: 'La Dra. Eugenia es increíble. Te hace sentir cómodo enseguida. Una dentista absolutamente fantástica. La enfermera Irelina también es muy amable...'
+                    en: 'Dr Eugenia is incredible. Puts you at your ease immediately. Absolutely fantastic dentist.',
+                    es: 'La Dra. Eugenia es increíble. Te hace sentir cómodo enseguida. Una dentista absolutamente fantástica.'
                 },
                 'teresa vez luque': {
                     en: 'Dr. Eugenia has been, is, and will always be the best dentist...and I say this from experience. Always willing to help anyone who needs it...',
@@ -1936,7 +2282,6 @@
             
             initReviews();
             initCases();
-            initProducts();
             loadFeaturedReviews();
             
             // Add scroll listener to carousel for arrow visibility
@@ -1944,133 +2289,7 @@
             if (carousel) {
                 carousel.addEventListener('scroll', updateCarouselArrows);
             }
-            initReviews();
         });
-
-        let currentCaseIndex = 0;
-        const casesPerPage = 6;
-        let allCases = [];
-        let allProducts = [];
-
-        function initCases() {
-            fetch('data/cases.json')
-                .then(response => response.json())
-                .then(data => {
-                    allCases = data;
-                    loadCases();
-                    // Re-apply language after adding new elements
-                    changeLanguage(currentLanguage);
-                })
-                .catch(error => console.error('Error loading cases:', error));
-        }
-
-        function loadCases() {
-            const grid = document.getElementById('cases-grid');
-            grid.innerHTML = ''; // Clear existing cases
-
-            allCases.forEach((caseItem, index) => {
-                if (index < currentCaseIndex + casesPerPage) {
-                    const card = `
-                        <div class="case-item">
-                            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-                                <h3 class="text-xl font-semibold mb-4">${caseItem.title}</h3>
-                                <p class="text-gray-600 mb-4">${caseItem.description}</p>
-                                <div class="flex justify-between items-center">
-                                    <span class="text-sm text-gray-500">${caseItem.date}</span>
-                                    <span class="text-sm text-gray-500">${caseItem.category}</span>
-                                </div>
-                            </div>
-                        </div>
-                    `;
-                    grid.innerHTML += card;
-                }
-            });
-
-            // Update Load More button visibility
-            if (currentCaseIndex + casesPerPage < allCases.length) {
-                document.getElementById('load-more-cases').style.display = 'inline-block';
-            } else {
-                document.getElementById('load-more-cases').style.display = 'none';
-            }
-        }
-
-        function filterCases(category, event) {
-            const caseItems = document.querySelectorAll('.case-item');
-            const filterBtns = document.querySelectorAll('.filter-btn');
-            
-            // Update active button
-            filterBtns.forEach(btn => {
-                btn.classList.remove('active', 'bg-slate-600', 'text-white');
-                btn.classList.add('bg-gray-200', 'text-gray-700');
-            });
-            event.target.classList.add('active', 'bg-slate-600', 'text-white');
-            event.target.classList.remove('bg-gray-200', 'text-gray-700');
-            
-            // Filter items
-            caseItems.forEach(item => {
-                if (category === 'all' || item.dataset.tags.includes(category)) {
-                    item.style.display = 'block';
-                } else {
-                    item.style.display = 'none';
-                }
-            });
-        }
-
-        function loadProducts() {
-            const grid = document.getElementById('products-grid');
-            grid.innerHTML = ''; // Clear existing products
-
-            allProducts.forEach(product => {
-                const stars = Array(5).fill(0).map((_, i) => {
-                    if (i < Math.floor(product.rating)) return '<i class="fas fa-star"></i>';
-                    if (i < product.rating) return '<i class="fas fa-star-half-alt"></i>';
-                    return '<i class="far fa-star"></i>';
-                }).join('');
-
-                const productElement = `
-                    <div class="amazon-product bg-white rounded-2xl shadow-lg overflow-hidden">
-                        <div class="p-8 flex items-center justify-center" style="min-height: 200px; background: linear-gradient(135deg, rgba(0, 82, 156, 0.08) 0%, rgba(0, 82, 156, 0.15) 100%);">
-                            <i class="fas ${product.icon} text-7xl" style="color: var(--primary-blue);"></i>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-xl font-semibold text-gray-800 mb-2">
-                                <span class="lang-en">${product.name_en}</span>
-                                <span class="lang-es hidden">${product.name_es}</span>
-                            </h3>
-                            <p class="text-gray-600 mb-4">
-                                <span class="lang-en">${product.description_en}</span>
-                                <span class="lang-es hidden">${product.description_es}</span>
-                            </p>
-                            <div class="flex items-center justify-between mb-4">
-                                <div class="star-rating text-sm text-yellow-500">
-                                    ${stars}
-                                    <span class="text-gray-600 ml-2">${product.rating}/5</span>
-                                </div>
-                                <div class="text-2xl font-bold text-gray-800">${product.price}</div>
-                            </div>
-                            <a href="${product.url}" target="_blank" class="block w-full text-white text-center py-3 rounded-lg font-semibold transition" style="background-color: var(--primary-blue);">
-                                <i class="fab fa-amazon mr-2"></i>
-                                <span class="lang-en">View on Amazon</span>
-                                <span class="lang-es hidden">Ver en Amazon</span>
-                            </a>
-                        </div>
-                    </div>
-                `;
-                grid.innerHTML += productElement;
-            });
-            // Re-apply language after adding new elements
-            changeLanguage(currentLanguage);
-        }
-
-        function initProducts() {
-            fetch('data/products.json')
-                .then(response => response.json())
-                .then(data => {
-                    allProducts = data;
-                    loadProducts();
-                })
-                .catch(error => console.error('Error loading products:', error));
-        }
     </script>
 
 </body>
