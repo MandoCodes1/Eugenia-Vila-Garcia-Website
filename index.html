@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dra. Eugenia Vila - Odontología Estética y General</title>
-    <meta name="description" content="Doctora especializada en odontología estética con más de 30 años de experiencia. Invisalign, implantes dentales y cuidado oral integral. Registrada GDC.">
+    <meta name="description" content="Doctora especializada en odontología estética con más de 30 años de experiencia. Invisalign, implantes dentales y cuidado oral integral. Colegiada en el Colegio de Dentistas de Málaga.">
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -239,6 +239,27 @@
         #carousel-prev, #carousel-next {
             transition: opacity 0.3s ease, transform 0.3s ease;
         }
+        
+        /* Navigation link hover underline effect */
+        .nav-link {
+            position: relative;
+            padding-bottom: 4px;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary-blue);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
     </style>
 </head>
 <body class="bg-gray-50 smooth-scroll">
@@ -268,9 +289,6 @@
                     </a>
                     <a href="#contact" class="nav-link text-gray-700 hover:text-slate-600 font-medium transition" onclick="showTab('contact', event)">
                         <span class="lang-en">Contact</span><span class="lang-es hidden">Contacto</span>
-                    </a>
-                    <a href="#cv" class="nav-link text-gray-700 hover:text-slate-600 font-medium transition" onclick="showTab('cv', event)">
-                        <i class="fas fa-file-pdf mr-1"></i>CV
                     </a>
                     
                     <!-- Language Switcher -->
@@ -311,9 +329,6 @@
                 <a href="#contact" class="block text-gray-700 hover:text-slate-600 py-2" onclick="showTab('contact', event)">
                     <span class="lang-en">Contact</span><span class="lang-es hidden">Contacto</span>
                 </a>
-                <a href="#cv" class="block text-gray-700 hover:text-slate-600 py-2" onclick="showTab('cv', event)">
-                    <i class="fas fa-file-pdf mr-2"></i><span class="lang-en">CV</span><span class="lang-es hidden">CV</span>
-                </a>
             </div>
         </div>
     </nav>
@@ -325,6 +340,7 @@
             <div class="container mx-auto px-6">
                 <div class="flex flex-col md:flex-row items-center justify-between gap-12">
                     <div class="md:w-1/2 mb-10 md:mb-0">
+                        <h2 class="text-xl md:text-2xl font-semibold mb-2 lang-en">Dental Clinic</h2>
                         <h1 class="text-3xl md:text-5xl font-bold mb-4 leading-tight lang-en">
                             Dr. Eugenia Vila<br>
                             <span class="text-2xl md:text-3xl font-normal opacity-90">MD, BDS, MSc</span>
@@ -335,42 +351,40 @@
                             <span class="text-2xl md:text-3xl font-normal opacity-90">MD, Lic. Odont., MSc</span>
                         </h1>
                         <p class="text-lg md:text-xl mb-8 leading-relaxed lang-en" style="color: rgba(255, 255, 255, 0.9);">
-                            Experienced dental professional with a special interest in oral surgery and dental implants
+                            Experienced dental professional offering a wide range of high-quality oral treatments at affordable prices
                         </p>
                         <p class="text-lg md:text-xl mb-8 leading-relaxed lang-es hidden" style="color: rgba(255, 255, 255, 0.9);">
                             Dentista malagueña con amplia gama de tratamientos orales de la más alta calidad a precios asequibles
                         </p>
                         <div class="flex flex-wrap gap-3 mb-8">
                             <span class="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-sm">
-                                <i class="fas fa-certificate mr-2"></i><span class="lang-en">GDC Registered</span><span class="lang-es hidden">Registrada GDC</span>
+                                <i class="fas fa-certificate mr-2"></i><span class="lang-en">20,000+ patients treated</span><span class="lang-es hidden">20,000+ Pacientes Satisfechos</span>
                             </span>
                             <span class="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-sm">
                                 <i class="fas fa-award mr-2"></i><span class="lang-en">30+ Years Experience</span><span class="lang-es hidden">30+ Años de Experiencia</span>
                             </span>
-                            <span class="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-sm">
-                                <i class="fas fa-star mr-2"></i><span class="lang-en">5-Star Rated</span><span class="lang-es hidden">5/5 Estrellas</span>
-                            </span>
                         </div>
-                        <!-- English Version - Professional Recruitment -->
+                        <!-- English Version - Patient Bookings -->
                         <div class="flex flex-wrap gap-3 mb-6 lang-en">
-                            <button onclick="showTab('contact', event)" class="border-2 border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white/10 transition">
-                                Get In Touch
+                            <button onclick="document.getElementById('appointment-form').scrollIntoView({ behavior: 'smooth', block: 'start' });" class="border-2 border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white/10 transition inline-flex items-center gap-2" title="Book Appointment">
+                                <i class="fas fa-calendar-check text-xl"></i>
+                                <span class="lang-en">Book Appointment</span>
                             </button>
-                            <button onclick="showTab('cv', event)" class="px-6 py-3 rounded-full font-semibold transition shadow-lg" style="background-color: var(--primary-blue); color: white;">
-                                <i class="fas fa-file-pdf mr-2"></i>View CV
-                            </button>
-                            <button onclick="showTab('cases', event)" class="px-6 py-3 rounded-full font-semibold transition shadow-lg" style="background-color: var(--primary-blue); color: white;">
-                                View Cases
-                            </button>
+                            <a href="https://wa.me/34679975580" target="_blank" class="border-2 border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white/10 transition inline-flex items-center gap-2" title="WhatsApp">
+                                <i class="fab fa-whatsapp text-xl"></i>
+                                WhatsApp
+                            </a>
+                            <a href="https://maps.app.goo.gl/ZCarKQCmnUGdkBZB7" target="_blank" class="border-2 border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white/10 transition inline-flex items-center gap-2" title="Location">
+                                <i class="fas fa-directions text-xl"></i>
+                                Map
+                            </a>
                         </div>
                         
                         <!-- Spanish Version - Patient Bookings -->
                         <div class="flex flex-wrap gap-3 mb-6 lang-es hidden">
-                            <button onclick="showTab('cases', event)" class="px-6 py-3 rounded-full font-semibold transition shadow-lg" style="background-color: var(--primary-blue); color: white;">
-                                Casos
-                            </button>
-                            <button onclick="showTab('reviews', event)" class="px-6 py-3 rounded-full font-semibold transition shadow-lg" style="background-color: var(--primary-blue); color: white;">
-                                Reseñas
+                            <button onclick="document.getElementById('appointment-form').scrollIntoView({ behavior: 'smooth', block: 'start' });" class="border-2 border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white/10 transition inline-flex items-center gap-2" title="Reservar Cita">
+                                <i class="fas fa-calendar-check text-xl"></i>
+                                <span class="lang-es">Reservar Cita</span>
                             </button>
                             <a href="https://wa.me/34679975580" target="_blank" class="border-2 border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white/10 transition inline-flex items-center gap-2" title="WhatsApp">
                                 <i class="fab fa-whatsapp text-xl"></i>
@@ -379,22 +393,6 @@
                             <a href="https://maps.app.goo.gl/ZCarKQCmnUGdkBZB7" target="_blank" class="border-2 border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white/10 transition inline-flex items-center gap-2" title="Ubicación">
                                 <i class="fas fa-directions text-xl"></i>
                                 Mapa
-                            </a>
-                        </div>
-                        
-                        <!-- Contact Icons - English (Professional) -->
-                        <div class="flex flex-wrap gap-3 lang-en">
-                            <a href="mailto:eugeniavila63@gmail.com" class="px-6 py-3 rounded-full font-semibold transition shadow-lg inline-flex items-center gap-2" style="background-color: var(--primary-blue); color: white;" title="Email">
-                                <i class="fas fa-envelope text-xl"></i>
-                                Email
-                            </a>
-                            <a href="https://www.linkedin.com/in/eugenia-vila-garcia/" target="_blank" class="px-6 py-3 rounded-full font-semibold transition shadow-lg inline-flex items-center gap-2" style="background-color: var(--primary-blue); color: white;" title="LinkedIn">
-                                <i class="fab fa-linkedin text-xl"></i>
-                                LinkedIn
-                            </a>
-                            <a href="tel:+447309281723" class="px-6 py-3 rounded-full font-semibold transition shadow-lg inline-flex items-center gap-2" style="background-color: var(--primary-blue); color: white;" title="Phone">
-                                <i class="fas fa-phone text-xl"></i>
-                                Call
                             </a>
                         </div>
                     </div>
@@ -410,7 +408,7 @@
         </section>
 
         <!-- Specialties Section -->
-        <section class="py-20 bg-white">
+        <section class="py-24 bg-gray-50">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16">
                     <h2 class="text-4xl font-bold text-gray-800 mb-4">
@@ -423,7 +421,7 @@
                     </p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <div class="card-hover p-8 rounded-2xl shadow-lg text-center fade-in-up delay-1" style="background: linear-gradient(135deg, rgba(0, 82, 156, 0.08) 0%, rgba(0, 82, 156, 0.15) 100%);">
+                    <div class="card-hover p-8 rounded-2xl shadow-md border border-gray-100 text-center fade-in-up delay-1" style="background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.95) 100%), linear-gradient(135deg, rgba(0, 82, 156, 0.08) 0%, rgba(0, 82, 156, 0.15) 100%); backdrop-filter: blur(4px);">
                         <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style="background-color: var(--primary-blue);">
                             <i class="fas fa-teeth text-white text-2xl"></i>
                         </div>
@@ -433,7 +431,7 @@
                             <span class="lang-es hidden">Terapia con alineadores transparentes para tratamiento ortodóntico discreto</span>
                         </p>
                     </div>
-                    <div class="card-hover p-8 rounded-2xl shadow-lg text-center fade-in-up delay-2" style="background: linear-gradient(135deg, rgba(160, 211, 241, 0.1) 0%, rgba(160, 211, 241, 0.2) 100%);">
+                    <div class="card-hover p-8 rounded-2xl shadow-md border border-gray-100 text-center fade-in-up delay-2" style="background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.95) 100%), linear-gradient(135deg, rgba(160, 211, 241, 0.1) 0%, rgba(160, 211, 241, 0.2) 100%); backdrop-filter: blur(4px);">
                         <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style="background-color: var(--primary-blue-light);">
                             <i class="fas fa-tooth text-white text-2xl"></i>
                         </div>
@@ -446,7 +444,7 @@
                             <span class="lang-es hidden">Soluciones permanentes para dientes perdidos</span>
                         </p>
                     </div>
-                    <div class="card-hover p-8 rounded-2xl shadow-lg text-center fade-in-up delay-3" style="background: linear-gradient(135deg, rgba(0, 82, 156, 0.08) 0%, rgba(0, 82, 156, 0.15) 100%);">
+                    <div class="card-hover p-8 rounded-2xl shadow-md border border-gray-100 text-center fade-in-up delay-3" style="background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.95) 100%), linear-gradient(135deg, rgba(0, 82, 156, 0.08) 0%, rgba(0, 82, 156, 0.15) 100%); backdrop-filter: blur(4px);">
                         <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style="background-color: var(--primary-blue);">
                             <i class="fas fa-smile text-white text-2xl"></i>
                         </div>
@@ -459,7 +457,7 @@
                             <span class="lang-es hidden">Mejora estética y transformación de sonrisas</span>
                         </p>
                     </div>
-                    <div class="card-hover p-8 rounded-2xl shadow-lg text-center fade-in-up delay-4" style="background: linear-gradient(135deg, rgba(160, 211, 241, 0.1) 0%, rgba(160, 211, 241, 0.2) 100%);">
+                    <div class="card-hover p-8 rounded-2xl shadow-md border border-gray-100 text-center fade-in-up delay-4" style="background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.95) 100%), linear-gradient(135deg, rgba(160, 211, 241, 0.1) 0%, rgba(160, 211, 241, 0.2) 100%); backdrop-filter: blur(4px);">
                         <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style="background-color: var(--primary-blue-light);">
                             <i class="fas fa-sun text-white text-2xl"></i>
                         </div>
@@ -476,8 +474,94 @@
             </div>
         </section>
 
+        <!-- Dental Cases Preview -->
+        <section class="py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16 fade-in-up">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-4 lang-en">Featured Dental Cases</h2>
+                    <h2 class="text-4xl font-bold text-gray-800 mb-4 lang-es hidden">Casos Dentales Destacados</h2>
+                </div>
+
+                <!-- Featured Cases Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-12">
+                    <!-- Case 1: Invisalign -->
+                    <div class="case-item card-hover bg-white rounded-2xl shadow-lg overflow-hidden">
+                        <div class="before-after-container">
+                            <div class="grid grid-cols-2 gap-3 p-6 bg-gray-50">
+                                <div class="aspect-square bg-gradient-to-br from-gray-200 to-gray-300 rounded-lg flex items-center justify-center">
+                                    <div class="text-center">
+                                        <i class="fas fa-image text-4xl text-gray-400 mb-2"></i>
+                                        <p class="text-xs text-gray-500 font-medium">
+                                            <span class="lang-en">Before</span>
+                                            <span class="lang-es hidden">Antes</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="aspect-square rounded-lg flex items-center justify-center" style="background: linear-gradient(135deg, rgba(0, 82, 156, 0.15) 0%, rgba(0, 82, 156, 0.25) 100%);">
+                                    <div class="text-center">
+                                        <i class="fas fa-image text-4xl mb-2" style="color: var(--primary-blue);"></i>
+                                        <p class="text-xs font-medium" style="color: var(--primary-blue);">
+                                            <span class="lang-en">After</span>
+                                            <span class="lang-es hidden">Después</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6 pt-4">
+                            <h3 class="text-lg font-semibold text-gray-800 mb-2">
+                                <span class="lang-en">Invisalign Treatment</span>
+                                <span class="lang-es hidden">Tratamiento Invisalign</span>
+                            </h3>
+                        </div>
+                    </div>
+
+                    <!-- Case 2: Smile Makeover -->
+                    <div class="case-item card-hover bg-white rounded-2xl shadow-lg overflow-hidden">
+                        <div class="before-after-container">
+                            <div class="grid grid-cols-2 gap-3 p-6 bg-gray-50">
+                                <div class="aspect-square bg-gradient-to-br from-gray-200 to-gray-300 rounded-lg flex items-center justify-center">
+                                    <div class="text-center">
+                                        <i class="fas fa-image text-4xl text-gray-400 mb-2"></i>
+                                        <p class="text-xs text-gray-500 font-medium">
+                                            <span class="lang-en">Before</span>
+                                            <span class="lang-es hidden">Antes</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="aspect-square rounded-lg flex items-center justify-center" style="background: linear-gradient(135deg, rgba(160, 211, 241, 0.2) 0%, rgba(90, 84, 128, 0.25) 100%);">
+                                    <div class="text-center">
+                                        <i class="fas fa-image text-4xl mb-2" style="color: var(--primary-blue-light);"></i>
+                                        <p class="text-xs font-medium" style="color: var(--primary-blue-light);">
+                                            <span class="lang-en">After</span>
+                                            <span class="lang-es hidden">Después</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6 pt-4">
+                            <h3 class="text-lg font-semibold text-gray-800 mb-2">
+                                <span class="lang-en">Smile Makeover</span>
+                                <span class="lang-es hidden">Diseño de Sonrisa</span>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- View All Cases Button -->
+                <div class="text-center">
+                    <button onclick="showTab('cases', event)" class="text-white px-8 py-3 rounded-full font-semibold transition shadow-lg hover:shadow-xl" style="background-color: var(--primary-blue);">
+                        <span class="lang-en">View All Cases</span>
+                        <span class="lang-es hidden">Ver Todos Los Casos</span>
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
         <!-- Quick Reviews Preview -->
-        <section class="py-20 bg-gray-50">
+        <section class="py-24 bg-gradient-to-b from-gray-50 to-white">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16 fade-in-up">
                     <h2 class="text-4xl font-bold text-gray-800 mb-4 lang-en">What Patients Say</h2>
@@ -516,52 +600,214 @@
                     
                     <button onclick="showTab('reviews', event)" class="text-white px-8 py-3 rounded-full font-semibold transition shadow-lg hover:shadow-xl" style="background-color: var(--primary-blue);">
                         <span class="lang-en">View All 83 Reviews</span>
-                        <span class="lang-es hidden">Ver Todas Las 83 Reseñas</span>
+                        <span class="lang-es hidden">Ver Todas Las Reseñas</span>
                     </button>
                 </div>
             </div>
         </section>
-        
-        <!-- Google Maps - Spanish Version Only (Patient Booking) -->
-        <section class="py-20 bg-white lang-es hidden">
+
+        <!-- Appointment Booking Form -->
+        <section id="appointment-form" class="py-24 bg-gray-50">
             <div class="container mx-auto px-6">
-                <div class="max-w-5xl mx-auto">
+                <div class="max-w-4xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-4xl font-bold text-gray-800 mb-4">
+                            <span class="lang-en">Book an Appointment</span>
+                            <span class="lang-es hidden">Reservar una Cita</span>
+                        </h2>
+                        <p class="text-xl text-gray-600">
+                            <span class="lang-en">Fill out the form below and we'll get back to you shortly</span>
+                            <span class="lang-es hidden">Complete el formulario a continuación y nos pondremos en contacto contigo pronto</span>
+                        </p>
+                    </div>
+
+                        <div class="bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg border border-gray-100 p-8">
+                        <form id="booking-form" onsubmit="submitBookingForm(event);" class="space-y-6">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                    <div>
+                                    <label for="patient-name" class="block text-sm font-semibold text-gray-700 mb-2">
+                                        <span class="lang-en">Full Name</span>
+                                        <span class="lang-es hidden">Nombre Completo</span>
+                                        <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="text" id="patient-name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="John Doe">
+                                    </div>
+                                        <div>
+                                    <label for="patient-email" class="block text-sm font-semibold text-gray-700 mb-2">
+                                        Email
+                                        <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="email" id="patient-email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="john@example.com">
+                                </div>
+                            </div>
+
+                            <div class="grid md:grid-cols-2 gap-6">
+                                    <div>
+                                    <label for="patient-phone" class="block text-sm font-semibold text-gray-700 mb-2">
+                                        <span class="lang-en">Phone Number</span>
+                                        <span class="lang-es hidden">Número de Teléfono</span>
+                                        <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="tel" id="patient-phone" name="phone" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="+34 679 975 580">
+                                    </div>
+                                <div>
+                                    <label for="treatment-type" class="block text-sm font-semibold text-gray-700 mb-2">
+                                        <span class="lang-en">Treatment of Interest</span>
+                                        <span class="lang-es hidden">Tratamiento de Interés</span>
+                                    </label>
+                                    <select id="treatment-type" name="treatment" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                            <option value="">Select a treatment / Seleccione un tratamiento</option>
+                                            <option value="consultation">General Consultation / Consulta General</option>
+                                            <option value="invisalign">Invisalign</option>
+                                            <option value="implants">Dental Implants / Implantes Dentales</option>
+                                            <option value="cosmetic">Cosmetic Bonding / Carillas de Composite</option>
+                                            <option value="whitening">Teeth Whitening / Blanqueamiento Dental</option>
+                                            <option value="other">Other / Otro</option>
+                                        </select>
+                                </div>
+                            </div>
+
+                                    <div>
+                                <label for="patient-message" class="block text-sm font-semibold text-gray-700 mb-2">
+                                    <span class="lang-en">Message</span>
+                                    <span class="lang-es hidden">Mensaje</span>
+                                </label>
+                                <textarea id="patient-message" name="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Tell us about your dental needs..."></textarea>
+                            </div>
+
+                            <div class="flex items-start">
+                                <input type="checkbox" id="privacy-policy" name="privacy" required class="mt-1 mr-3">
+                                <label for="privacy-policy" class="text-sm text-gray-700">
+                                    <span class="lang-en">I agree to the privacy policy and consent to my data being processed for appointment booking purposes.</span>
+                                    <span class="lang-es hidden">Acepto la política de privacidad y consiento que mis datos sean procesados con fines de reserva de citas.</span>
+                                </label>
+                            </div>
+
+                            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-semibold transition shadow-lg hover:shadow-xl">
+                                <span class="lang-en">Submit Appointment Request</span>
+                                <span class="lang-es hidden">Enviar Solicitud de Cita</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Google Maps - Both Languages (Patient Booking) -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="max-w-6xl mx-auto">
                     <div class="text-center mb-12">
                         <h2 class="text-4xl font-bold text-gray-800 mb-4">
                             <i class="fas fa-map-marker-alt text-slate-600 mr-3"></i>
-                            Ubicación de la Clínica
+                            <span class="lang-en">Clinic Location</span>
+                            <span class="lang-es hidden">Ubicación de la Clínica</span>
                         </h2>
-                        <p class="text-xl text-gray-600 mb-2">Clínica Privada en El Palo, Málaga</p>
-                        <p class="text-gray-700">
-                            <i class="fas fa-location-dot mr-2"></i>
-                            Av. Juan Sebastián Elcano, 191, Málaga-Este, 29017 Málaga, España
-                        </p>
                     </div>
                     
-                    <!-- Map Container -->
-                    <div class="rounded-2xl shadow-2xl overflow-hidden">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.244243110292!2d-4.36335838471206!3d36.72125677996417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7259d6897597c3%3A0x48544afb3aaf06a4!2sClinica%20Dental%20Dra.%20Eugenia%20Vila!5e0!3m2!1sen!2ses"
-                            width="100%" 
-                            height="450" 
-                            style="border:0;" 
-                            allowfullscreen="" 
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade"
-                            class="w-full"
-                        ></iframe>
-                    </div>
-                    
-                    <!-- Contact Actions -->
-                    <div class="grid md:grid-cols-2 gap-6 mt-8">
-                        <a href="https://wa.me/34679975580?text=Hola,%20me%20gustaría%20solicitar%20una%20cita" target="_blank" class="flex items-center justify-center gap-3 bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl font-semibold transition shadow-lg hover:shadow-xl">
-                            <i class="fab fa-whatsapp text-2xl"></i>
-                            <span>Reservar Cita por WhatsApp</span>
-                        </a>
-                        <a href="https://maps.app.goo.gl/ZCarKQCmnUGdkBZB7" target="_blank" class="flex items-center justify-center gap-3 text-white px-8 py-4 rounded-xl font-semibold transition shadow-lg hover:shadow-xl" style="background-color: #4285F4;">
-                            <i class="fas fa-directions text-2xl"></i>
-                            <span>Cómo Llegar</span>
-                        </a>
+                    <!-- Map and Information Side by Side -->
+                    <div class="grid md:grid-cols-2 gap-8 items-start">
+                        <!-- Map Container -->
+                        <div class="rounded-2xl shadow-2xl overflow-hidden">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.244243110292!2d-4.36335838471206!3d36.72125677996417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f11.1!3m3!1m2!1s0xd7259d6897597c3%3A0x48544afb3aaf06a4!2sClinica%20Dental%20Dra.%20Eugenia%20Vila!5e0!3m2!1sen!2ses&z=14"
+                                width="100%" 
+                                height="550" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade"
+                                class="w-full"
+                            ></iframe>
+                        </div>
+                        
+                        <!-- Clinic Information Panel -->
+                        <div class="bg-gradient-to-br from-gray-50 to-white rounded-2xl shadow-xl p-8 space-y-6">
+
+                            <!-- Opening Hours -->
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-800 mb-4">
+                                    <i class="fas fa-clock text-slate-600 mr-2"></i>
+                                    <span class="lang-en">Opening Hours</span>
+                                    <span class="lang-es hidden">Horario de Atención</span>
+                                </h4>
+                                <div class="space-y-2 text-gray-700">
+                                    <div class="flex justify-between">
+                                        <span class="font-medium">
+                                            <span class="lang-en">Monday - Friday</span>
+                                            <span class="lang-es hidden">Lunes - Viernes</span>
+                                        </span>
+                                        <span>9:00 - 20:00</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="font-medium">
+                                            <span class="lang-en">Saturday</span>
+                                            <span class="lang-es hidden">Sábado</span>
+                                        </span>
+                                        <span>
+                                            <span class="lang-en">By Appointment</span>
+                                            <span class="lang-es hidden">Con Cita</span>
+                                        </span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="font-medium">
+                                            <span class="lang-en">Sunday</span>
+                                            <span class="lang-es hidden">Domingo</span>
+                                        </span>
+                                        <span class="text-gray-400">
+                                            <span class="lang-en">Closed</span>
+                                            <span class="lang-es hidden">Cerrado</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Additional Information -->
+                            <div class="border-t border-gray-200 pt-6">
+                                <h4 class="text-lg font-semibold text-gray-800 mb-4">
+                                    <i class="fas fa-info-circle text-slate-600 mr-2"></i>
+                                    <span class="lang-en">Additional Information</span>
+                                    <span class="lang-es hidden">Información Adicional</span>
+                                </h4>
+                                <div class="space-y-3 text-sm text-gray-700">
+                                    <div class="flex items-start gap-2">
+                                        <i class="fas fa-parking text-slate-600 mt-1"></i>
+                                        <span>
+                                            <span class="lang-en">Street parking available nearby</span>
+                                            <span class="lang-es hidden">Aparcamiento en la calle disponible cerca</span>
+                                        </span>
+                                    </div>
+                                    <div class="flex items-start gap-2">
+                                        <i class="fas fa-bus text-slate-600 mt-1"></i>
+                                        <span>
+                                            <span class="lang-en">Bus stops within walking distance</span>
+                                            <span class="lang-es hidden">Paradas de autobús a poca distancia</span>
+                                        </span>
+                                    </div>
+                                    <div class="flex items-start gap-2">
+                                        <i class="fas fa-wheelchair text-slate-600 mt-1"></i>
+                                        <span>
+                                            <span class="lang-en">Wheelchair accessible</span>
+                                            <span class="lang-es hidden">Accesible para sillas de ruedas</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Action Buttons -->
+                            <div class="border-t border-gray-200 pt-6 space-y-3">
+                                <a href="https://wa.me/34679975580?text=Hola,%20me%20gustaría%20solicitar%20una%20cita" target="_blank" class="flex items-center justify-center gap-3 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-xl font-semibold transition shadow-lg hover:shadow-xl w-full">
+                            <i class="fab fa-whatsapp text-xl"></i>
+                                    <span class="lang-en">Book Appointment via WhatsApp</span>
+                                    <span class="lang-es hidden">Reservar Cita por WhatsApp</span>
+                                </a>
+                                <a href="https://maps.app.goo.gl/ZCarKQCmnUGdkBZB7" target="_blank" class="flex items-center justify-center gap-3 text-white px-6 py-3 rounded-xl font-semibold transition shadow-lg hover:shadow-xl w-full" style="background-color: #4285F4;">
+                                    <i class="fas fa-directions text-xl"></i>
+                                    <span class="lang-en">Get Directions</span>
+                                    <span class="lang-es hidden">Cómo Llegar</span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -586,19 +832,11 @@
                         <div class="space-y-4 text-gray-700">
                             <div class="flex items-start lang-en">
                                 <i class="fas fa-check-circle mt-1 mr-3" style="color: var(--primary-blue);"></i>
-                                <p><strong>GDC Registration:</strong> 287705 
-                                    <a href="https://olr.gdc-uk.org/SearchRegister/SearchResult?RegistrationNumber=287705" target="_blank" class="text-sm ml-2" style="color: var(--primary-blue);">
-                                        <i class="fas fa-external-link-alt"></i> Verify
-                                    </a>
-                                </p>
+                                <p><strong>Professional Registration:</strong> Colegio de Dentistas de Málaga</p>
                             </div>
                             <div class="flex items-start lang-es hidden">
                                 <i class="fas fa-check-circle mt-1 mr-3" style="color: var(--primary-blue);"></i>
-                                <p><strong>Registro GDC:</strong> 287705 
-                                    <a href="https://olr.gdc-uk.org/SearchRegister/SearchResult?RegistrationNumber=287705" target="_blank" class="text-sm ml-2" style="color: var(--primary-blue);">
-                                        <i class="fas fa-external-link-alt"></i> Verificar
-                                    </a>
-                                </p>
+                                <p><strong>Registro Profesional:</strong> Colegio de Dentistas de Málaga</p>
                             </div>
                             <div class="flex items-start lang-en">
                                 <i class="fas fa-trophy mt-1 mr-3" style="color: var(--gold-accent);"></i>
@@ -772,7 +1010,7 @@
                             <p class="text-gray-600 mb-4 text-sm">Complete orthodontic correction with clear aligners. Treatment duration: 12 months.</p>
                             <div class="flex flex-wrap gap-1">
                                 <span class="case-tag tag-invisalign">Invisalign</span>
-                                <span class="case-tag" style="background: #f3f4f6; color: #374151;">London Clinic</span>
+                                <span class="case-tag" style="background: #f3f4f6; color: #374151;">London</span>
                             </div>
                         </div>
                     </div>
@@ -800,7 +1038,7 @@
                             <p class="text-gray-600 mb-4 text-sm">Smile makeover with composite bonding on upper anterior teeth.</p>
                             <div class="flex flex-wrap gap-1">
                                 <span class="case-tag tag-bonding">Composite Bonding</span>
-                                <span class="case-tag" style="background: #f3f4f6; color: #374151;">Manchester</span>
+                                <span class="case-tag" style="background: #f3f4f6; color: #374151;">Spain</span>
                             </div>
                         </div>
                     </div>
@@ -828,7 +1066,7 @@
                             <p class="text-gray-600 mb-4 text-sm">Complete restoration with dental implant and crown. Natural appearance.</p>
                             <div class="flex flex-wrap gap-1">
                                 <span class="case-tag tag-implant">Dental Implant</span>
-                                <span class="case-tag" style="background: #f3f4f6; color: #374151;">Birmingham</span>
+                                <span class="case-tag" style="background: #f3f4f6; color: #374151;">Spain</span>
                             </div>
                         </div>
                     </div>
@@ -856,7 +1094,7 @@
                             <p class="text-gray-600 mb-4 text-sm">Dramatic color improvement with professional teeth whitening treatment.</p>
                             <div class="flex flex-wrap gap-1">
                                 <span class="case-tag tag-whitening">Teeth Whitening</span>
-                                <span class="case-tag" style="background: #f3f4f6; color: #374151;">London Clinic</span>
+                                <span class="case-tag" style="background: #f3f4f6; color: #374151;">London</span>
                             </div>
                         </div>
                     </div>
@@ -885,7 +1123,7 @@
                             <div class="flex flex-wrap gap-1">
                                 <span class="case-tag tag-veneers">Veneers</span>
                                 <span class="case-tag tag-bonding">Bonding</span>
-                                <span class="case-tag" style="background: #f3f4f6; color: #374151;">Manchester</span>
+                                <span class="case-tag" style="background: #f3f4f6; color: #374151;">Spain</span>
                             </div>
                         </div>
                     </div>
@@ -914,25 +1152,12 @@
                             <div class="flex flex-wrap gap-1">
                                 <span class="case-tag tag-invisalign">Invisalign</span>
                                 <span class="case-tag tag-whitening">Whitening</span>
-                                <span class="case-tag" style="background: #f3f4f6; color: #374151;">Birmingham</span>
+                                <span class="case-tag" style="background: #f3f4f6; color: #374151;">London</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Load More Cases Button -->
-                <div class="text-center mt-12">
-                    <button id="load-more-cases" class="text-white px-8 py-3 rounded-full font-semibold transition shadow-lg mb-4" style="background-color: var(--primary-blue);" onclick="loadMoreCases()">
-                        <i class="fas fa-chevron-down mr-2"></i>
-                        <span class="lang-en">Load More Cases</span>
-                        <span class="lang-es hidden">Cargar Más Casos</span>
-                    </button>
-                    <p class="text-gray-600 text-lg">
-                        <i class="fas fa-info-circle mr-2"></i>
-                        <span class="lang-en">All images shown with patient consent. Results may vary.</span>
-                        <span class="lang-es hidden">Todas las imágenes se muestran con consentimiento del paciente. Los resultados pueden variar.</span>
-                    </p>
-                </div>
             </div>
         </section>
     </div>
@@ -973,8 +1198,8 @@
 
                 <!-- Test Tabs for Different Layouts -->
                 <div class="flex justify-center gap-4 mb-8">
-                    <button onclick="switchTestimonialLayout('dr-kalia')" id="layout-dr-kalia" class="px-6 py-2 bg-slate-600 text-white rounded-lg font-medium">Dr. Kalia Style</button>
-                    <button onclick="switchTestimonialLayout('dr-martin')" id="layout-dr-martin" class="px-6 py-2 bg-gray-200 text-gray-700 rounded-lg font-medium hover:bg-gray-300">Dr. Martin Style</button>
+                    <button onclick="switchTestimonialLayout('dr-kalia')" id="layout-dr-kalia" class="px-6 py-2 bg-gray-200 text-gray-700 rounded-lg font-medium hover:bg-gray-300">Dr. Kalia Style</button>
+                    <button onclick="switchTestimonialLayout('dr-martin')" id="layout-dr-martin" class="px-6 py-2 bg-slate-600 text-white rounded-lg font-medium">Dr. Martin Style</button>
                 </div>
 
                 <!-- Reviews Container -->
@@ -982,14 +1207,6 @@
                     <!-- Reviews will be loaded here -->
                 </div>
 
-                <!-- Load More Button -->
-                <div class="text-center mt-16">
-                    <button id="load-more-reviews" class="text-white px-8 py-3 rounded-full font-semibold transition shadow-lg" style="background-color: var(--primary-blue);" onclick="loadMoreReviews()">
-                        <i class="fas fa-chevron-down mr-2"></i>
-                        <span class="lang-en">Load More Reviews</span>
-                        <span class="lang-es hidden">Cargar Más Reseñas</span>
-                    </button>
-                </div>
             </div>
         </section>
     </div>
@@ -1006,11 +1223,6 @@
                     <p class="text-xl text-gray-600 mb-4">
                         <span class="lang-en">Professional recommendations for optimal oral health</span>
                         <span class="lang-es hidden">Recomendaciones profesionales para una salud oral óptima</span>
-                    </p>
-                    <p class="text-sm text-gray-500">
-                        <i class="fas fa-info-circle mr-1"></i>
-                        <span class="lang-en">As an Amazon Associate, I earn from qualifying purchases</span>
-                        <span class="lang-es hidden">Como Asociado de Amazon, gano por compras que califican</span>
                     </p>
                 </div>
 
@@ -1193,25 +1405,13 @@
 
                 </div>
 
-                <div class="text-center mt-12 max-w-3xl mx-auto">
-                    <div class="bg-white rounded-xl p-6 shadow-lg">
-                        <h3 class="text-2xl font-semibold text-gray-800 mb-3">
-                            <span class="lang-en">Why These Products?</span>
-                            <span class="lang-es hidden">¿Por Qué Estos Productos?</span>
-                        </h3>
-                        <p class="text-gray-700 mb-4 lang-en">
-                            As a dental professional with over 15 years of experience, I've carefully selected these products based on their clinical effectiveness and patient feedback. Each product has been chosen to support optimal oral health and complement professional dental care.
-                        </p>
-                        <p class="text-gray-700 mb-4 lang-es hidden">
-                            Como profesional dental con más de 30 años de experiencia, he seleccionado cuidadosamente estos productos basándome en su efectividad clínica y comentarios de pacientes. Cada producto ha sido elegido para apoyar una salud oral óptima y complementar el cuidado dental profesional.
-                        </p>
-                        <p class="text-sm text-gray-500 italic lang-en">
-                            These recommendations are based on professional experience and patient outcomes. Individual needs may vary - always consult with your dentist for personalized advice.
-                        </p>
-                        <p class="text-sm text-gray-500 italic lang-es hidden">
-                            Estas recomendaciones se basan en experiencia profesional y resultados de pacientes. Las necesidades individuales pueden variar - siempre consulte con su dentista para obtener consejos personalizados.
-                        </p>
-                    </div>
+                <!-- Amazon Associate Disclaimer -->
+                <div class="text-center mt-12">
+                    <p class="text-sm text-gray-500">
+                        <i class="fas fa-info-circle mr-1"></i>
+                        <span class="lang-en">As an Amazon Associate, I earn from qualifying purchases</span>
+                        <span class="lang-es hidden">Como Asociado de Amazon, gano por compras que califican</span>
+                    </p>
                 </div>
             </div>
         </section>
@@ -1271,13 +1471,16 @@
                                     </div>
                                     <div class="ml-4">
                                         <div class="font-semibold text-gray-800">
-                                            <span class="lang-en">GDC Registration</span>
-                                            <span class="lang-es hidden">Registro GDC</span>
+                                            <span class="lang-en">Professional Registration</span>
+                                            <span class="lang-es hidden">Registro Profesional</span>
                                         </div>
-                                        <div class="text-gray-700">287705</div>
-                                        <a href="https://olr.gdc-uk.org/SearchRegister/SearchResult?RegistrationNumber=287705" target="_blank" class="text-sm" style="color: var(--primary-blue-light);">
-                                            <span class="lang-en">Verify on GDC Register</span>
-                                            <span class="lang-es hidden">Verificar en Registro GDC</span>
+                                        <div class="text-gray-700">
+                                            <span class="lang-en">Colegio de Dentistas de Málaga</span>
+                                            <span class="lang-es hidden">Colegio de Dentistas de Málaga</span>
+                                        </div>
+                                        <a href="https://www.coem.org.es/" target="_blank" class="text-sm" style="color: var(--primary-blue-light);">
+                                            <span class="lang-en">Visit Official Website</span>
+                                            <span class="lang-es hidden">Visitar Sitio Oficial</span>
                                             <i class="fas fa-external-link-alt ml-1"></i>
                                         </a>
                                     </div>
@@ -1422,126 +1625,12 @@
                                     <i class="fas fa-download mr-2"></i>
                                     <span class="lang-en">Download CV</span>
                                     <span class="lang-es hidden">Descargar CV</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <!-- CV Tab -->
-    <div id="cv-tab" class="tab-content">
-        <section class="py-16 bg-gradient-to-br from-slate-50 to-gray-100 min-h-screen">
-            <div class="container mx-auto px-6">
-                <div class="max-w-6xl mx-auto">
-                    <!-- Header -->
-                    <div class="text-center mb-8">
-                        <h2 class="text-4xl font-bold text-gray-800 mb-4">
-                            <i class="fas fa-file-pdf text-slate-600 mr-3"></i>
-                            <span class="lang-en">Curriculum Vitae</span>
-                            <span class="lang-es hidden">Currículum Vitae</span>
-                        </h2>
-                        <p class="text-xl text-gray-600">
-                            <span class="lang-en">Dr. Eugenia Vila - Professional Resume</span>
-                            <span class="lang-es hidden">Dra. Eugenia Vila - Currículum Profesional</span>
-                        </p>
-                    </div>
-
-                    <!-- PDF Viewer Container -->
-                    <div class="bg-white rounded-2xl shadow-2xl overflow-hidden">
-                        <!-- PDF Embed -->
-                        <div class="relative" style="height: calc(100vh - 250px); min-height: 600px;">
-                            <embed 
-                                src="documents/cv.pdf#toolbar=1&navpanes=0&scrollbar=1" 
-                                type="application/pdf" 
-                                width="100%" 
-                                height="100%"
-                                class="border-0"
-                            />
-                            
-                            <!-- Fallback for browsers that don't support embedded PDFs -->
-                            <div class="absolute inset-0 flex items-center justify-center bg-slate-50 hidden pdf-fallback">
-                                <div class="text-center p-8">
-                                    <i class="fas fa-file-pdf text-slate-400 text-6xl mb-4"></i>
-                                    <p class="text-gray-700 mb-6">
-                                        <span class="lang-en">Your browser doesn't support embedded PDFs.</span>
-                                        <span class="lang-es hidden">Su navegador no soporta PDFs embebidos.</span>
-                                    </p>
-                                    <a 
-                                        href="documents/cv.pdf" 
-                                        download 
-                                        class="inline-block text-white px-8 py-3 rounded-lg font-semibold transition shadow-lg"
-                                        style="background-color: var(--primary-blue-light);"
-                                    >
-                                        <i class="fas fa-download mr-2"></i>
-                                        <span class="lang-en">Download CV</span>
-                                        <span class="lang-es hidden">Descargar CV</span>
-                                    </a>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        
-                        <!-- Download Button at Bottom -->
-                        <div class="bg-slate-50 p-4 border-t border-slate-200">
-                            <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
-                                <div class="text-sm text-gray-600">
-                                    <i class="fas fa-info-circle mr-2"></i>
-                                    <span class="lang-en">View in full screen for best experience</span>
-                                    <span class="lang-es hidden">Ver en pantalla completa para mejor experiencia</span>
-                                </div>
-                                <a 
-                                    href="documents/cv.pdf" 
-                                    download 
-                                    class="text-white px-6 py-2 rounded-lg font-semibold transition shadow-md flex items-center gap-2"
-                                    style="background-color: var(--primary-blue);"
-                                >
-                                    <i class="fas fa-download"></i>
-                                    <span class="lang-en">Download PDF</span>
-                                    <span class="lang-es hidden">Descargar PDF</span>
-                                </a>
-                            </div>
-                        </div>
                     </div>
-
-                    <!-- Quick Stats Below PDF -->
-                    <div class="grid md:grid-cols-3 gap-6 mt-8">
-                        <div class="bg-white rounded-xl shadow-lg p-6 text-center">
-                            <div class="text-slate-600 mb-2">
-                                <i class="fas fa-graduation-cap text-3xl"></i>
-                            </div>
-                            <div class="text-2xl font-bold text-gray-800 mb-1">30+</div>
-                            <div class="text-sm text-gray-600">
-                                <span class="lang-en">Years of Experience</span>
-                                <span class="lang-es hidden">Años de Experiencia</span>
-                            </div>
-                        </div>
-                        
-                        <div class="bg-white rounded-xl shadow-lg p-6 text-center">
-                            <div class="text-slate-600 mb-2">
-                                <i class="fas fa-award text-3xl"></i>
-                            </div>
-                            <div class="text-2xl font-bold text-gray-800 mb-1">5/5</div>
-                            <div class="text-sm text-gray-600">
-                                <span class="lang-en">Patient Rating</span>
-                                <span class="lang-es hidden">Calificación de Pacientes</span>
-                            </div>
-                        </div>
-                        
-                        <div class="bg-white rounded-xl shadow-lg p-6 text-center">
-                            <div class="text-slate-600 mb-2">
-                                <i class="fas fa-users text-3xl"></i>
-                            </div>
-                            <div class="text-2xl font-bold text-gray-800 mb-1">20,000+</div>
-                            <div class="text-sm text-gray-600">
-                                <span class="lang-en">Patients Treated</span>
-                                <span class="lang-es hidden">Pacientes Atendidos</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </section>
     </div>
 
@@ -1555,8 +1644,8 @@
                         <span class="lang-en">Dr. Eugenia Vila</span>
                         <span class="lang-es hidden">Dra. Eugenia Vila</span>
                     </h3>
-                    <p class="text-gray-400 text-sm leading-relaxed mb-4">
-                        <span class="lang-en">GDC-registered dental professional with 30+ years of experience, specializing in aesthetic dentistry and comprehensive oral care in London.</span>
+                    <p class="text-gray-200 text-sm leading-relaxed mb-4">
+                        <span class="lang-en">Registered dental professional with 30+ years of experience, specializing in aesthetic dentistry and comprehensive oral care in Málaga.</span>
                         <span class="lang-es hidden">Doctora especializada en odontología estética con más de 30 años de experiencia. Atendiendo pacientes en Málaga con cuidado dental integral de alta calidad.</span>
                     </p>
                     <div class="flex gap-3">
@@ -1575,19 +1664,19 @@
                     
                     <!-- English Version - UK Locations -->
                     <div class="space-y-3 text-sm lang-en">
-                        <div class="text-gray-400">
+                        <div class="text-gray-200">
                             <p class="font-semibold text-white mb-1">Balham, London</p>
                             <p class="text-xs">Dental Art Implant Clinics</p>
                             <a href="https://maps.app.goo.gl/ZCarKQCmnUGdkBZB7" target="_blank" 
-                               class="text-slate-400 hover:text-white transition text-xs">
+                               class="text-gray-300 hover:text-white transition text-xs">
                                 <i class="fas fa-map-marker-alt mr-1"></i>View on Map
                             </a>
                         </div>
-                        <div class="text-gray-400">
+                        <div class="text-gray-200">
                             <p class="font-semibold text-white mb-1">East Finchley, London</p>
                             <p class="text-xs">Dental Art Implant Clinics</p>
                             <a href="https://maps.app.goo.gl/ZCarKQCmnUGdkBZB7" target="_blank" 
-                               class="text-slate-400 hover:text-white transition text-xs">
+                               class="text-gray-300 hover:text-white transition text-xs">
                                 <i class="fas fa-map-marker-alt mr-1"></i>View on Map
                             </a>
                         </div>
@@ -1595,13 +1684,13 @@
                     
                     <!-- Spanish Version - Málaga Location -->
                     <div class="space-y-3 text-sm lang-es hidden">
-                        <div class="text-gray-400">
+                        <div class="text-gray-200">
                             <p class="font-semibold text-white mb-1">Málaga, España</p>
                             <p class="text-xs">Clínica Dental Dra. Eugenia Vila</p>
                             <p class="text-xs">Av. Juan Sebastián Elcano, 191</p>
                             <p class="text-xs">Málaga-Este, 29017 Málaga</p>
                             <a href="https://maps.app.goo.gl/ZCarKQCmnUGdkBZB7" target="_blank" 
-                               class="text-slate-400 hover:text-white transition text-xs">
+                               class="text-gray-300 hover:text-white transition text-xs">
                                 <i class="fas fa-map-marker-alt mr-1"></i>Ver en Mapa
                             </a>
                         </div>
@@ -1614,16 +1703,16 @@
                     <h4 class="text-lg font-semibold mb-4 lang-es hidden">Contacto</h4>
                     <div class="space-y-3 text-sm">
                         <!-- Phone - English Version -->
-                        <div class="flex items-start gap-3 text-gray-400 lang-en">
+                        <div class="flex items-start gap-3 text-gray-200 lang-en">
                             <i class="fas fa-phone mt-1"></i>
                             <div>
                                 <p class="font-semibold text-white mb-1">Phone</p>
                                 <a href="tel:+447309281723" class="hover:text-white transition">+44 7309 281723</a>
                             </div>
                         </div>
-
+                        
                         <!-- WhatsApp - English Version -->
-                        <div class="flex items-start gap-3 text-gray-400 lang-en">
+                        <div class="flex items-start gap-3 text-gray-200 lang-en">
                             <i class="fab fa-whatsapp mt-1"></i>
                             <div>
                                 <p class="font-semibold text-white mb-1">WhatsApp</p>
@@ -1632,7 +1721,7 @@
                         </div>
                         
                         <!-- Phone - Spanish Version -->
-                        <div class="flex items-start gap-3 text-gray-400 lang-es hidden">
+                        <div class="flex items-start gap-3 text-gray-200 lang-es hidden">
                             <i class="fas fa-phone mt-1"></i>
                             <div>
                                 <p class="font-semibold text-white mb-1">Teléfono</p>
@@ -1641,7 +1730,7 @@
                         </div>
                         
                         <!-- WhatsApp - Spanish Version -->
-                        <div class="flex items-start gap-3 text-gray-400 lang-es hidden">
+                        <div class="flex items-start gap-3 text-gray-200 lang-es hidden">
                             <i class="fab fa-whatsapp mt-1"></i>
                             <div>
                                 <p class="font-semibold text-white mb-1">WhatsApp</p>
@@ -1650,7 +1739,7 @@
                         </div>
 
                         <!-- Email -->
-                        <div class="flex items-start gap-3 text-gray-400">
+                        <div class="flex items-start gap-3 text-gray-200">
                             <i class="fas fa-envelope mt-1"></i>
                             <div>
                                 <p class="font-semibold text-white mb-1">Email</p>
@@ -1665,22 +1754,22 @@
                     <h4 class="text-lg font-semibold mb-4 lang-en">Quick Links</h4>
                     <h4 class="text-lg font-semibold mb-4 lang-es hidden">Enlaces Rápidos</h4>
                     <div class="space-y-2 text-sm">
-                        <a href="#home" onclick="showTab('home', event)" class="block text-gray-400 hover:text-white transition">
+                        <a href="#home" onclick="showTab('home', event)" class="block text-gray-200 hover:text-white transition">
                             <span class="lang-en">Home</span><span class="lang-es hidden">Inicio</span>
                         </a>
-                        <a href="#about" onclick="showTab('about', event)" class="block text-gray-400 hover:text-white transition">
+                        <a href="#about" onclick="showTab('about', event)" class="block text-gray-200 hover:text-white transition">
                             <span class="lang-en">About</span><span class="lang-es hidden">Acerca de</span>
                         </a>
-                        <a href="#cases" onclick="showTab('cases', event)" class="block text-gray-400 hover:text-white transition">
+                        <a href="#cases" onclick="showTab('cases', event)" class="block text-gray-200 hover:text-white transition">
                             <span class="lang-en">Dental Cases</span><span class="lang-es hidden">Casos Dentales</span>
                         </a>
-                        <a href="#reviews" onclick="showTab('reviews', event)" class="block text-gray-400 hover:text-white transition">
+                        <a href="#reviews" onclick="showTab('reviews', event)" class="block text-gray-200 hover:text-white transition">
                             <span class="lang-en">Reviews</span><span class="lang-es hidden">Reseñas</span>
                         </a>
-                        <a href="#products" onclick="showTab('products', event)" class="block text-gray-400 hover:text-white transition">
+                        <a href="#products" onclick="showTab('products', event)" class="block text-gray-200 hover:text-white transition">
                             <span class="lang-en">Products</span><span class="lang-es hidden">Productos</span>
                         </a>
-                        <a href="#contact" onclick="showTab('contact', event)" class="block text-gray-400 hover:text-white transition">
+                        <a href="#contact" onclick="showTab('contact', event)" class="block text-gray-200 hover:text-white transition">
                             <span class="lang-en">Contact</span><span class="lang-es hidden">Contacto</span>
                         </a>
                     </div>
@@ -1688,11 +1777,11 @@
             </div>
 
             <!-- Bottom Bar -->
-            <div class="border-t border-slate-700 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+            <div class="border-t border-slate-700 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-100">
                 <p>&copy; 2025 <span class="lang-en">Dr. Eugenia Vila.</span><span class="lang-es hidden">Dra. Eugenia Vila.</span> <span class="lang-en">All rights reserved.</span><span class="lang-es hidden">Todos los derechos reservados.</span></p>
                 <p class="mt-2 md:mt-0 text-xs">
-                    <span class="lang-en">Professional Dental Portfolio • GDC Registered</span>
-                    <span class="lang-es hidden">Portafolio Dental Profesional • Registrado GDC</span>
+                    <span class="lang-en">Professional Dental Portfolio • Registered Dentist</span>
+                    <span class="lang-es hidden">Portafolio Dental Profesional • Dentista Colegiada</span>
                 </p>
             </div>
         </div>
@@ -1743,23 +1832,36 @@
         
         // Single-select filter for cases
         function filterCases(category, event) {
+            event.preventDefault();
+            event.stopPropagation();
+            
             const caseItems = document.querySelectorAll('.case-item');
             const filterBtns = document.querySelectorAll('.filter-btn');
+            
+            // Find the button element (handle case where event.target might be a span inside the button)
+            let clickedButton = event.target;
+            if (!clickedButton.classList.contains('filter-btn')) {
+                clickedButton = event.target.closest('.filter-btn');
+            }
             
             // Update active button
             filterBtns.forEach(btn => {
                 btn.classList.remove('active', 'bg-slate-600', 'text-white');
                 btn.classList.add('bg-gray-200', 'text-gray-700');
             });
-            event.target.classList.add('active', 'bg-slate-600', 'text-white');
-            event.target.classList.remove('bg-gray-200', 'text-gray-700');
+            
+            if (clickedButton) {
+                clickedButton.classList.add('active', 'bg-slate-600', 'text-white');
+                clickedButton.classList.remove('bg-gray-200', 'text-gray-700');
+            }
             
             // Filter items
             caseItems.forEach(item => {
-                if (category === 'all' || item.dataset.tags.includes(category)) {
-                    item.style.display = 'block';
+                const tags = item.dataset.tags || '';
+                if (category === 'all' || tags.split(' ').includes(category)) {
+                    item.classList.remove('hidden');
                 } else {
-                    item.style.display = 'none';
+                    item.classList.add('hidden');
                 }
             });
         }
@@ -1814,7 +1916,7 @@
         let currentReviewIndex = 0;
         let reviewsPerPage = 8;
         let allReviews = [];
-        let reviewLayout = 'dr-kalia'; // Current layout style
+        let reviewLayout = 'dr-martin'; // Current layout style
         let currentLanguage = 'es'; // Current language
         
         // Real reviews data from Google and Trustpilot (Reordered with best reviews first)
@@ -1882,6 +1984,14 @@
             allReviews = [...reviewsData];
             currentReviewIndex = 0;
                     loadReviews();
+            
+            // Set initial button state for Dr. Martin style (default)
+            const kaliaBtn = document.getElementById('layout-dr-kalia');
+            const martinBtn = document.getElementById('layout-dr-martin');
+            if (kaliaBtn && martinBtn) {
+                kaliaBtn.className = 'px-6 py-2 bg-gray-200 text-gray-700 rounded-lg font-medium hover:bg-gray-300';
+                martinBtn.className = 'px-6 py-2 bg-slate-600 text-white rounded-lg font-medium';
+            }
         }
         
         // Load featured reviews carousel on home page
@@ -2000,7 +2110,7 @@
                 }
                 
                 const card = `
-                    <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-slate-400 hover:shadow-xl transition-shadow duration-300 flex flex-col" style="min-height: 280px;">
+                    <div class="card-hover bg-white p-6 rounded-xl shadow-lg flex flex-col" style="min-height: 280px;">
                         <div class="flex items-center gap-3 mb-4">
                             ${avatarHTML}
                             <div class="flex-1">
@@ -2012,9 +2122,9 @@
                             </div>
                         </div>
                         <div class="flex-1">
-                            <p class="text-gray-700 text-sm italic leading-relaxed mb-3 review-text-preview-${index}">"${truncatedText || reviewText}"</p>
+                            <p class="text-gray-700 text-base italic leading-relaxed mb-3 review-text-preview-${index}">"${truncatedText || reviewText}"</p>
                             ${showReadMore ? `
-                                <p class="text-gray-700 text-sm italic leading-relaxed mb-3 review-text-full-${index} hidden">"${reviewText}"</p>
+                                <p class="text-gray-700 text-base italic leading-relaxed mb-3 review-text-full-${index} hidden">"${reviewText}"</p>
                                 <button onclick="toggleReviewText(${index})" class="text-slate-600 hover:text-slate-700 text-xs font-medium mb-3 review-toggle-${index}">
                                     <span class="lang-en">Read More</span>
                                     <span class="lang-es hidden">Leer Más</span>
@@ -2113,12 +2223,11 @@
         // Function to generate reviews with different layouts
         function loadReviews() {
             const reviewsContainer = document.getElementById('reviews-container');
-            const loadMoreBtn = document.getElementById('load-more-reviews');
             
             if (!reviewsContainer) return; // Not on reviews tab
             
-            // Get reviews to display
-            const reviewsToShow = allReviews.slice(0, currentReviewIndex + reviewsPerPage);
+            // Get reviews to display - show all reviews
+            const reviewsToShow = allReviews;
             reviewsContainer.innerHTML = ''; // Clear existing content
             
             reviewsToShow.forEach((review, index) => {
@@ -2210,13 +2319,6 @@
             } else {
                 reviewsContainer.className = 'max-w-5xl mx-auto space-y-12';
             }
-            
-            // Update Load More button visibility
-            if (currentReviewIndex + reviewsPerPage >= allReviews.length) {
-                loadMoreBtn.style.display = 'none';
-            } else {
-                loadMoreBtn.style.display = 'inline-block';
-            }
         }
         
         // Switch review layout
@@ -2261,18 +2363,10 @@
         // Initialize cases visibility on page load
         function initCases() {
             const caseItems = document.querySelectorAll('.case-item');
-            caseItems.forEach((item, index) => {
-                if (index < 6) {
+            // Show all cases
+            caseItems.forEach((item) => {
                     item.classList.remove('hidden');
-                } else {
-                    item.classList.add('hidden');
-                }
             });
-            
-            // Hide Load More button if 6 or fewer cases
-            if (caseItems.length <= 6) {
-                document.getElementById('load-more-cases').style.display = 'none';
-            }
         }
         
         // Load testimonials and cases when page loads
@@ -2290,6 +2384,57 @@
                 carousel.addEventListener('scroll', updateCarouselArrows);
             }
         });
+        
+        // Appointment Booking Form Submission
+        function submitBookingForm(event) {
+            event.preventDefault();
+            
+            const form = event.target;
+            const formData = new FormData(form);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const phone = formData.get('phone');
+            const treatment = formData.get('treatment');
+            const message = formData.get('message');
+            
+            // Create WhatsApp message
+            const isSpanish = currentLanguage === 'es';
+            let whatsappMessage = isSpanish 
+                ? `Hola! Me gustaría reservar una cita.\n\n`
+                : `Hello! I would like to book an appointment.\n\n`;
+            whatsappMessage += isSpanish ? `Nombre: ${name}\n` : `Name: ${name}\n`;
+            whatsappMessage += `Email: ${email}\n`;
+            whatsappMessage += isSpanish ? `Teléfono: ${phone}\n` : `Phone: ${phone}\n`;
+            if (treatment) {
+                whatsappMessage += isSpanish ? `Tratamiento: ${treatment}\n` : `Treatment: ${treatment}\n`;
+            }
+            if (message) {
+                whatsappMessage += isSpanish ? `Mensaje: ${message}\n` : `Message: ${message}\n`;
+            }
+            
+            // Encode message for URL
+            const encodedMessage = encodeURIComponent(whatsappMessage);
+            
+            // Open WhatsApp with pre-filled message
+            window.open(`https://wa.me/34679975580?text=${encodedMessage}`, '_blank');
+            
+            // Show success message
+            const submitButton = form.querySelector('button[type="submit"]');
+            const originalText = submitButton.innerHTML;
+            submitButton.innerHTML = currentLanguage === 'es' 
+                ? '<i class="fas fa-check mr-2"></i>Cita Enviada' 
+                : '<i class="fas fa-check mr-2"></i>Request Sent';
+            submitButton.disabled = true;
+            submitButton.style.backgroundColor = '#10b981';
+            
+            // Reset form after 3 seconds
+            setTimeout(() => {
+                form.reset();
+                submitButton.innerHTML = originalText;
+                submitButton.disabled = false;
+                submitButton.style.backgroundColor = '';
+            }, 3000);
+        }
     </script>
 
 </body>
